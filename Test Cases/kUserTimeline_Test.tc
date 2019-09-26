@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>kUserTimeline_Test</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>388e2cfa-014f-4a47-99da-f9ab39b3b9b2</testCaseGuid>
+   <variable>
+      <defaultValue>'12-09-2019 00:01:00 +05:30'</defaultValue>
+      <description></description>
+      <id>5b480f63-7031-45b4-b8c7-2b799126e804</id>
+      <masked>false</masked>
+      <name>fromdaTe</name>
+   </variable>
+   <variable>
+      <defaultValue>'12-09-2019 08:59:00 +05:30'</defaultValue>
+      <description></description>
+      <id>17d0bc24-cfc7-4a62-ad64-a5f3cad0a48a</id>
+      <masked>false</masked>
+      <name>todaTe</name>
+   </variable>
+</TestCaseEntity>

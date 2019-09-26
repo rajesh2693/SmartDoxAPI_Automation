@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>zActivityCategory_Test</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e5cbb753-0f8a-4ab8-b51d-710f42d423d3</testCaseGuid>
+   <variable>
+      <defaultValue>'99940db2-e23a-49a6-a7b5-e5533b042e85'</defaultValue>
+      <description></description>
+      <id>71bfbc98-af21-4bb7-97d4-30eaf9c2a567</id>
+      <masked>false</masked>
+      <name>versiontableID</name>
+   </variable>
+</TestCaseEntity>

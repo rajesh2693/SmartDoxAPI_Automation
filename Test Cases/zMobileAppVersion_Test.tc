@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>zMobileAppVersion_Test</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>902eddba-22f7-4a6a-901e-b30d40acba39</testCaseGuid>
+   <variable>
+      <defaultValue>'3'</defaultValue>
+      <description></description>
+      <id>a5099bd5-3108-4a88-8d84-61367d6589d7</id>
+      <masked>false</masked>
+      <name>versionNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>'IOS'</defaultValue>
+      <description></description>
+      <id>753e88cb-e07f-442b-863d-b97edb68fd91</id>
+      <masked>false</masked>
+      <name>oparatingSystem</name>
+   </variable>
+</TestCaseEntity>

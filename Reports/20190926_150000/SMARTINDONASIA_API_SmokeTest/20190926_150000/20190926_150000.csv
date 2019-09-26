@@ -1,0 +1,46 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+SMARTINDONASIA_API_SmokeTest,,,,2019-09-26 15:00:04,2019-09-26 15:00:13,8.570s,INCOMPLETE
+,,,,,,,
+Test Cases/a.ValidateMobileNumber_Test,,,,2019-09-26 15:00:04,2019-09-26 15:00:09,4.533s,PASSED
+"sendRequest(findTestObject(""aValidate Mobile Number"", [""protocal"":Endpoint]))",,,,2019-09-26 15:00:05,2019-09-26 15:00:07,2.102s,PASSED
+"response = sendRequestAndVerify(findTestObject(""aValidate Mobile Number"", [""protocal"":Endpoint]))",,,,2019-09-26 15:00:07,2019-09-26 15:00:09,1.833s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2019-09-26 15:00:09,2019-09-26 15:00:09,0.011s,PASSED
+result = slurper.parseText(response.getResponseText()),,,,2019-09-26 15:00:09,2019-09-26 15:00:09,0.025s,PASSED
+"println(""***************************************"")",,,,2019-09-26 15:00:09,2019-09-26 15:00:09,0.007s,PASSED
+"println(""THIS IS THE RESPONSE FROM VALIDATEMOBILENUMBER TEST CASE = "" + result)",,,,2019-09-26 15:00:09,2019-09-26 15:00:09,0.006s,PASSED
+"println(""***************************************"")",,,,2019-09-26 15:00:09,2019-09-26 15:00:09,0.001s,PASSED
+value = uniqueTokenCode,,,,2019-09-26 15:00:09,2019-09-26 15:00:09,0.018s,PASSED
+println(value),,,,2019-09-26 15:00:09,2019-09-26 15:00:09,0.001s,PASSED
+uniquetoken = value,,,,2019-09-26 15:00:09,2019-09-26 15:00:09,0.001s,PASSED
+"println(""***************************************"")",,,,2019-09-26 15:00:09,2019-09-26 15:00:09,0.006s,PASSED
+"println(""UNIQ TOKEN ID IS GENARATED  = "" + uniquetoken)",,,,2019-09-26 15:00:09,2019-09-26 15:00:09,0.004s,PASSED
+"println(""***************************************"")",,,,2019-09-26 15:00:09,2019-09-26 15:00:09,0.001s,PASSED
+,,,,,,,
+Test Cases/aValidate_OTPTest,,,,2019-09-26 15:00:09,2019-09-26 15:00:11,1.600s,PASSED
+"sendRequest(findTestObject(""aValidate OTP"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-26 15:00:10,2019-09-26 15:00:10,0.314s,PASSED
+"response1 = sendRequest(findTestObject(""aValidate Mobile Number""))",,,,2019-09-26 15:00:10,2019-09-26 15:00:11,0.478s,PASSED
+slurper1 = new groovy.json.JsonSlurper(),,,,2019-09-26 15:00:11,2019-09-26 15:00:11,0.000s,PASSED
+result1 = slurper1.parseText(responseBodyContent),,,,2019-09-26 15:00:11,2019-09-26 15:00:11,0.000s,PASSED
+"println(""***************************************"")",,,,2019-09-26 15:00:11,2019-09-26 15:00:11,0.001s,PASSED
+"println(""THIS IS THE RESPONSE FROM VALIDATEOTP TEST CASE = "" + result1)",,,,2019-09-26 15:00:11,2019-09-26 15:00:11,0.006s,PASSED
+"println(""***************************************"")",,,,2019-09-26 15:00:11,2019-09-26 15:00:11,0.001s,PASSED
+value1 = userId,,,,2019-09-26 15:00:11,2019-09-26 15:00:11,0.004s,PASSED
+userid = value1,,,,2019-09-26 15:00:11,2019-09-26 15:00:11,0.010s,PASSED
+"println(""***************************************"")",,,,2019-09-26 15:00:11,2019-09-26 15:00:11,0.002s,PASSED
+"println(""THE USER ID IS GENARATED  = "" + userid)",,,,2019-09-26 15:00:11,2019-09-26 15:00:11,0.001s,PASSED
+"println(""***************************************"")",,,,2019-09-26 15:00:11,2019-09-26 15:00:11,0.000s,PASSED
+,,,,,,,
+Test Cases/z1SupervisiorTeamStatus_Test,,,,2019-09-26 15:00:11,2019-09-26 15:00:13,1.958s,PASSED
+now1 = new java.util.Date(),,,,2019-09-26 15:00:11,2019-09-26 15:00:11,0.023s,PASSED
+"fromDatE = now1.format(""dd-MM-YYYY HH:mm:ss +5:30"")",,,,2019-09-26 15:00:11,2019-09-26 15:00:11,0.004s,PASSED
+println(fromDatE),,,,2019-09-26 15:00:11,2019-09-26 15:00:11,0.008s,PASSED
+now2 = new java.util.Date(),,,,2019-09-26 15:00:11,2019-09-26 15:00:11,0.001s,PASSED
+"toDatE = now2.format(""dd-MM-YYYY HH:mm:ss +5:30"")",,,,2019-09-26 15:00:11,2019-09-26 15:00:11,0.004s,PASSED
+println(toDatE),,,,2019-09-26 15:00:11,2019-09-26 15:00:11,0.002s,PASSED
+"sendRequest(findTestObject(""ySupervisior Team Status"", [""uniqueToken"":uniquetoken, ""userId"":userid, ""fromDatE"":fromDatE, ""toDatE"":toDatE]))",,,,2019-09-26 15:00:11,2019-09-26 15:00:12,0.421s,PASSED
+"responsez1 = sendRequestAndVerify(findTestObject(""ySupervisior Team Status"", [""uniqueToken"":uniquetoken, ""userId"":userid, ""fromDatE"":fromDatE, ""toDatE"":toDatE]))",,,,2019-09-26 15:00:12,2019-09-26 15:00:13,1.029s,PASSED
+slurperz1 = new groovy.json.JsonSlurper(),,,,2019-09-26 15:00:13,2019-09-26 15:00:13,0.001s,PASSED
+resultz1 = slurperz1.parseText(responsez1.getResponseText()),,,,2019-09-26 15:00:13,2019-09-26 15:00:13,0.002s,PASSED
+"println(""***************************************"")",,,,2019-09-26 15:00:13,2019-09-26 15:00:13,0.004s,PASSED
+"println(""THIS IS THE RESPONSE FROM SUPERVISIOR TEAM STATUS TEST CASE = "" + resultz1)",,,,2019-09-26 15:00:13,2019-09-26 15:00:13,0.009s,PASSED
+"println(""***************************************"")",,,,2019-09-26 15:00:13,2019-09-26 15:00:13,0.000s,PASSED

@@ -1,0 +1,54 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+SMARTINDONASIA_API_SmokeTest,,,,2019-09-05 07:22:24,2019-09-05 07:22:35,10.705s,INCOMPLETE
+,,,,,,,
+Test Cases/aValidateMobileNumberTest,,,,2019-09-05 07:22:24,2019-09-05 07:22:29,4.556s,PASSED
+"response = sendRequestAndVerify(findTestObject(""avalidate_mobile_number""))",,,,2019-09-05 07:22:25,2019-09-05 07:22:29,4.005s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2019-09-05 07:22:29,2019-09-05 07:22:29,0.010s,PASSED
+result = slurper.parseText(response.getResponseText()),,,,2019-09-05 07:22:29,2019-09-05 07:22:29,0.012s,PASSED
+"println(""***************************************"")",,,,2019-09-05 07:22:29,2019-09-05 07:22:29,0.006s,PASSED
+"println(""THIS IS THE RESPONSE FROM VALIDATEMOBILENUMBER TEST CASE = "" + result)",,,,2019-09-05 07:22:29,2019-09-05 07:22:29,0.004s,PASSED
+"println(""***************************************"")",,,,2019-09-05 07:22:29,2019-09-05 07:22:29,0.001s,PASSED
+value = uniqueTokenCode,,,,2019-09-05 07:22:29,2019-09-05 07:22:29,0.008s,PASSED
+println(value),,,,2019-09-05 07:22:29,2019-09-05 07:22:29,0.001s,PASSED
+uniquetoken = value,,,,2019-09-05 07:22:29,2019-09-05 07:22:29,0.002s,PASSED
+"println(""***************************************"")",,,,2019-09-05 07:22:29,2019-09-05 07:22:29,0.002s,PASSED
+"println(""UNIQ TOKEN ID IS GENARATED  = "" + uniquetoken)",,,,2019-09-05 07:22:29,2019-09-05 07:22:29,0.003s,PASSED
+"println(""***************************************"")",,,,2019-09-05 07:22:29,2019-09-05 07:22:29,0.002s,PASSED
+,,,,,,,
+Test Cases/bValidate_OTPTest,,,,2019-09-05 07:22:29,2019-09-05 07:22:32,3.030s,PASSED
+"sendRequest(findTestObject(""bvalidate_OTP"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-05 07:22:29,2019-09-05 07:22:30,1.134s,PASSED
+"response1 = sendRequestAndVerify(findTestObject(""avalidate_mobile_number""))",,,,2019-09-05 07:22:30,2019-09-05 07:22:32,1.441s,PASSED
+slurper1 = new groovy.json.JsonSlurper(),,,,2019-09-05 07:22:32,2019-09-05 07:22:32,0.001s,PASSED
+result1 = slurper1.parseText(response1.getResponseText()),,,,2019-09-05 07:22:32,2019-09-05 07:22:32,0.002s,PASSED
+"println(""***************************************"")",,,,2019-09-05 07:22:32,2019-09-05 07:22:32,0.001s,PASSED
+"println(""THIS IS THE RESPONSE FROM VALIDATEOTP TEST CASE = "" + result1)",,,,2019-09-05 07:22:32,2019-09-05 07:22:32,0.001s,PASSED
+"println(""***************************************"")",,,,2019-09-05 07:22:32,2019-09-05 07:22:32,0.001s,PASSED
+value1 = userId,,,,2019-09-05 07:22:32,2019-09-05 07:22:32,0.001s,PASSED
+userid = value1,,,,2019-09-05 07:22:32,2019-09-05 07:22:32,0.001s,PASSED
+"println(""***************************************"")",,,,2019-09-05 07:22:32,2019-09-05 07:22:32,0.001s,PASSED
+"println(""THE USER ID IS GENARATED  = "" + userid)",,,,2019-09-05 07:22:32,2019-09-05 07:22:32,0.001s,PASSED
+"println(""***************************************"")",,,,2019-09-05 07:22:32,2019-09-05 07:22:32,0.001s,PASSED
+,,,,,,,
+Test Cases/cInsertTripDetailsTest (MI),,,,2019-09-05 07:22:32,2019-09-05 07:22:35,2.712s,PASSED
+"sendRequest(findTestObject(""bvalidate_OTP"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-05 07:22:32,2019-09-05 07:22:33,1.062s,PASSED
+triPID = toString().toUpperCase(),,,,2019-09-05 07:22:33,2019-09-05 07:22:33,0.000s,PASSED
+println(triPID),,,,2019-09-05 07:22:33,2019-09-05 07:22:33,0.010s,PASSED
+now = new java.util.Date(),,,,2019-09-05 07:22:33,2019-09-05 07:22:33,0.000s,PASSED
+"tiMe = now.format(""dd:MM:YYYY-HH:mm:ss +5:30"")",,,,2019-09-05 07:22:33,2019-09-05 07:22:33,0.001s,PASSED
+println(tiMe),,,,2019-09-05 07:22:33,2019-09-05 07:22:33,0.000s,PASSED
+"resp2 = sendRequest(findTestObject(""insert_trip_detail"", [""uniqueToken"":uniquetoken, ""userId"":userid, ""tripid"":triPID, ""startriptime"":tiMe, ""startripLocality"":startripLocality]))",,,,2019-09-05 07:22:33,2019-09-05 07:22:35,1.183s,PASSED
+slurper2 = new groovy.json.JsonSlurper(),,,,2019-09-05 07:22:35,2019-09-05 07:22:35,0.000s,PASSED
+result2 = slurper2.parseText(resp2.getResponseText()),,,,2019-09-05 07:22:35,2019-09-05 07:22:35,0.000s,PASSED
+"println(""***************************************
+"")",,,,2019-09-05 07:22:35,2019-09-05 07:22:35,0.000s,PASSED
+"println(""THIS IS THE RESPONSE FROM INSERT TRIP DETAILS  TEST CASE = "" + result2)",,,,2019-09-05 07:22:35,2019-09-05 07:22:35,0.000s,PASSED
+"println(""***************************************
+"")",,,,2019-09-05 07:22:35,2019-09-05 07:22:35,0.000s,PASSED
+"toString().split(triPID, 0)",,,,2019-09-05 07:22:35,2019-09-05 07:22:35,0.010s,PASSED
+"value2 = toString().substring(25, 61)",,,,2019-09-05 07:22:35,2019-09-05 07:22:35,0.000s,PASSED
+println(value2),,,,2019-09-05 07:22:35,2019-09-05 07:22:35,0.000s,PASSED
+"println(""THE TRIP iD IS   = "" + value2)",,,,2019-09-05 07:22:35,2019-09-05 07:22:35,0.000s,PASSED
+f = new java.io.File(D:\abcd.txt),,,,2019-09-05 07:22:35,2019-09-05 07:22:35,0.000s,PASSED
+valueA = value2,,,,2019-09-05 07:22:35,2019-09-05 07:22:35,0.000s,PASSED
+"f.append(valueA + ""
+"")",,,,2019-09-05 07:22:35,2019-09-05 07:22:35,0.010s,PASSED

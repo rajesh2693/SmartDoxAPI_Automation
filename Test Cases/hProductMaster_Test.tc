@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>hProductMaster_Test</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a0709aa7-e711-462d-8911-0dc2aac0772b</testCaseGuid>
+   <variable>
+      <defaultValue>'e7098ad2-c17e-4475-a201-39a35e8ef795'</defaultValue>
+      <description></description>
+      <id>17b132b0-80e5-4e73-822d-6aef7405c2e2</id>
+      <masked>false</masked>
+      <name>versiontableId</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,29 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+SMARTINDONASIA_API_SmokeTest,,,,2019-09-09 17:00:44,2019-09-09 17:00:53,8.520s,INCOMPLETE
+,,,,,,,
+Test Cases/aValidateMobileNumberTest,,,,2019-09-09 17:00:45,2019-09-09 17:00:49,4.077s,PASSED
+"response = sendRequestAndVerify(findTestObject(""avalidate_mobile_number""))",,,,2019-09-09 17:00:45,2019-09-09 17:00:49,3.380s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2019-09-09 17:00:49,2019-09-09 17:00:49,0.011s,PASSED
+result = slurper.parseText(response.getResponseText()),,,,2019-09-09 17:00:49,2019-09-09 17:00:49,0.025s,PASSED
+"println(""***************************************"")",,,,2019-09-09 17:00:49,2019-09-09 17:00:49,0.008s,PASSED
+"println(""THIS IS THE RESPONSE FROM VALIDATEMOBILENUMBER TEST CASE = "" + result)",,,,2019-09-09 17:00:49,2019-09-09 17:00:49,0.007s,PASSED
+"println(""***************************************"")",,,,2019-09-09 17:00:49,2019-09-09 17:00:49,0.006s,PASSED
+value = uniqueTokenCode,,,,2019-09-09 17:00:49,2019-09-09 17:00:49,0.025s,PASSED
+println(value),,,,2019-09-09 17:00:49,2019-09-09 17:00:49,0.002s,PASSED
+uniquetoken = value,,,,2019-09-09 17:00:49,2019-09-09 17:00:49,0.006s,PASSED
+"println(""***************************************"")",,,,2019-09-09 17:00:49,2019-09-09 17:00:49,0.002s,PASSED
+"println(""UNIQ TOKEN ID IS GENARATED  = "" + uniquetoken)",,,,2019-09-09 17:00:49,2019-09-09 17:00:49,0.007s,PASSED
+"println(""***************************************"")",,,,2019-09-09 17:00:49,2019-09-09 17:00:49,0.002s,PASSED
+,,,,,,,
+Test Cases/bValidate_OTPTest,,,,2019-09-09 17:00:49,2019-09-09 17:00:50,1.465s,FAILED
+"sendRequestAndVerify(findTestObject(""bvalidate_OTP"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-09 17:00:49,2019-09-09 17:00:50,0.988s,FAILED
+,,,,,,,
+Test Cases/cInsertTripDetailsTest,,,,2019-09-09 17:00:50,2019-09-09 17:00:52,1.527s,FAILED
+"sendRequestAndVerify(findTestObject(""bvalidate_OTP"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-09 17:00:51,2019-09-09 17:00:52,1.018s,FAILED
+,,,,,,,
+Test Cases/dUpdateTripDetails,,,,2019-09-09 17:00:52,2019-09-09 17:00:53,0.966s,PASSED
+file1 = new java.io.File(D:\InsertTripDetails_ID.txt),,,,2019-09-09 17:00:52,2019-09-09 17:00:52,0.001s,PASSED
+triPID = file1.readLines(),,,,2019-09-09 17:00:52,2019-09-09 17:00:52,0.014s,PASSED
+"println(""-------------->"" + triPID)",,,,2019-09-09 17:00:52,2019-09-09 17:00:52,0.001s,PASSED
+"sendRequest(findTestObject(""bvalidate_OTP"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-09 17:00:52,2019-09-09 17:00:52,0.250s,PASSED
+"sendRequest(findTestObject(""update_trip_detail"", [""uptripiD"":uptripiD, ""userId"":userid]))",,,,2019-09-09 17:00:52,2019-09-09 17:00:53,0.317s,PASSED

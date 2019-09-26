@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites name="SMARTINDONASIA_API_SmokeTest" time="6" tests="3" failures="0" errors="0">
+    <testsuite name="SMARTINDONASIA_API_SmokeTest" tests="3" failures="0" errors="0" time="6" timestamp="2019-09-23 20:26:59" hostname="Rajesh.Veeranna - VSPLBLRLT0060.visionetsystems.com" id="Test Suites/SMARTINDONASIA_API_SmokeTest">
+        <properties>
+            <property name="deviceName" value=""/>
+            <property name="devicePlatform" value=""/>
+            <property name="logFolder" value="C:\\Users\\rajesh.veeranna\\Katalon Studio\\SmartIndonasia\\Reports\\20190923_202656\\SMARTINDONASIA_API_SmokeTest\\20190923_202656"/>
+            <property name="logFiles" value="C:\\Users\\rajesh.veeranna\\Katalon Studio\\SmartIndonasia\\Reports\\20190923_202656\\SMARTINDONASIA_API_SmokeTest\\20190923_202656\\execution0.log"/>
+            <property name="attachments" value=""/>
+            <property name="hostName" value="Rajesh.Veeranna - VSPLBLRLT0060.visionetsystems.com"/>
+            <property name="hostAddress" value="10.130.3.183"/>
+            <property name="os" value="Windows 7 64bit"/>
+            <property name="katalonVersion" value="6.3.3.11"/>
+        </properties>
+        <testcase name="Test Cases/a.ValidateMobileNumber_Test" classname="Test Cases/a.ValidateMobileNumber_Test" status="PASSED">
+            <system-out>2019-09-23 20:26:59 - [TEST_CASE][PASSED] - Test Cases/a.ValidateMobileNumber_Test: Test Cases/a.ValidateMobileNumber_Test&#xD;
+&#xD;
+2019-09-23 20:27:00 - [TEST_STEP][PASSED] - sendRequest(findTestObject("aValidate Mobile Number", ["protocal":Endpoint])): Send request successfully&#xD;
+&#xD;
+2019-09-23 20:27:01 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190923_202656\SMARTINDONASIA_API_SmokeTest\20190923_202656\requests\main\0.har&#xD;
+&#xD;
+2019-09-23 20:27:02 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-09-23 20:27:02 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("aValidate Mobile Number", ["protocal":Endpoint])): Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-23 20:27:02 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190923_202656\SMARTINDONASIA_API_SmokeTest\20190923_202656\requests\main\1.har&#xD;
+&#xD;
+2019-09-23 20:27:02 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully&#xD;
+&#xD;
+2019-09-23 20:27:02 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null&#xD;
+&#xD;
+2019-09-23 20:27:03 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null&#xD;
+&#xD;
+2019-09-23 20:27:03 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully&#xD;
+&#xD;
+2019-09-23 20:27:03 - [MESSAGE][PASSED] - Verify response status code successfully&#xD;
+&#xD;
+2019-09-23 20:27:03 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null&#xD;
+&#xD;
+2019-09-23 20:27:03 - [MESSAGE][PASSED] - Verify response successfully&#xD;
+&#xD;
+2019-09-23 20:27:03 - [MESSAGE][PASSED] - Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-23 20:27:03 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null&#xD;
+&#xD;
+2019-09-23 20:27:03 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseText()): null&#xD;
+&#xD;
+2019-09-23 20:27:03 - [TEST_STEP][PASSED] - println("***************************************"): null&#xD;
+&#xD;
+2019-09-23 20:27:03 - [TEST_STEP][PASSED] - println("THIS IS THE RESPONSE FROM VALIDATEMOBILENUMBER TEST CASE = " + result): null&#xD;
+&#xD;
+2019-09-23 20:27:03 - [TEST_STEP][PASSED] - println("***************************************"): null&#xD;
+&#xD;
+2019-09-23 20:27:03 - [TEST_STEP][PASSED] - value = uniqueTokenCode: null&#xD;
+&#xD;
+2019-09-23 20:27:03 - [TEST_STEP][PASSED] - println(value): null&#xD;
+&#xD;
+2019-09-23 20:27:03 - [TEST_STEP][PASSED] - uniquetoken = value: null&#xD;
+&#xD;
+2019-09-23 20:27:03 - [TEST_STEP][PASSED] - println("***************************************"): null&#xD;
+&#xD;
+2019-09-23 20:27:03 - [TEST_STEP][PASSED] - println("UNIQ TOKEN ID IS GENARATED  = " + uniquetoken): null&#xD;
+&#xD;
+2019-09-23 20:27:03 - [TEST_STEP][PASSED] - println("***************************************"): null</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/aValidate_OTPTest" classname="Test Cases/aValidate_OTPTest" status="PASSED">
+            <system-out>2019-09-23 20:27:03 - [TEST_CASE][PASSED] - Test Cases/aValidate_OTPTest: Test Cases/aValidate_OTPTest&#xD;
+&#xD;
+2019-09-23 20:27:03 - [TEST_STEP][PASSED] - sendRequest(findTestObject("aValidate OTP", ["uniqueToken":uniquetoken, "userId":userid])): Send request successfully&#xD;
+&#xD;
+2019-09-23 20:27:04 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190923_202656\SMARTINDONASIA_API_SmokeTest\20190923_202656\requests\main\2.har&#xD;
+&#xD;
+2019-09-23 20:27:04 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-09-23 20:27:04 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("aValidate Mobile Number")): Send request successfully&#xD;
+&#xD;
+2019-09-23 20:27:04 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190923_202656\SMARTINDONASIA_API_SmokeTest\20190923_202656\requests\main\3.har&#xD;
+&#xD;
+2019-09-23 20:27:04 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-09-23 20:27:04 - [TEST_STEP][PASSED] - slurper1 = new groovy.json.JsonSlurper(): null&#xD;
+&#xD;
+2019-09-23 20:27:04 - [TEST_STEP][PASSED] - result1 = slurper1.parseText(responseBodyContent): null&#xD;
+&#xD;
+2019-09-23 20:27:04 - [TEST_STEP][PASSED] - println("***************************************"): null&#xD;
+&#xD;
+2019-09-23 20:27:04 - [TEST_STEP][PASSED] - println("THIS IS THE RESPONSE FROM VALIDATEOTP TEST CASE = " + result1): null&#xD;
+&#xD;
+2019-09-23 20:27:04 - [TEST_STEP][PASSED] - println("***************************************"): null&#xD;
+&#xD;
+2019-09-23 20:27:04 - [TEST_STEP][PASSED] - value1 = userId: null&#xD;
+&#xD;
+2019-09-23 20:27:04 - [TEST_STEP][PASSED] - userid = value1: null&#xD;
+&#xD;
+2019-09-23 20:27:04 - [TEST_STEP][PASSED] - println("***************************************"): null&#xD;
+&#xD;
+2019-09-23 20:27:04 - [TEST_STEP][PASSED] - println("THE USER ID IS GENARATED  = " + userid): null&#xD;
+&#xD;
+2019-09-23 20:27:04 - [TEST_STEP][PASSED] - println("***************************************"): null</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/zActivityCategory_Test" classname="Test Cases/zActivityCategory_Test" status="PASSED">
+            <system-out>2019-09-23 20:27:04 - [TEST_CASE][PASSED] - Test Cases/zActivityCategory_Test: Test Cases/zActivityCategory_Test&#xD;
+&#xD;
+2019-09-23 20:27:05 - [TEST_STEP][PASSED] - sendRequest(findTestObject("zActivity Category", ["versiontableID":versiontableID, "userId":userid, "uniqueToken":uniquetoken])): Send request successfully&#xD;
+&#xD;
+2019-09-23 20:27:05 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190923_202656\SMARTINDONASIA_API_SmokeTest\20190923_202656\requests\main\4.har&#xD;
+&#xD;
+2019-09-23 20:27:05 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-09-23 20:27:05 - [TEST_STEP][PASSED] - responsez1 = sendRequestAndVerify(findTestObject("zActivity Category", ["versiontableID":versiontableID, "userId":userid, "uniqueToken":uniquetoken])): Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-23 20:27:05 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190923_202656\SMARTINDONASIA_API_SmokeTest\20190923_202656\requests\main\5.har&#xD;
+&#xD;
+2019-09-23 20:27:05 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully&#xD;
+&#xD;
+2019-09-23 20:27:05 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null&#xD;
+&#xD;
+2019-09-23 20:27:05 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null&#xD;
+&#xD;
+2019-09-23 20:27:05 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully&#xD;
+&#xD;
+2019-09-23 20:27:05 - [MESSAGE][PASSED] - Verify response status code successfully&#xD;
+&#xD;
+2019-09-23 20:27:05 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null&#xD;
+&#xD;
+2019-09-23 20:27:05 - [MESSAGE][PASSED] - Verify response successfully&#xD;
+&#xD;
+2019-09-23 20:27:05 - [MESSAGE][PASSED] - Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-23 20:27:05 - [TEST_STEP][PASSED] - slurperz1 = new groovy.json.JsonSlurper(): null&#xD;
+&#xD;
+2019-09-23 20:27:05 - [TEST_STEP][PASSED] - resultz1 = slurperz1.parseText(responsez1.getResponseText()): null&#xD;
+&#xD;
+2019-09-23 20:27:05 - [TEST_STEP][PASSED] - println("***************************************"): null&#xD;
+&#xD;
+2019-09-23 20:27:05 - [TEST_STEP][PASSED] - println("THIS IS THE RESPONSE FROM ACTIVITY CATEGORY TEST CASE = " + resultz1): null&#xD;
+&#xD;
+2019-09-23 20:27:05 - [TEST_STEP][PASSED] - println("***************************************"): null</system-out>
+            <system-err></system-err>
+        </testcase>
+        <system-out>2019-09-23 20:26:59 - [TEST_SUITE][INCOMPLETE] - SMARTINDONASIA_API_SmokeTest: null</system-out>
+        <system-err>2019-09-23 20:26:59 - [TEST_SUITE][INCOMPLETE] - SMARTINDONASIA_API_SmokeTest: null</system-err>
+    </testsuite>
+</testsuites>

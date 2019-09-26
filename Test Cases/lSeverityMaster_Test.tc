@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>lSeverityMaster_Test</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1874002b-0713-4fd0-81e7-36e686294496</testCaseGuid>
+   <variable>
+      <defaultValue>'c656174e-0273-475f-bd50-ce8df0c9786f'</defaultValue>
+      <description></description>
+      <id>d73d8464-576d-4b9b-828a-43fa7a80a338</id>
+      <masked>false</masked>
+      <name>versiontableId</name>
+   </variable>
+</TestCaseEntity>

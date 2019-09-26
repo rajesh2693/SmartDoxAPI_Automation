@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>bUpdateUser_CheckInTest</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f6cd5394-ea61-4e38-80c2-908849ec4f86</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>38ac2732-38fe-4e87-abda-281257e4a6d9</id>
+      <masked>false</masked>
+      <name>checkinID</name>
+   </variable>
+   <variable>
+      <defaultValue>'Japan'</defaultValue>
+      <description></description>
+      <id>aa51c72d-62db-47ea-ac21-5dbfdfba0ec0</id>
+      <masked>false</masked>
+      <name>checkoutLocality</name>
+   </variable>
+</TestCaseEntity>

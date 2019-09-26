@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>SMARTINDONASIA_API_SmokeTest2</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>a988fdd1-04c7-4a8e-a490-a7eeb030b9da</testSuiteGuid>
+   <testCaseLink>
+      <guid>aa726715-b357-4c03-ac11-a20034fe01de</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/a.ValidateMobileNumber_Test</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>74ea6c92-3dfd-4309-b93b-8ffefb4f1044</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/aValidate_OTPTest</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1b2bc3d3-27c0-4236-a1b3-572fb20413cd</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/z6MobileTracking_Test--ND</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>e5993773-eded-48a8-8717-283e8511def7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>60928ac3-4f69-44c5-8d85-842e6d1e9973</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f3c78ab5-5e40-4b47-8d78-cf207a98c1f8</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

@@ -1,0 +1,9 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+SMARTINDONASIA_API_SmokeTest,,,,2019-09-23 16:22:08,2019-09-23 16:22:28,20.537s,INCOMPLETE
+,,,,,,,
+Test Cases/a.ValidateMobileNumber_Test,,,,2019-09-23 16:22:08,2019-09-23 16:22:25,16.655s,FAILED
+"sendRequest(findTestObject(""aValidate Mobile Number"", [""protocal"":Endpoint, ""mobiLe"":mobiLe]))",,,,2019-09-23 16:22:09,2019-09-23 16:22:24,15.836s,FAILED
+,,,,,,,
+Test Cases/aValidate_OTPTest,,,,2019-09-23 16:22:25,2019-09-23 16:22:28,3.475s,FAILED
+"sendRequest(findTestObject(""aValidate OTP"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-23 16:22:25,2019-09-23 16:22:26,1.257s,PASSED
+"response1 = sendRequestAndVerify(findTestObject(""aValidate Mobile Number""))",,,,2019-09-23 16:22:26,2019-09-23 16:22:28,1.337s,FAILED

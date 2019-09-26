@@ -1,0 +1,46 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+SMARTINDONASIA_API_SmokeTest,,,,2019-08-29 23:46:35,2019-08-29 23:46:49,13.557s,INCOMPLETE
+,,,,,,,
+Test Cases/aValidateMobileNumberTest,,,,2019-08-29 23:46:36,2019-08-29 23:46:44,7.691s,PASSED
+"response = sendRequestAndVerify(findTestObject(""validate_mobile_number""))",,,,2019-08-29 23:46:37,2019-08-29 23:46:44,7.132s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2019-08-29 23:46:44,2019-08-29 23:46:44,0.008s,PASSED
+result = slurper.parseText(response.getResponseText()),,,,2019-08-29 23:46:44,2019-08-29 23:46:44,0.021s,PASSED
+"println(""***************************************"")",,,,2019-08-29 23:46:44,2019-08-29 23:46:44,0.007s,PASSED
+"println(""THIS IS THE RESPONSE FROM VALIDATEMOBILENUMBER TEST CASE = "" + result)",,,,2019-08-29 23:46:44,2019-08-29 23:46:44,0.065s,PASSED
+"println(""***************************************"")",,,,2019-08-29 23:46:44,2019-08-29 23:46:44,0.004s,PASSED
+value = uniqueTokenCode,,,,2019-08-29 23:46:44,2019-08-29 23:46:44,0.009s,PASSED
+println(value),,,,2019-08-29 23:46:44,2019-08-29 23:46:44,0.006s,PASSED
+uniquetoken = value,,,,2019-08-29 23:46:44,2019-08-29 23:46:44,0.002s,PASSED
+"println(""***************************************"")",,,,2019-08-29 23:46:44,2019-08-29 23:46:44,0.001s,PASSED
+"println(""UNIQ TOKEN ID IS GENARATED  = "" + uniquetoken)",,,,2019-08-29 23:46:44,2019-08-29 23:46:44,0.002s,PASSED
+"println(""***************************************"")",,,,2019-08-29 23:46:44,2019-08-29 23:46:44,0.002s,PASSED
+,,,,,,,
+Test Cases/bValidate_OTPTest,,,,2019-08-29 23:46:44,2019-08-29 23:46:47,2.732s,PASSED
+"sendRequest(findTestObject(""validate_OTP"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-08-29 23:46:44,2019-08-29 23:46:45,1.015s,PASSED
+"response1 = sendRequestAndVerify(findTestObject(""validate_mobile_number""))",,,,2019-08-29 23:46:45,2019-08-29 23:46:47,1.400s,PASSED
+slurper1 = new groovy.json.JsonSlurper(),,,,2019-08-29 23:46:47,2019-08-29 23:46:47,0.001s,PASSED
+result1 = slurper1.parseText(response1.getResponseText()),,,,2019-08-29 23:46:47,2019-08-29 23:46:47,0.002s,PASSED
+"println(""***************************************"")",,,,2019-08-29 23:46:47,2019-08-29 23:46:47,0.001s,PASSED
+"println(""THIS IS THE RESPONSE FROM VALIDATEOTP TEST CASE = "" + result1)",,,,2019-08-29 23:46:47,2019-08-29 23:46:47,0.001s,PASSED
+"println(""***************************************"")",,,,2019-08-29 23:46:47,2019-08-29 23:46:47,0.001s,PASSED
+value1 = userId,,,,2019-08-29 23:46:47,2019-08-29 23:46:47,0.001s,PASSED
+userid = value1,,,,2019-08-29 23:46:47,2019-08-29 23:46:47,0.002s,PASSED
+"println(""***************************************"")",,,,2019-08-29 23:46:47,2019-08-29 23:46:47,0.001s,PASSED
+"println(""THE USER ID IS GENARATED  = "" + userid)",,,,2019-08-29 23:46:47,2019-08-29 23:46:47,0.001s,PASSED
+"println(""***************************************"")",,,,2019-08-29 23:46:47,2019-08-29 23:46:47,0.001s,PASSED
+,,,,,,,
+Test Cases/cInsertTripDetailsTest (MI),,,,2019-08-29 23:46:47,2019-08-29 23:46:49,2.353s,PASSED
+"sendRequest(findTestObject(""validate_OTP"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-08-29 23:46:47,2019-08-29 23:46:48,1.080s,PASSED
+triPID = toString().toUpperCase(),,,,2019-08-29 23:46:48,2019-08-29 23:46:48,0.017s,PASSED
+println(triPID),,,,2019-08-29 23:46:48,2019-08-29 23:46:48,0.002s,PASSED
+"resp2 = sendRequest(findTestObject(""insert_trip_detail"", [""uniqueToken"":uniquetoken, ""userId"":userid, ""tripid"":triPID, ""startriptime"":startriptime, ""startripLocality"":startripLocality]))",,,,2019-08-29 23:46:48,2019-08-29 23:46:49,0.834s,PASSED
+slurper2 = new groovy.json.JsonSlurper(),,,,2019-08-29 23:46:49,2019-08-29 23:46:49,0.001s,PASSED
+result2 = slurper2.parseText(resp2.getResponseText()),,,,2019-08-29 23:46:49,2019-08-29 23:46:49,0.002s,PASSED
+"println(""***************************************
+"")",,,,2019-08-29 23:46:49,2019-08-29 23:46:49,0.003s,PASSED
+"println(""THIS IS THE RESPONSE FROM INSERT TRIP DETAILS  TEST CASE = "" + result2)",,,,2019-08-29 23:46:49,2019-08-29 23:46:49,0.002s,PASSED
+"println(""***************************************
+"")",,,,2019-08-29 23:46:49,2019-08-29 23:46:49,0.001s,PASSED
+value2 = userId,,,,2019-08-29 23:46:49,2019-08-29 23:46:49,0.001s,PASSED
+println(value2),,,,2019-08-29 23:46:49,2019-08-29 23:46:49,0.007s,PASSED
+userid = value2,,,,2019-08-29 23:46:49,2019-08-29 23:46:49,0.001s,PASSED

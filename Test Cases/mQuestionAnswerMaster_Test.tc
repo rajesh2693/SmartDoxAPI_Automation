@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>mQuestionAnswerMaster_Test</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e014d3a9-c086-4ee3-bdde-0f8712595ef9</testCaseGuid>
+   <variable>
+      <defaultValue>'6c1c9eb6-472d-4846-9c1a-fcd74f0e1123'</defaultValue>
+      <description></description>
+      <id>c408c48f-4a09-4883-8cbb-59e5629d6eff</id>
+      <masked>false</masked>
+      <name>lobID</name>
+   </variable>
+</TestCaseEntity>

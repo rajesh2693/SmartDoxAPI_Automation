@@ -1,0 +1,163 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+SMARTINDONASIA_API_SmokeTest,,,,2019-09-17 19:38:20,2019-09-17 19:39:09,48.567s,INCOMPLETE
+,,,,,,,
+Test Cases/a.ValidateMobileNumber_Test,,,,2019-09-17 19:38:21,2019-09-17 19:38:26,4.990s,PASSED
+"response = sendRequestAndVerify(findTestObject(""aValidate Mobile Number""))",,,,2019-09-17 19:38:21,2019-09-17 19:38:26,4.454s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2019-09-17 19:38:26,2019-09-17 19:38:26,0.010s,PASSED
+result = slurper.parseText(response.getResponseText()),,,,2019-09-17 19:38:26,2019-09-17 19:38:26,0.026s,PASSED
+"println(""***************************************"")",,,,2019-09-17 19:38:26,2019-09-17 19:38:26,0.007s,PASSED
+"println(""THIS IS THE RESPONSE FROM VALIDATEMOBILENUMBER TEST CASE = "" + result)",,,,2019-09-17 19:38:26,2019-09-17 19:38:26,0.006s,PASSED
+"println(""***************************************"")",,,,2019-09-17 19:38:26,2019-09-17 19:38:26,0.005s,PASSED
+value = uniqueTokenCode,,,,2019-09-17 19:38:26,2019-09-17 19:38:26,0.015s,PASSED
+println(value),,,,2019-09-17 19:38:26,2019-09-17 19:38:26,0.002s,PASSED
+uniquetoken = value,,,,2019-09-17 19:38:26,2019-09-17 19:38:26,0.002s,PASSED
+"println(""***************************************"")",,,,2019-09-17 19:38:26,2019-09-17 19:38:26,0.001s,PASSED
+"println(""UNIQ TOKEN ID IS GENARATED  = "" + uniquetoken)",,,,2019-09-17 19:38:26,2019-09-17 19:38:26,0.007s,PASSED
+"println(""***************************************"")",,,,2019-09-17 19:38:26,2019-09-17 19:38:26,0.003s,PASSED
+,,,,,,,
+Test Cases/aValidate_OTPTest,,,,2019-09-17 19:38:26,2019-09-17 19:38:28,2.306s,PASSED
+"sendRequestAndVerify(findTestObject(""aValidate OTP"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-17 19:38:26,2019-09-17 19:38:27,0.876s,PASSED
+"response1 = sendRequestAndVerify(findTestObject(""aValidate Mobile Number""))",,,,2019-09-17 19:38:27,2019-09-17 19:38:28,0.783s,PASSED
+slurper1 = new groovy.json.JsonSlurper(),,,,2019-09-17 19:38:28,2019-09-17 19:38:28,0.001s,PASSED
+result1 = slurper1.parseText(response1.getResponseText()),,,,2019-09-17 19:38:28,2019-09-17 19:38:28,0.001s,PASSED
+"println(""***************************************"")",,,,2019-09-17 19:38:28,2019-09-17 19:38:28,0.002s,PASSED
+"println(""THIS IS THE RESPONSE FROM VALIDATEOTP TEST CASE = "" + result1)",,,,2019-09-17 19:38:28,2019-09-17 19:38:28,0.001s,PASSED
+"println(""***************************************"")",,,,2019-09-17 19:38:28,2019-09-17 19:38:28,0.001s,PASSED
+value1 = userId,,,,2019-09-17 19:38:28,2019-09-17 19:38:28,0.001s,PASSED
+userid = value1,,,,2019-09-17 19:38:28,2019-09-17 19:38:28,0.001s,PASSED
+"println(""***************************************"")",,,,2019-09-17 19:38:28,2019-09-17 19:38:28,0.001s,PASSED
+"println(""THE USER ID IS GENARATED  = "" + userid)",,,,2019-09-17 19:38:28,2019-09-17 19:38:28,0.001s,PASSED
+"println(""***************************************"")",,,,2019-09-17 19:38:28,2019-09-17 19:38:28,0.001s,PASSED
+,,,,,,,
+Test Cases/bInsertUser_CheckInTest,,,,2019-09-17 19:38:28,2019-09-17 19:38:29,1.236s,PASSED
+chkInID = toString().toUpperCase(),,,,2019-09-17 19:38:28,2019-09-17 19:38:28,0.008s,PASSED
+println(chkInID),,,,2019-09-17 19:38:28,2019-09-17 19:38:28,0.002s,PASSED
+now = new java.util.Date(),,,,2019-09-17 19:38:28,2019-09-17 19:38:28,0.009s,PASSED
+"chkInTime = now.format(""dd-MM-YYYY HH:mm:ss +5:30"")",,,,2019-09-17 19:38:28,2019-09-17 19:38:28,0.006s,PASSED
+println(chkInTime),,,,2019-09-17 19:38:28,2019-09-17 19:38:28,0.002s,PASSED
+"resp3 = sendRequest(findTestObject(""bInsert User CheckIn"", [""uniqueToken"":uniquetoken, ""userId"":userid, ""checkInTime"":chkInTime, ""checkInID"":chkInID, ""checkinLocality"":checkinLocality]))",,,,2019-09-17 19:38:28,2019-09-17 19:38:29,0.777s,PASSED
+slurper3 = new groovy.json.JsonSlurper(),,,,2019-09-17 19:38:29,2019-09-17 19:38:29,0.001s,PASSED
+result3 = slurper3.parseText(resp3.getResponseText()),,,,2019-09-17 19:38:29,2019-09-17 19:38:29,0.001s,PASSED
+"println(""***************************************
+"")",,,,2019-09-17 19:38:29,2019-09-17 19:38:29,0.001s,PASSED
+"println(""THIS IS THE RESPONSE FROM USER_CHECKIN TEST CASE = "" + result3)",,,,2019-09-17 19:38:29,2019-09-17 19:38:29,0.001s,PASSED
+"println(""***************************************
+"")",,,,2019-09-17 19:38:29,2019-09-17 19:38:29,0.001s,PASSED
+"toString().split(chkInID, 0)",,,,2019-09-17 19:38:29,2019-09-17 19:38:29,0.003s,PASSED
+"value3 = toString().substring(11, 47)",,,,2019-09-17 19:38:29,2019-09-17 19:38:29,0.001s,PASSED
+println(value3),,,,2019-09-17 19:38:29,2019-09-17 19:38:29,0.001s,PASSED
+"println(""THE CHECKIN  iD IS   = "" + value3)",,,,2019-09-17 19:38:29,2019-09-17 19:38:29,0.001s,PASSED
+f = new java.io.File(D:\Checkin_ID.txt),,,,2019-09-17 19:38:29,2019-09-17 19:38:29,0.000s,PASSED
+f.write(value3),,,,2019-09-17 19:38:29,2019-09-17 19:38:29,0.004s,PASSED
+,,,,,,,
+Test Cases/bUpdateUser_CheckInTest,,,,2019-09-17 19:38:29,2019-09-17 19:38:30,0.782s,PASSED
+file3 = new java.io.File(D:\Checkin_ID.txt),,,,2019-09-17 19:38:30,2019-09-17 19:38:30,0.001s,PASSED
+checkinID = file3.readLines(),,,,2019-09-17 19:38:30,2019-09-17 19:38:30,0.019s,PASSED
+"println(""-------------->"" + checkinID)",,,,2019-09-17 19:38:30,2019-09-17 19:38:30,0.001s,PASSED
+now1 = new java.util.Date(),,,,2019-09-17 19:38:30,2019-09-17 19:38:30,0.001s,PASSED
+"chkOutTime = now1.format(""dd-MM-YYYY HH:mm:ss +5:30"")",,,,2019-09-17 19:38:30,2019-09-17 19:38:30,0.002s,PASSED
+println(chkOutTime),,,,2019-09-17 19:38:30,2019-09-17 19:38:30,0.001s,PASSED
+"resp4 = sendRequest(findTestObject(""bUpdate User CheckIn"", [""uniqueToken"":uniquetoken, ""userId"":userid, ""checkinID"":checkinID, ""checkedOutTime"":chkOutTime]))",,,,2019-09-17 19:38:30,2019-09-17 19:38:30,0.348s,PASSED
+,,,,,,,
+Test Cases/cInsertTripDetails_Test,,,,2019-09-17 19:38:30,2019-09-17 19:38:31,1.162s,PASSED
+"sendRequestAndVerify(findTestObject(""aValidate OTP"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-17 19:38:30,2019-09-17 19:38:31,0.546s,PASSED
+triPID = toString().toUpperCase(),,,,2019-09-17 19:38:31,2019-09-17 19:38:31,0.002s,PASSED
+println(triPID),,,,2019-09-17 19:38:31,2019-09-17 19:38:31,0.002s,PASSED
+now = new java.util.Date(),,,,2019-09-17 19:38:31,2019-09-17 19:38:31,0.003s,PASSED
+"tiMe = now.format(""dd-MM-YYYY HH:mm:ss +5:30"")",,,,2019-09-17 19:38:31,2019-09-17 19:38:31,0.002s,PASSED
+println(tiMe),,,,2019-09-17 19:38:31,2019-09-17 19:38:31,0.002s,PASSED
+"resp2 = sendRequest(findTestObject(""cInsert Trip Detail"", [""uniqueToken"":uniquetoken, ""userId"":userid, ""tripid"":triPID, ""startriptime"":tiMe, ""startripLocality"":startripLocality]))",,,,2019-09-17 19:38:31,2019-09-17 19:38:31,0.275s,PASSED
+slurper2 = new groovy.json.JsonSlurper(),,,,2019-09-17 19:38:31,2019-09-17 19:38:31,0.003s,PASSED
+result2 = slurper2.parseText(resp2.getResponseText()),,,,2019-09-17 19:38:31,2019-09-17 19:38:31,0.001s,PASSED
+"println(""***************************************
+"")",,,,2019-09-17 19:38:31,2019-09-17 19:38:31,0.001s,PASSED
+"println(""THIS IS THE RESPONSE FROM INSERT TRIP DETAILS  TEST CASE = "" + result2)",,,,2019-09-17 19:38:31,2019-09-17 19:38:31,0.001s,PASSED
+"println(""***************************************
+"")",,,,2019-09-17 19:38:31,2019-09-17 19:38:31,0.000s,PASSED
+"toString().split(triPID, 0)",,,,2019-09-17 19:38:31,2019-09-17 19:38:31,0.001s,PASSED
+"value2 = toString().substring(25, 61)",,,,2019-09-17 19:38:31,2019-09-17 19:38:31,0.001s,PASSED
+println(value2),,,,2019-09-17 19:38:31,2019-09-17 19:38:31,0.001s,PASSED
+"println(""THE TRIP iD IS   = "" + value2)",,,,2019-09-17 19:38:31,2019-09-17 19:38:31,0.001s,PASSED
+f = new java.io.File(D:\InsertTripDetails_ID.txt),,,,2019-09-17 19:38:31,2019-09-17 19:38:31,0.001s,PASSED
+f.write(value2),,,,2019-09-17 19:38:31,2019-09-17 19:38:31,0.002s,PASSED
+,,,,,,,
+Test Cases/cUpdateTripDetails_Test,,,,2019-09-17 19:38:31,2019-09-17 19:38:32,0.991s,PASSED
+file1 = new java.io.File(D:\InsertTripDetails_ID.txt),,,,2019-09-17 19:38:31,2019-09-17 19:38:31,0.001s,PASSED
+triPID = file1.readLines(),,,,2019-09-17 19:38:31,2019-09-17 19:38:32,0.005s,PASSED
+"println(""-------------->"" + triPID)",,,,2019-09-17 19:38:32,2019-09-17 19:38:32,0.001s,PASSED
+"sendRequest(findTestObject(""aValidate OTP"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-17 19:38:32,2019-09-17 19:38:32,0.523s,PASSED
+"sendRequest(findTestObject(""cUpdate Trip Detail"", [""uptripiD"":triPID, ""userId"":userid]))",,,,2019-09-17 19:38:32,2019-09-17 19:38:32,0.181s,PASSED
+,,,,,,,
+Test Cases/d.VersionMaster_Test,,,,2019-09-17 19:38:32,2019-09-17 19:38:33,0.663s,PASSED
+"sendRequestAndVerify(findTestObject(""d.Version Master"", [""uniqueToken"":uniquetoken]))",,,,2019-09-17 19:38:32,2019-09-17 19:38:33,0.478s,PASSED
+,,,,,,,
+Test Cases/dLeaveType_Test,,,,2019-09-17 19:38:33,2019-09-17 19:38:34,1.116s,PASSED
+"sendRequestAndVerify(findTestObject(""eLeave Type"", [""versiontableId"":versiontableId, ""userId"":userid, ""uniqueToken"":uniquetoken]))",,,,2019-09-17 19:38:33,2019-09-17 19:38:34,0.885s,PASSED
+,,,,,,,
+Test Cases/eLeaveApplication_Test,,,,2019-09-17 19:38:34,2019-09-17 19:38:35,0.926s,PASSED
+"sendRequestAndVerify(findTestObject(""eLeave Application"", [""leavetypeId"":leavetypeId, ""fromdaTe"":fromdaTe, ""todaTe"":todaTe, ""commenTs"":commenTs, ""userId"":userid, ""uniqueToken"":uniquetoken]))",,,,2019-09-17 19:38:34,2019-09-17 19:38:35,0.663s,PASSED
+,,,,,,,
+Test Cases/eLeaveCancelApplicationTest,,,,2019-09-17 19:38:35,2019-09-17 19:38:36,0.773s,PASSED
+"sendRequestAndVerify(findTestObject(""eLeave Cancel Application"", [""userId"":userid, ""uniqueToken"":uniquetoken, ""fromdaTe"":fromdaTe, ""todaTe"":todaTe]))",,,,2019-09-17 19:38:35,2019-09-17 19:38:36,0.514s,PASSED
+,,,,,,,
+Test Cases/gCropMasterTest,,,,2019-09-17 19:38:36,2019-09-17 19:38:37,0.890s,PASSED
+"sendRequestAndVerify(findTestObject(""gCrop-Master"", [""versiontableId"":versiontableId, ""userId"":userid, ""uniqueToken"":uniquetoken]))",,,,2019-09-17 19:38:36,2019-09-17 19:38:37,0.640s,PASSED
+,,,,,,,
+Test Cases/hProductMaster_Test,,,,2019-09-17 19:38:37,2019-09-17 19:38:37,0.813s,PASSED
+"sendRequestAndVerify(findTestObject(""iUser_Crop_Product"", [""versiontableId"":"""", ""userId"":userid, ""uniqueToken"":uniquetoken]))",,,,2019-09-17 19:38:37,2019-09-17 19:38:37,0.612s,PASSED
+,,,,,,,
+Test Cases/iUserCropProduct_Test,,,,2019-09-17 19:38:37,2019-09-17 19:38:38,0.729s,PASSED
+"sendRequestAndVerify(findTestObject(""iUser_Crop_Product"", [""versiontableId"":"""", ""userId"":userid, ""uniqueToken"":uniquetoken]))",,,,2019-09-17 19:38:38,2019-09-17 19:38:38,0.539s,PASSED
+,,,,,,,
+Test Cases/jUserGeographyDetails_Test,,,,2019-09-17 19:38:38,2019-09-17 19:38:39,0.952s,PASSED
+"sendRequestAndVerify(findTestObject(""jUser Geography Details"", [""versiontableId"":versiontableId, ""userId"":userid, ""uniqueToken"":uniquetoken]))",,,,2019-09-17 19:38:38,2019-09-17 19:38:39,0.724s,PASSED
+,,,,,,,
+Test Cases/kUserTimeline_Test,,,,2019-09-17 19:38:39,2019-09-17 19:38:40,0.851s,PASSED
+"sendRequestAndVerify(findTestObject(""kUserTimeline"", [""fromdaTe"":fromdaTe, ""todaTe"":todaTe, ""userId"":userid, ""uniqueToken"":uniquetoken]))",,,,2019-09-17 19:38:39,2019-09-17 19:38:40,0.628s,PASSED
+,,,,,,,
+Test Cases/lSeverityMaster_Test,,,,2019-09-17 19:38:40,2019-09-17 19:38:43,2.991s,PASSED
+"sendRequestAndVerify(findTestObject(""lSeverity Master"", [""versiontableId"":versiontableId, ""userId"":userid, ""uniqueToken"":uniquetoken]))",,,,2019-09-17 19:38:40,2019-09-17 19:38:43,2.797s,PASSED
+,,,,,,,
+Test Cases/mQuestionAnswerMaster_Test,,,,2019-09-17 19:38:43,2019-09-17 19:38:45,1.527s,PASSED
+"sendRequestAndVerify(findTestObject(""mQuestion Answer Master"", [""lobID"":lobID, ""userId"":userid, ""uniqueToken"":uniquetoken]))",,,,2019-09-17 19:38:43,2019-09-17 19:38:45,1.299s,PASSED
+,,,,,,,
+Test Cases/nHolidayMaster_Test,,,,2019-09-17 19:38:45,2019-09-17 19:38:46,1.396s,PASSED
+"sendRequestAndVerify(findTestObject(""nHoliday Master"", [""versiontableId"":versiontableId, ""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-17 19:38:45,2019-09-17 19:38:46,1.183s,PASSED
+,,,,,,,
+Test Cases/oRefrenceMaster_Test,,,,2019-09-17 19:38:46,2019-09-17 19:38:47,0.722s,FAILED
+"sendRequestAndVerify(findTestObject(""oRefrence Master"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-17 19:38:46,2019-09-17 19:38:47,0.491s,FAILED
+,,,,,,,
+Test Cases/pLobByUser_Test,,,,2019-09-17 19:38:47,2019-09-17 19:38:47,0.684s,PASSED
+"sendRequestAndVerify(findTestObject(""pLob By User"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-17 19:38:47,2019-09-17 19:38:47,0.459s,PASSED
+,,,,,,,
+Test Cases/qActivityHistory_Test,,,,2019-09-17 19:38:47,2019-09-17 19:39:02,15.113s,PASSED
+"sendRequestAndVerify(findTestObject(""qActivity History"", [""userId"":userid, ""uniqueToken"":uniquetoken]))",,,,2019-09-17 19:38:48,2019-09-17 19:39:02,14.925s,PASSED
+,,,,,,,
+Test Cases/RoleAccessUser_Test,,,,2019-09-17 19:39:02,2019-09-17 19:39:04,1.907s,PASSED
+"sendRequestAndVerify(findTestObject(""Role Access By User"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-17 19:39:03,2019-09-17 19:39:03,0.604s,PASSED
+"responseR = sendRequestAndVerify(findTestObject(""Role Access By User""))",,,,2019-09-17 19:39:03,2019-09-17 19:39:04,0.566s,PASSED
+slurperR = new groovy.json.JsonSlurper(),,,,2019-09-17 19:39:04,2019-09-17 19:39:04,0.001s,PASSED
+resultR = slurperR.parseText(responseR.getResponseText()),,,,2019-09-17 19:39:04,2019-09-17 19:39:04,0.001s,PASSED
+"println(""***************************************"")",,,,2019-09-17 19:39:04,2019-09-17 19:39:04,0.001s,PASSED
+"println(""THIS IS THE RESPONSE FROM VALIDATEOTP TEST CASE = "" + resultR)",,,,2019-09-17 19:39:04,2019-09-17 19:39:04,0.001s,PASSED
+"println(""***************************************"")",,,,2019-09-17 19:39:04,2019-09-17 19:39:04,0.001s,PASSED
+valueR = roleId,,,,2019-09-17 19:39:04,2019-09-17 19:39:04,0.000s,PASSED
+loGID = valueR,,,,2019-09-17 19:39:04,2019-09-17 19:39:04,0.000s,PASSED
+"println(""***************************************"")",,,,2019-09-17 19:39:04,2019-09-17 19:39:04,0.001s,PASSED
+"println(""THE USER LOG ID IS   = "" + loGID)",,,,2019-09-17 19:39:04,2019-09-17 19:39:04,0.001s,PASSED
+"println(""***************************************"")",,,,2019-09-17 19:39:04,2019-09-17 19:39:04,0.497s,PASSED
+,,,,,,,
+Test Cases/sIncidentHistory_Test,,,,2019-09-17 19:39:04,2019-09-17 19:39:06,2.070s,PASSED
+"sendRequestAndVerify(findTestObject(""sIncident History"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-17 19:39:05,2019-09-17 19:39:06,1.862s,PASSED
+,,,,,,,
+Test Cases/tMergeContactDetail_Test,,,,2019-09-17 19:39:06,2019-09-17 19:39:07,0.776s,PASSED
+"sendRequestAndVerify(findTestObject(""tMerge Contact Detail"", [""countryID"":countryID, ""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-17 19:39:07,2019-09-17 19:39:07,0.577s,PASSED
+,,,,,,,
+Test Cases/vInsertIncident_Test,,,,2019-09-17 19:39:07,2019-09-17 19:39:09,1.656s,FAILED
+"incidenTID = toUpperCase().replace(""-"", """")",,,,2019-09-17 19:39:08,2019-09-17 19:39:08,0.001s,PASSED
+println(incidenTID),,,,2019-09-17 19:39:08,2019-09-17 19:39:08,0.001s,PASSED
+now = new java.util.Date(),,,,2019-09-17 19:39:08,2019-09-17 19:39:08,0.001s,PASSED
+"incidenTDate = now.format(""dd-MM-YYYY HH:mm:ss +5:30"")",,,,2019-09-17 19:39:08,2019-09-17 19:39:08,0.000s,PASSED
+println(incidenTDate),,,,2019-09-17 19:39:08,2019-09-17 19:39:08,0.000s,PASSED
+"sendRequestAndVerify(findTestObject(""vInsert Incident"", [""userId"":userid, ""uniqueToken"":uniquetoken, ""incidentID"":incidenTID, ""incidentDate"":incidenTDate, ""checkInLocality"":checkInLocality, ... ]))",,,,2019-09-17 19:39:08,2019-09-17 19:39:08,0.603s,PASSED
+"responsev = sendRequestAndVerify(findTestObject(""vInsert Incident""))",,,,2019-09-17 19:39:08,2019-09-17 19:39:09,0.685s,FAILED

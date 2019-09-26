@@ -1,0 +1,40 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+SMARTINDONASIA_API_SmokeTest,,,,2019-09-23 20:09:33,2019-09-23 20:09:38,5.438s,INCOMPLETE
+,,,,,,,
+Test Cases/a.ValidateMobileNumber_Test,,,,2019-09-23 20:09:33,2019-09-23 20:09:37,3.317s,PASSED
+"sendRequest(findTestObject(""aValidate Mobile Number"", [""protocal"":Endpoint]))",,,,2019-09-23 20:09:34,2019-09-23 20:09:36,1.764s,PASSED
+"response = sendRequestAndVerify(findTestObject(""aValidate Mobile Number"", [""protocal"":Endpoint]))",,,,2019-09-23 20:09:36,2019-09-23 20:09:37,1.048s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2019-09-23 20:09:37,2019-09-23 20:09:37,0.021s,PASSED
+result = slurper.parseText(response.getResponseText()),,,,2019-09-23 20:09:37,2019-09-23 20:09:37,0.011s,PASSED
+"println(""***************************************"")",,,,2019-09-23 20:09:37,2019-09-23 20:09:37,0.020s,PASSED
+"println(""THIS IS THE RESPONSE FROM VALIDATEMOBILENUMBER TEST CASE = "" + result)",,,,2019-09-23 20:09:37,2019-09-23 20:09:37,0.000s,PASSED
+"println(""***************************************"")",,,,2019-09-23 20:09:37,2019-09-23 20:09:37,0.000s,PASSED
+value = uniqueTokenCode,,,,2019-09-23 20:09:37,2019-09-23 20:09:37,0.010s,PASSED
+println(value),,,,2019-09-23 20:09:37,2019-09-23 20:09:37,0.000s,PASSED
+uniquetoken = value,,,,2019-09-23 20:09:37,2019-09-23 20:09:37,0.000s,PASSED
+"println(""***************************************"")",,,,2019-09-23 20:09:37,2019-09-23 20:09:37,0.001s,PASSED
+"println(""UNIQ TOKEN ID IS GENARATED  = "" + uniquetoken)",,,,2019-09-23 20:09:37,2019-09-23 20:09:37,0.000s,PASSED
+"println(""***************************************"")",,,,2019-09-23 20:09:37,2019-09-23 20:09:37,0.000s,PASSED
+,,,,,,,
+Test Cases/aValidate_OTPTest,,,,2019-09-23 20:09:37,2019-09-23 20:09:37,0.726s,PASSED
+"sendRequest(findTestObject(""aValidate OTP"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-23 20:09:37,2019-09-23 20:09:37,0.206s,PASSED
+"response1 = sendRequest(findTestObject(""aValidate Mobile Number""))",,,,2019-09-23 20:09:37,2019-09-23 20:09:37,0.264s,PASSED
+slurper1 = new groovy.json.JsonSlurper(),,,,2019-09-23 20:09:37,2019-09-23 20:09:37,0.000s,PASSED
+result1 = slurper1.parseText(responseBodyContent),,,,2019-09-23 20:09:37,2019-09-23 20:09:37,0.000s,PASSED
+"println(""***************************************"")",,,,2019-09-23 20:09:37,2019-09-23 20:09:37,0.000s,PASSED
+"println(""THIS IS THE RESPONSE FROM VALIDATEOTP TEST CASE = "" + result1)",,,,2019-09-23 20:09:37,2019-09-23 20:09:37,0.001s,PASSED
+"println(""***************************************"")",,,,2019-09-23 20:09:37,2019-09-23 20:09:37,0.000s,PASSED
+value1 = userId,,,,2019-09-23 20:09:37,2019-09-23 20:09:37,0.000s,PASSED
+userid = value1,,,,2019-09-23 20:09:37,2019-09-23 20:09:37,0.000s,PASSED
+"println(""***************************************"")",,,,2019-09-23 20:09:37,2019-09-23 20:09:37,0.000s,PASSED
+"println(""THE USER ID IS GENARATED  = "" + userid)",,,,2019-09-23 20:09:37,2019-09-23 20:09:37,0.000s,PASSED
+"println(""***************************************"")",,,,2019-09-23 20:09:37,2019-09-23 20:09:37,0.000s,PASSED
+,,,,,,,
+Test Cases/zActivityCategory_Test,,,,2019-09-23 20:09:37,2019-09-23 20:09:38,1.010s,PASSED
+"sendRequest(findTestObject(""zActivity Category"", [""versiontableID"":versiontableID, ""userId"":userid, ""uniqueToken"":uniquetoken]))",,,,2019-09-23 20:09:38,2019-09-23 20:09:38,0.382s,PASSED
+"responsez1 = sendRequest(findTestObject(""zActivity Category"", [""versiontableID"":versiontableID, ""userId"":userid, ""uniqueToken"":uniquetoken]))",,,,2019-09-23 20:09:38,2019-09-23 20:09:38,0.298s,PASSED
+slurperz1 = new groovy.json.JsonSlurper(),,,,2019-09-23 20:09:38,2019-09-23 20:09:38,0.000s,PASSED
+resultz1 = slurperz1.parseText(responsez1.getResponseText()),,,,2019-09-23 20:09:38,2019-09-23 20:09:38,0.011s,PASSED
+"println(""***************************************"")",,,,2019-09-23 20:09:38,2019-09-23 20:09:38,0.000s,PASSED
+"println(""THIS IS THE RESPONSE FROM ACTIVITY CATEGORY TEST CASE = "" + resultz1)",,,,2019-09-23 20:09:38,2019-09-23 20:09:38,0.003s,PASSED
+"println(""***************************************"")",,,,2019-09-23 20:09:38,2019-09-23 20:09:38,0.003s,PASSED

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites name="SMARTINDONASIA_API_SmokeTest" time="9" tests="2" failures="0" errors="1">
+    <testsuite name="SMARTINDONASIA_API_SmokeTest" tests="2" failures="0" errors="1" time="9" timestamp="2019-09-04 23:29:52" hostname="Rajesh.Veeranna - VSPLBLRLT0060.visionetsystems.com" id="Test Suites/SMARTINDONASIA_API_SmokeTest">
+        <properties>
+            <property name="deviceName" value=""/>
+            <property name="devicePlatform" value=""/>
+            <property name="logFolder" value="C:\\Users\\rajesh.veeranna\\Katalon Studio\\SmartIndonasia\\Reports\\20190904_232949\\SMARTINDONASIA_API_SmokeTest\\20190904_232949"/>
+            <property name="logFiles" value="C:\\Users\\rajesh.veeranna\\Katalon Studio\\SmartIndonasia\\Reports\\20190904_232949\\SMARTINDONASIA_API_SmokeTest\\20190904_232949\\execution0.log"/>
+            <property name="attachments" value=""/>
+            <property name="hostName" value="Rajesh.Veeranna - VSPLBLRLT0060.visionetsystems.com"/>
+            <property name="hostAddress" value="10.30.33.72"/>
+            <property name="os" value="Windows 7 64bit"/>
+            <property name="katalonVersion" value="6.3.3.11"/>
+        </properties>
+        <testcase name="Test Cases/aValidateMobileNumberTest" classname="Test Cases/aValidateMobileNumberTest" status="PASSED">
+            <system-out>2019-09-04 23:29:53 - [TEST_CASE][PASSED] - Test Cases/aValidateMobileNumberTest: Test Cases/aValidateMobileNumberTest&#xD;
+&#xD;
+2019-09-04 23:29:53 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("avalidate_mobile_number")): Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-04 23:29:56 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190904_232949\SMARTINDONASIA_API_SmokeTest\20190904_232949\requests\main\0.har&#xD;
+&#xD;
+2019-09-04 23:29:56 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully&#xD;
+&#xD;
+2019-09-04 23:29:56 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null&#xD;
+&#xD;
+2019-09-04 23:29:56 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null&#xD;
+&#xD;
+2019-09-04 23:29:56 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully&#xD;
+&#xD;
+2019-09-04 23:29:56 - [MESSAGE][PASSED] - Verify response status code successfully&#xD;
+&#xD;
+2019-09-04 23:29:56 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null&#xD;
+&#xD;
+2019-09-04 23:29:57 - [MESSAGE][PASSED] - Verify response successfully&#xD;
+&#xD;
+2019-09-04 23:29:57 - [MESSAGE][PASSED] - Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-04 23:29:57 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null&#xD;
+&#xD;
+2019-09-04 23:29:57 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseText()): null&#xD;
+&#xD;
+2019-09-04 23:29:57 - [TEST_STEP][PASSED] - println("***************************************"): null&#xD;
+&#xD;
+2019-09-04 23:29:57 - [TEST_STEP][PASSED] - println("THIS IS THE RESPONSE FROM VALIDATEMOBILENUMBER TEST CASE = " + result): null&#xD;
+&#xD;
+2019-09-04 23:29:57 - [TEST_STEP][PASSED] - println("***************************************"): null&#xD;
+&#xD;
+2019-09-04 23:29:57 - [TEST_STEP][PASSED] - value = uniqueTokenCode: null&#xD;
+&#xD;
+2019-09-04 23:29:57 - [TEST_STEP][PASSED] - println(value): null&#xD;
+&#xD;
+2019-09-04 23:29:57 - [TEST_STEP][PASSED] - uniquetoken = value: null&#xD;
+&#xD;
+2019-09-04 23:29:57 - [TEST_STEP][PASSED] - println("***************************************"): null&#xD;
+&#xD;
+2019-09-04 23:29:57 - [TEST_STEP][PASSED] - println("UNIQ TOKEN ID IS GENARATED  = " + uniquetoken): null&#xD;
+&#xD;
+2019-09-04 23:29:57 - [TEST_STEP][PASSED] - println("***************************************"): null</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/bValidate_OTPTest" classname="Test Cases/bValidate_OTPTest" status="PASSED">
+            <system-out>2019-09-04 23:29:57 - [TEST_CASE][PASSED] - Test Cases/bValidate_OTPTest: Test Cases/bValidate_OTPTest&#xD;
+&#xD;
+2019-09-04 23:29:57 - [TEST_STEP][PASSED] - sendRequest(findTestObject("bvalidate_OTP", ["uniqueToken":uniquetoken, "userId":userid])): Send request successfully&#xD;
+&#xD;
+2019-09-04 23:29:58 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190904_232949\SMARTINDONASIA_API_SmokeTest\20190904_232949\requests\main\1.har&#xD;
+&#xD;
+2019-09-04 23:29:58 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-09-04 23:29:58 - [TEST_STEP][PASSED] - response1 = sendRequestAndVerify(findTestObject("avalidate_mobile_number")): Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-04 23:29:58 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190904_232949\SMARTINDONASIA_API_SmokeTest\20190904_232949\requests\main\2.har&#xD;
+&#xD;
+2019-09-04 23:29:58 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully&#xD;
+&#xD;
+2019-09-04 23:29:59 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null&#xD;
+&#xD;
+2019-09-04 23:29:59 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null&#xD;
+&#xD;
+2019-09-04 23:29:59 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully&#xD;
+&#xD;
+2019-09-04 23:29:59 - [MESSAGE][PASSED] - Verify response status code successfully&#xD;
+&#xD;
+2019-09-04 23:29:59 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null&#xD;
+&#xD;
+2019-09-04 23:29:59 - [MESSAGE][PASSED] - Verify response successfully&#xD;
+&#xD;
+2019-09-04 23:29:59 - [MESSAGE][PASSED] - Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-04 23:29:59 - [TEST_STEP][PASSED] - slurper1 = new groovy.json.JsonSlurper(): null&#xD;
+&#xD;
+2019-09-04 23:29:59 - [TEST_STEP][PASSED] - result1 = slurper1.parseText(response1.getResponseText()): null&#xD;
+&#xD;
+2019-09-04 23:29:59 - [TEST_STEP][PASSED] - println("***************************************"): null&#xD;
+&#xD;
+2019-09-04 23:29:59 - [TEST_STEP][PASSED] - println("THIS IS THE RESPONSE FROM VALIDATEOTP TEST CASE = " + result1): null&#xD;
+&#xD;
+2019-09-04 23:29:59 - [TEST_STEP][PASSED] - println("***************************************"): null&#xD;
+&#xD;
+2019-09-04 23:29:59 - [TEST_STEP][PASSED] - value1 = userId: null&#xD;
+&#xD;
+2019-09-04 23:29:59 - [TEST_STEP][PASSED] - userid = value1: null&#xD;
+&#xD;
+2019-09-04 23:29:59 - [TEST_STEP][PASSED] - println("***************************************"): null&#xD;
+&#xD;
+2019-09-04 23:29:59 - [TEST_STEP][PASSED] - println("THE USER ID IS GENARATED  = " + userid): null&#xD;
+&#xD;
+2019-09-04 23:29:59 - [TEST_STEP][PASSED] - println("***************************************"): null</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/cInsertTripDetailsTest (MI)" classname="Test Cases/cInsertTripDetailsTest (MI)" status="ERROR">
+            <error type="ERROR" message="Test Cases/cInsertTripDetailsTest (MI) FAILED.&#xA;Reason:&#xA;java.lang.IllegalArgumentException: Text must not be null or empty&#xD;&#xA;&#x9;at cInsertTripDetailsTest (MI).run(cInsertTripDetailsTest (MI):59)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;&#xA;&#x9;at TempTestSuite1567619989929.run(TempTestSuite1567619989929.groovy:35)&#xD;&#xA;"/>
+            <system-out>2019-09-04 23:29:59 - [TEST_CASE][ERROR] - Test Cases/cInsertTripDetailsTest (MI): Test Cases/cInsertTripDetailsTest (MI) FAILED.
+Reason:
+java.lang.IllegalArgumentException: Text must not be null or empty&#xD;
+	at cInsertTripDetailsTest (MI).run(cInsertTripDetailsTest (MI):59)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1567619989929.run(TempTestSuite1567619989929.groovy:35)&#xD;
+&#xD;
+&#xD;
+2019-09-04 23:29:59 - [TEST_STEP][PASSED] - sendRequest(findTestObject("bvalidate_OTP", ["uniqueToken":uniquetoken, "userId":userid])): Send request successfully&#xD;
+&#xD;
+2019-09-04 23:30:00 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190904_232949\SMARTINDONASIA_API_SmokeTest\20190904_232949\requests\main\3.har&#xD;
+&#xD;
+2019-09-04 23:30:00 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-09-04 23:30:00 - [TEST_STEP][PASSED] - triPID = toString().toUpperCase(): null&#xD;
+&#xD;
+2019-09-04 23:30:00 - [TEST_STEP][PASSED] - println(triPID): null&#xD;
+&#xD;
+2019-09-04 23:30:00 - [TEST_STEP][PASSED] - now = new java.util.Date(): null&#xD;
+&#xD;
+2019-09-04 23:30:00 - [TEST_STEP][PASSED] - tiMe = now.format("dd:MM:YYYY-HH:mm:ss +5:30"): null&#xD;
+&#xD;
+2019-09-04 23:30:00 - [TEST_STEP][PASSED] - println(tiMe): null&#xD;
+&#xD;
+2019-09-04 23:30:00 - [TEST_STEP][PASSED] - resp2 = sendRequest(findTestObject("insert_trip_detail", ["uniqueToken":uniquetoken, "userId":userid, "tripid":triPID, "startriptime":tiMe, "startripLocality":startripLocality])): Send request successfully&#xD;
+&#xD;
+2019-09-04 23:30:01 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190904_232949\SMARTINDONASIA_API_SmokeTest\20190904_232949\requests\main\4.har&#xD;
+&#xD;
+2019-09-04 23:30:01 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-09-04 23:30:01 - [TEST_STEP][PASSED] - slurper2 = new groovy.json.JsonSlurper(): null&#xD;
+&#xD;
+2019-09-04 23:30:01 - [TEST_STEP][PASSED] - result2 = slurper2.parseText(resp2.getResponseText()): null&#xD;
+&#xD;
+2019-09-04 23:30:01 - [TEST_STEP][PASSED] - println("***************************************
+"): null&#xD;
+&#xD;
+2019-09-04 23:30:01 - [TEST_STEP][PASSED] - println("THIS IS THE RESPONSE FROM INSERT TRIP DETAILS  TEST CASE = " + result2): null&#xD;
+&#xD;
+2019-09-04 23:30:01 - [TEST_STEP][PASSED] - println("***************************************
+"): null&#xD;
+&#xD;
+2019-09-04 23:30:01 - [TEST_STEP][PASSED] - toString().split(triPID, 0): null&#xD;
+&#xD;
+2019-09-04 23:30:01 - [TEST_STEP][PASSED] - value2 = toString().substring(25, 61): null&#xD;
+&#xD;
+2019-09-04 23:30:01 - [TEST_STEP][PASSED] - println(value2): null&#xD;
+&#xD;
+2019-09-04 23:30:01 - [TEST_STEP][PASSED] - println("THE TRIP iD IS   = " + value2): null&#xD;
+&#xD;
+2019-09-04 23:30:01 - [TEST_STEP][PASSED] - sendRequest(findTestObject("update_trip_detail", ["tripiD":triPID, "userId":userid])): Send request successfully&#xD;
+&#xD;
+2019-09-04 23:30:01 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190904_232949\SMARTINDONASIA_API_SmokeTest\20190904_232949\requests\main\5.har&#xD;
+&#xD;
+2019-09-04 23:30:01 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-09-04 23:30:01 - [TEST_STEP][PASSED] - resp3 = sendRequest(findTestObject("insert_trip_detail", ["tripiD":value2])): Send request successfully&#xD;
+&#xD;
+2019-09-04 23:30:02 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190904_232949\SMARTINDONASIA_API_SmokeTest\20190904_232949\requests\main\6.har&#xD;
+&#xD;
+2019-09-04 23:30:02 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-09-04 23:30:02 - [TEST_STEP][PASSED] - slurper3 = new groovy.json.JsonSlurper(): null&#xD;
+&#xD;
+2019-09-04 23:30:02 - [TEST_STEP][PASSED] - result3 = slurper3.parseText(resp3.getResponseText()): null</system-out>
+            <system-err>2019-09-04 23:29:59 - [TEST_CASE][ERROR] - Test Cases/cInsertTripDetailsTest (MI): Test Cases/cInsertTripDetailsTest (MI) FAILED.
+Reason:
+java.lang.IllegalArgumentException: Text must not be null or empty&#xD;
+	at cInsertTripDetailsTest (MI).run(cInsertTripDetailsTest (MI):59)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1567619989929.run(TempTestSuite1567619989929.groovy:35)</system-err>
+        </testcase>
+        <system-out>2019-09-04 23:29:52 - [TEST_SUITE][INCOMPLETE] - SMARTINDONASIA_API_SmokeTest: null</system-out>
+        <system-err>2019-09-04 23:29:52 - [TEST_SUITE][INCOMPLETE] - SMARTINDONASIA_API_SmokeTest: null</system-err>
+    </testsuite>
+</testsuites>

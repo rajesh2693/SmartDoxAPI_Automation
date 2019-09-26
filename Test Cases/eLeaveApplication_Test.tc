@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>eLeaveApplication_Test</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a93a5d27-e7dd-4c58-af7f-05774ee63b26</testCaseGuid>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>e697030a-5144-4711-8673-b3024ec86664</id>
+      <masked>false</masked>
+      <name>leavetypeId</name>
+   </variable>
+   <variable>
+      <defaultValue>'12-09-2019 00:00:00 +05:30'</defaultValue>
+      <description></description>
+      <id>ded0104b-4ad8-4134-b20e-07859c19fd7b</id>
+      <masked>false</masked>
+      <name>fromdaTe</name>
+   </variable>
+   <variable>
+      <defaultValue>'12-09-2019 23:59:00 +05:30'</defaultValue>
+      <description></description>
+      <id>8aee1834-a9c2-47b8-aac4-a17dcd6afd7d</id>
+      <masked>false</masked>
+      <name>todaTe</name>
+   </variable>
+   <variable>
+      <defaultValue>'Annual Leave'</defaultValue>
+      <description></description>
+      <id>fad04ab8-9366-480c-8c89-6de1823d3da3</id>
+      <masked>false</masked>
+      <name>commenTs</name>
+   </variable>
+</TestCaseEntity>

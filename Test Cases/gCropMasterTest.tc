@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>gCropMasterTest</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>88cd6993-687c-49c3-b5fd-af3413a62ff0</testCaseGuid>
+   <variable>
+      <defaultValue>'a4b3a031-c51e-4f50-8be5-aa7a65ea92e3'</defaultValue>
+      <description></description>
+      <id>78bbacb7-4d67-47f3-9a6c-12825e15ff81</id>
+      <masked>false</masked>
+      <name>versiontableId</name>
+   </variable>
+</TestCaseEntity>

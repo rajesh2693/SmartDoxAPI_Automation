@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>z6MobileTracking_Test--ND</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0f110c34-2808-4b5a-8910-c4d915b94a44</testCaseGuid>
+   <variable>
+      <defaultValue>'25-09-2019 19:01:18 +5:30'</defaultValue>
+      <description></description>
+      <id>e5993773-eded-48a8-8717-283e8511def7</id>
+      <masked>false</masked>
+      <name>createdDatE</name>
+   </variable>
+   <variable>
+      <defaultValue>'12843B6B-A032-46CB-A889-D38FD43AED6E'</defaultValue>
+      <description></description>
+      <id>60928ac3-4f69-44c5-8d85-842e6d1e9973</id>
+      <masked>false</masked>
+      <name>ctiD</name>
+   </variable>
+   <variable>
+      <defaultValue>'25-09-2019 19:01:18 +5:30'</defaultValue>
+      <description></description>
+      <id>f3c78ab5-5e40-4b47-8d78-cf207a98c1f8</id>
+      <masked>false</masked>
+      <name>submittedDatE</name>
+   </variable>
+</TestCaseEntity>

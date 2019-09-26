@@ -1,0 +1,40 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+SMARTINDONASIA_API_SmokeTest,,,,2019-09-26 20:45:51,2019-09-26 20:45:57,5.456s,INCOMPLETE
+,,,,,,,
+Test Cases/a.ValidateMobileNumber_Test,,,,2019-09-26 20:45:51,2019-09-26 20:45:55,3.262s,PASSED
+"sendRequest(findTestObject(""aValidate Mobile Number"", [""protocal"":Endpoint]))",,,,2019-09-26 20:45:52,2019-09-26 20:45:54,1.665s,PASSED
+"response = sendRequestAndVerify(findTestObject(""aValidate Mobile Number"", [""protocal"":Endpoint]))",,,,2019-09-26 20:45:54,2019-09-26 20:45:55,1.064s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2019-09-26 20:45:55,2019-09-26 20:45:55,0.010s,PASSED
+result = slurper.parseText(response.getResponseText()),,,,2019-09-26 20:45:55,2019-09-26 20:45:55,0.024s,PASSED
+"println(""***************************************"")",,,,2019-09-26 20:45:55,2019-09-26 20:45:55,0.010s,PASSED
+"println(""THIS IS THE RESPONSE FROM VALIDATEMOBILENUMBER TEST CASE = "" + result)",,,,2019-09-26 20:45:55,2019-09-26 20:45:55,0.009s,PASSED
+"println(""***************************************"")",,,,2019-09-26 20:45:55,2019-09-26 20:45:55,0.002s,PASSED
+value = uniqueTokenCode,,,,2019-09-26 20:45:55,2019-09-26 20:45:55,0.026s,PASSED
+println(value),,,,2019-09-26 20:45:55,2019-09-26 20:45:55,0.003s,PASSED
+uniquetoken = value,,,,2019-09-26 20:45:55,2019-09-26 20:45:55,0.002s,PASSED
+"println(""***************************************"")",,,,2019-09-26 20:45:55,2019-09-26 20:45:55,0.007s,PASSED
+"println(""UNIQ TOKEN ID IS GENARATED  = "" + uniquetoken)",,,,2019-09-26 20:45:55,2019-09-26 20:45:55,0.005s,PASSED
+"println(""***************************************"")",,,,2019-09-26 20:45:55,2019-09-26 20:45:55,0.001s,PASSED
+,,,,,,,
+Test Cases/aValidate_OTPTest,,,,2019-09-26 20:45:55,2019-09-26 20:45:56,0.943s,PASSED
+"sendRequest(findTestObject(""aValidate OTP"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-26 20:45:55,2019-09-26 20:45:55,0.238s,PASSED
+"response1 = sendRequest(findTestObject(""aValidate Mobile Number""))",,,,2019-09-26 20:45:55,2019-09-26 20:45:56,0.394s,PASSED
+slurper1 = new groovy.json.JsonSlurper(),,,,2019-09-26 20:45:56,2019-09-26 20:45:56,0.001s,PASSED
+result1 = slurper1.parseText(responseBodyContent),,,,2019-09-26 20:45:56,2019-09-26 20:45:56,0.001s,PASSED
+"println(""***************************************"")",,,,2019-09-26 20:45:56,2019-09-26 20:45:56,0.001s,PASSED
+"println(""THIS IS THE RESPONSE FROM VALIDATEOTP TEST CASE = "" + result1)",,,,2019-09-26 20:45:56,2019-09-26 20:45:56,0.001s,PASSED
+"println(""***************************************"")",,,,2019-09-26 20:45:56,2019-09-26 20:45:56,0.001s,PASSED
+value1 = userId,,,,2019-09-26 20:45:56,2019-09-26 20:45:56,0.000s,PASSED
+userid = value1,,,,2019-09-26 20:45:56,2019-09-26 20:45:56,0.000s,PASSED
+"println(""***************************************"")",,,,2019-09-26 20:45:56,2019-09-26 20:45:56,0.001s,PASSED
+"println(""THE USER ID IS GENARATED  = "" + userid)",,,,2019-09-26 20:45:56,2019-09-26 20:45:56,0.001s,PASSED
+"println(""***************************************"")",,,,2019-09-26 20:45:56,2019-09-26 20:45:56,0.001s,PASSED
+,,,,,,,
+Test Cases/cUpdateTripDetails_Test,,,,2019-09-26 20:45:56,2019-09-26 20:45:57,0.844s,ERROR
+file1 = new java.io.File(D:\InsertTripDetails_ID.txt),,,,2019-09-26 20:45:56,2019-09-26 20:45:56,0.003s,PASSED
+uptripiD = file1.readLines(),,,,2019-09-26 20:45:56,2019-09-26 20:45:56,0.022s,PASSED
+"println(""-------------->"" + uptripiD)",,,,2019-09-26 20:45:56,2019-09-26 20:45:56,0.010s,PASSED
+"sendRequest(findTestObject(""cUpdate Trip Detail"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-26 20:45:56,2019-09-26 20:45:56,0.228s,PASSED
+"responseC = sendRequest(findTestObject(""cUpdate Trip Detail"", [""uptripiD"":uptripiD, ""userId"":userid]))",,,,2019-09-26 20:45:56,2019-09-26 20:45:57,0.262s,PASSED
+slurpert = new groovy.json.JsonSlurper(),,,,2019-09-26 20:45:57,2019-09-26 20:45:57,0.000s,PASSED
+resultt = slurpert.parseText(responseC.getResponseText()),,,,2019-09-26 20:45:57,2019-09-26 20:45:57,0.000s,PASSED

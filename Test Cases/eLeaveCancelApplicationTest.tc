@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>eLeaveCancelApplicationTest</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a4850d7a-676c-462e-860f-382f76d2f4dd</testCaseGuid>
+   <variable>
+      <defaultValue>'12-09-2019 00:00:00 +05:30'</defaultValue>
+      <description></description>
+      <id>bdb12eb7-5c98-4aeb-9207-42904135d804</id>
+      <masked>false</masked>
+      <name>fromdaTe</name>
+   </variable>
+   <variable>
+      <defaultValue>'12-09-2019 23:59:00 +05:30'</defaultValue>
+      <description></description>
+      <id>9b50c391-b896-4a45-990b-337d31dee926</id>
+      <masked>false</masked>
+      <name>todaTe</name>
+   </variable>
+</TestCaseEntity>

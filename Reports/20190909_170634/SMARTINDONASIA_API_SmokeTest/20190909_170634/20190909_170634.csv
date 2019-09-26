@@ -1,0 +1,30 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+SMARTINDONASIA_API_SmokeTest,,,,2019-09-09 17:06:37,2019-09-09 17:06:44,6.801s,INCOMPLETE
+,,,,,,,
+Test Cases/aValidateMobileNumberTest,,,,2019-09-09 17:06:38,2019-09-09 17:06:42,4.045s,PASSED
+"response = sendRequestAndVerify(findTestObject(""avalidate_mobile_number""))",,,,2019-09-09 17:06:39,2019-09-09 17:06:42,3.348s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2019-09-09 17:06:42,2019-09-09 17:06:42,0.010s,PASSED
+result = slurper.parseText(response.getResponseText()),,,,2019-09-09 17:06:42,2019-09-09 17:06:42,0.022s,PASSED
+"println(""***************************************"")",,,,2019-09-09 17:06:42,2019-09-09 17:06:42,0.006s,PASSED
+"println(""THIS IS THE RESPONSE FROM VALIDATEMOBILENUMBER TEST CASE = "" + result)",,,,2019-09-09 17:06:42,2019-09-09 17:06:42,0.009s,PASSED
+"println(""***************************************"")",,,,2019-09-09 17:06:42,2019-09-09 17:06:42,0.005s,PASSED
+value = uniqueTokenCode,,,,2019-09-09 17:06:42,2019-09-09 17:06:42,0.016s,PASSED
+println(value),,,,2019-09-09 17:06:42,2019-09-09 17:06:42,0.003s,PASSED
+uniquetoken = value,,,,2019-09-09 17:06:42,2019-09-09 17:06:42,0.003s,PASSED
+"println(""***************************************"")",,,,2019-09-09 17:06:42,2019-09-09 17:06:42,0.002s,PASSED
+"println(""UNIQ TOKEN ID IS GENARATED  = "" + uniquetoken)",,,,2019-09-09 17:06:42,2019-09-09 17:06:42,0.002s,PASSED
+"println(""***************************************"")",,,,2019-09-09 17:06:42,2019-09-09 17:06:42,0.001s,PASSED
+,,,,,,,
+Test Cases/bValidate_OTPTest,,,,2019-09-09 17:06:42,2019-09-09 17:06:44,2.234s,PASSED
+"sendRequestAndVerify(findTestObject(""bvalidate_OTP"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-09 17:06:43,2019-09-09 17:06:43,0.784s,PASSED
+"response1 = sendRequestAndVerify(findTestObject(""avalidate_mobile_number""))",,,,2019-09-09 17:06:43,2019-09-09 17:06:44,0.888s,PASSED
+slurper1 = new groovy.json.JsonSlurper(),,,,2019-09-09 17:06:44,2019-09-09 17:06:44,0.001s,PASSED
+result1 = slurper1.parseText(response1.getResponseText()),,,,2019-09-09 17:06:44,2019-09-09 17:06:44,0.001s,PASSED
+"println(""***************************************"")",,,,2019-09-09 17:06:44,2019-09-09 17:06:44,0.010s,PASSED
+"println(""THIS IS THE RESPONSE FROM VALIDATEOTP TEST CASE = "" + result1)",,,,2019-09-09 17:06:44,2019-09-09 17:06:44,0.002s,PASSED
+"println(""***************************************"")",,,,2019-09-09 17:06:44,2019-09-09 17:06:44,0.003s,PASSED
+value1 = userId,,,,2019-09-09 17:06:44,2019-09-09 17:06:44,0.001s,PASSED
+userid = value1,,,,2019-09-09 17:06:44,2019-09-09 17:06:44,0.001s,PASSED
+"println(""***************************************"")",,,,2019-09-09 17:06:44,2019-09-09 17:06:44,0.001s,PASSED
+"println(""THE USER ID IS GENARATED  = "" + userid)",,,,2019-09-09 17:06:44,2019-09-09 17:06:44,0.006s,PASSED
+"println(""***************************************"")",,,,2019-09-09 17:06:44,2019-09-09 17:06:44,0.002s,PASSED

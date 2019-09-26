@@ -1,0 +1,1136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites name="SMARTINDONASIA_API_SmokeTest" time="44" tests="23" failures="1" errors="0">
+    <testsuite name="SMARTINDONASIA_API_SmokeTest" tests="23" failures="1" errors="0" time="44" timestamp="2019-09-17 18:28:17" hostname="Rajesh.Veeranna - VSPLBLRLT0060.visionetsystems.com" id="Test Suites/SMARTINDONASIA_API_SmokeTest">
+        <properties>
+            <property name="deviceName" value=""/>
+            <property name="devicePlatform" value=""/>
+            <property name="logFolder" value="C:\\Users\\rajesh.veeranna\\Katalon Studio\\SmartIndonasia\\Reports\\20190917_182814\\SMARTINDONASIA_API_SmokeTest\\20190917_182814"/>
+            <property name="logFiles" value="C:\\Users\\rajesh.veeranna\\Katalon Studio\\SmartIndonasia\\Reports\\20190917_182814\\SMARTINDONASIA_API_SmokeTest\\20190917_182814\\execution0.log"/>
+            <property name="attachments" value=""/>
+            <property name="hostName" value="Rajesh.Veeranna - VSPLBLRLT0060.visionetsystems.com"/>
+            <property name="hostAddress" value="10.130.3.183"/>
+            <property name="os" value="Windows 7 64bit"/>
+            <property name="katalonVersion" value="6.3.3.11"/>
+        </properties>
+        <testcase name="Test Cases/a.ValidateMobileNumber_Test" classname="Test Cases/a.ValidateMobileNumber_Test" status="PASSED">
+            <system-out>2019-09-17 18:28:17 - [TEST_CASE][PASSED] - Test Cases/a.ValidateMobileNumber_Test: Test Cases/a.ValidateMobileNumber_Test&#xD;
+&#xD;
+2019-09-17 18:28:18 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("aValidate Mobile Number")): Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-17 18:28:21 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190917_182814\SMARTINDONASIA_API_SmokeTest\20190917_182814\requests\main\0.har&#xD;
+&#xD;
+2019-09-17 18:28:21 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully&#xD;
+&#xD;
+2019-09-17 18:28:21 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null&#xD;
+&#xD;
+2019-09-17 18:28:22 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null&#xD;
+&#xD;
+2019-09-17 18:28:22 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:22 - [MESSAGE][PASSED] - Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:22 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null&#xD;
+&#xD;
+2019-09-17 18:28:22 - [MESSAGE][PASSED] - Verify response successfully&#xD;
+&#xD;
+2019-09-17 18:28:22 - [MESSAGE][PASSED] - Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-17 18:28:22 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null&#xD;
+&#xD;
+2019-09-17 18:28:22 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseText()): null&#xD;
+&#xD;
+2019-09-17 18:28:22 - [TEST_STEP][PASSED] - println("***************************************"): null&#xD;
+&#xD;
+2019-09-17 18:28:22 - [TEST_STEP][PASSED] - println("THIS IS THE RESPONSE FROM VALIDATEMOBILENUMBER TEST CASE = " + result): null&#xD;
+&#xD;
+2019-09-17 18:28:22 - [TEST_STEP][PASSED] - println("***************************************"): null&#xD;
+&#xD;
+2019-09-17 18:28:22 - [TEST_STEP][PASSED] - value = uniqueTokenCode: null&#xD;
+&#xD;
+2019-09-17 18:28:22 - [TEST_STEP][PASSED] - println(value): null&#xD;
+&#xD;
+2019-09-17 18:28:22 - [TEST_STEP][PASSED] - uniquetoken = value: null&#xD;
+&#xD;
+2019-09-17 18:28:22 - [TEST_STEP][PASSED] - println("***************************************"): null&#xD;
+&#xD;
+2019-09-17 18:28:22 - [TEST_STEP][PASSED] - println("UNIQ TOKEN ID IS GENARATED  = " + uniquetoken): null&#xD;
+&#xD;
+2019-09-17 18:28:22 - [TEST_STEP][PASSED] - println("***************************************"): null</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/aValidate_OTPTest" classname="Test Cases/aValidate_OTPTest" status="PASSED">
+            <system-out>2019-09-17 18:28:22 - [TEST_CASE][PASSED] - Test Cases/aValidate_OTPTest: Test Cases/aValidate_OTPTest&#xD;
+&#xD;
+2019-09-17 18:28:22 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("aValidate OTP", ["uniqueToken":uniquetoken, "userId":userid])): Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-17 18:28:23 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190917_182814\SMARTINDONASIA_API_SmokeTest\20190917_182814\requests\main\1.har&#xD;
+&#xD;
+2019-09-17 18:28:23 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully&#xD;
+&#xD;
+2019-09-17 18:28:23 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null&#xD;
+&#xD;
+2019-09-17 18:28:23 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null&#xD;
+&#xD;
+2019-09-17 18:28:23 - [MESSAGE][PASSED] - Verify response successfully&#xD;
+&#xD;
+2019-09-17 18:28:23 - [MESSAGE][PASSED] - Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-17 18:28:23 - [TEST_STEP][PASSED] - response1 = sendRequestAndVerify(findTestObject("aValidate Mobile Number")): Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-17 18:28:24 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190917_182814\SMARTINDONASIA_API_SmokeTest\20190917_182814\requests\main\2.har&#xD;
+&#xD;
+2019-09-17 18:28:24 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully&#xD;
+&#xD;
+2019-09-17 18:28:24 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null&#xD;
+&#xD;
+2019-09-17 18:28:24 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null&#xD;
+&#xD;
+2019-09-17 18:28:24 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:25 - [MESSAGE][PASSED] - Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:25 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null&#xD;
+&#xD;
+2019-09-17 18:28:25 - [MESSAGE][PASSED] - Verify response successfully&#xD;
+&#xD;
+2019-09-17 18:28:25 - [MESSAGE][PASSED] - Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-17 18:28:25 - [TEST_STEP][PASSED] - slurper1 = new groovy.json.JsonSlurper(): null&#xD;
+&#xD;
+2019-09-17 18:28:25 - [TEST_STEP][PASSED] - result1 = slurper1.parseText(response1.getResponseText()): null&#xD;
+&#xD;
+2019-09-17 18:28:25 - [TEST_STEP][PASSED] - println("***************************************"): null&#xD;
+&#xD;
+2019-09-17 18:28:25 - [TEST_STEP][PASSED] - println("THIS IS THE RESPONSE FROM VALIDATEOTP TEST CASE = " + result1): null&#xD;
+&#xD;
+2019-09-17 18:28:25 - [TEST_STEP][PASSED] - println("***************************************"): null&#xD;
+&#xD;
+2019-09-17 18:28:25 - [TEST_STEP][PASSED] - value1 = userId: null&#xD;
+&#xD;
+2019-09-17 18:28:25 - [TEST_STEP][PASSED] - userid = value1: null&#xD;
+&#xD;
+2019-09-17 18:28:25 - [TEST_STEP][PASSED] - println("***************************************"): null&#xD;
+&#xD;
+2019-09-17 18:28:25 - [TEST_STEP][PASSED] - println("THE USER ID IS GENARATED  = " + userid): null&#xD;
+&#xD;
+2019-09-17 18:28:25 - [TEST_STEP][PASSED] - println("***************************************"): null</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/bInsertUser_CheckInTest" classname="Test Cases/bInsertUser_CheckInTest" status="PASSED">
+            <system-out>2019-09-17 18:28:25 - [TEST_CASE][PASSED] - Test Cases/bInsertUser_CheckInTest: Test Cases/bInsertUser_CheckInTest&#xD;
+&#xD;
+2019-09-17 18:28:25 - [TEST_STEP][PASSED] - chkInID = toString().toUpperCase(): null&#xD;
+&#xD;
+2019-09-17 18:28:25 - [TEST_STEP][PASSED] - println(chkInID): null&#xD;
+&#xD;
+2019-09-17 18:28:25 - [TEST_STEP][PASSED] - now = new java.util.Date(): null&#xD;
+&#xD;
+2019-09-17 18:28:25 - [TEST_STEP][PASSED] - chkInTime = now.format("dd-MM-YYYY HH:mm:ss +5:30"): null&#xD;
+&#xD;
+2019-09-17 18:28:25 - [TEST_STEP][PASSED] - println(chkInTime): null&#xD;
+&#xD;
+2019-09-17 18:28:25 - [TEST_STEP][PASSED] - resp3 = sendRequest(findTestObject("bInsert User CheckIn", ["uniqueToken":uniquetoken, "userId":userid, "checkInTime":chkInTime, "checkInID":chkInID, "checkinLocality":checkinLocality])): Send request successfully&#xD;
+&#xD;
+2019-09-17 18:28:25 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190917_182814\SMARTINDONASIA_API_SmokeTest\20190917_182814\requests\main\3.har&#xD;
+&#xD;
+2019-09-17 18:28:25 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-09-17 18:28:25 - [TEST_STEP][PASSED] - slurper3 = new groovy.json.JsonSlurper(): null&#xD;
+&#xD;
+2019-09-17 18:28:25 - [TEST_STEP][PASSED] - result3 = slurper3.parseText(resp3.getResponseText()): null&#xD;
+&#xD;
+2019-09-17 18:28:25 - [TEST_STEP][PASSED] - println("***************************************
+"): null&#xD;
+&#xD;
+2019-09-17 18:28:25 - [TEST_STEP][PASSED] - println("THIS IS THE RESPONSE FROM USER_CHECKIN TEST CASE = " + result3): null&#xD;
+&#xD;
+2019-09-17 18:28:25 - [TEST_STEP][PASSED] - println("***************************************
+"): null&#xD;
+&#xD;
+2019-09-17 18:28:25 - [TEST_STEP][PASSED] - toString().split(chkInID, 0): null&#xD;
+&#xD;
+2019-09-17 18:28:25 - [TEST_STEP][PASSED] - value3 = toString().substring(11, 47): null&#xD;
+&#xD;
+2019-09-17 18:28:25 - [TEST_STEP][PASSED] - println(value3): null&#xD;
+&#xD;
+2019-09-17 18:28:25 - [TEST_STEP][PASSED] - println("THE CHECKIN  iD IS   = " + value3): null&#xD;
+&#xD;
+2019-09-17 18:28:25 - [TEST_STEP][PASSED] - f = new java.io.File(D:\Checkin_ID.txt): null&#xD;
+&#xD;
+2019-09-17 18:28:25 - [TEST_STEP][PASSED] - f.write(value3): null</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/bUpdateUser_CheckInTest" classname="Test Cases/bUpdateUser_CheckInTest" status="PASSED">
+            <system-out>2019-09-17 18:28:25 - [TEST_CASE][PASSED] - Test Cases/bUpdateUser_CheckInTest: Test Cases/bUpdateUser_CheckInTest&#xD;
+&#xD;
+2019-09-17 18:28:25 - [TEST_STEP][PASSED] - file3 = new java.io.File(D:\Checkin_ID.txt): null&#xD;
+&#xD;
+2019-09-17 18:28:25 - [TEST_STEP][PASSED] - checkinID = file3.readLines(): null&#xD;
+&#xD;
+2019-09-17 18:28:25 - [TEST_STEP][PASSED] - println("--------------&gt;" + checkinID): null&#xD;
+&#xD;
+2019-09-17 18:28:25 - [TEST_STEP][PASSED] - now1 = new java.util.Date(): null&#xD;
+&#xD;
+2019-09-17 18:28:26 - [TEST_STEP][PASSED] - chkOutTime = now1.format("dd-MM-YYYY HH:mm:ss +5:30"): null&#xD;
+&#xD;
+2019-09-17 18:28:26 - [TEST_STEP][PASSED] - println(chkOutTime): null&#xD;
+&#xD;
+2019-09-17 18:28:26 - [TEST_STEP][PASSED] - resp4 = sendRequest(findTestObject("bUpdate User CheckIn", ["uniqueToken":uniquetoken, "userId":userid, "checkinID":checkinID, "checkedOutTime":chkOutTime])): Send request successfully&#xD;
+&#xD;
+2019-09-17 18:28:26 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190917_182814\SMARTINDONASIA_API_SmokeTest\20190917_182814\requests\main\4.har&#xD;
+&#xD;
+2019-09-17 18:28:26 - [MESSAGE][PASSED] - Send request successfully</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/cInsertTripDetails_Test" classname="Test Cases/cInsertTripDetails_Test" status="PASSED">
+            <system-out>2019-09-17 18:28:26 - [TEST_CASE][PASSED] - Test Cases/cInsertTripDetails_Test: Test Cases/cInsertTripDetails_Test&#xD;
+&#xD;
+2019-09-17 18:28:26 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("aValidate OTP", ["uniqueToken":uniquetoken, "userId":userid])): Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-17 18:28:27 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190917_182814\SMARTINDONASIA_API_SmokeTest\20190917_182814\requests\main\5.har&#xD;
+&#xD;
+2019-09-17 18:28:27 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully&#xD;
+&#xD;
+2019-09-17 18:28:27 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null&#xD;
+&#xD;
+2019-09-17 18:28:27 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null&#xD;
+&#xD;
+2019-09-17 18:28:27 - [MESSAGE][PASSED] - Verify response successfully&#xD;
+&#xD;
+2019-09-17 18:28:27 - [MESSAGE][PASSED] - Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-17 18:28:27 - [TEST_STEP][PASSED] - triPID = toString().toUpperCase(): null&#xD;
+&#xD;
+2019-09-17 18:28:27 - [TEST_STEP][PASSED] - println(triPID): null&#xD;
+&#xD;
+2019-09-17 18:28:27 - [TEST_STEP][PASSED] - now = new java.util.Date(): null&#xD;
+&#xD;
+2019-09-17 18:28:27 - [TEST_STEP][PASSED] - tiMe = now.format("dd-MM-YYYY HH:mm:ss +5:30"): null&#xD;
+&#xD;
+2019-09-17 18:28:27 - [TEST_STEP][PASSED] - println(tiMe): null&#xD;
+&#xD;
+2019-09-17 18:28:27 - [TEST_STEP][PASSED] - resp2 = sendRequest(findTestObject("cInsert Trip Detail", ["uniqueToken":uniquetoken, "userId":userid, "tripid":triPID, "startriptime":tiMe, "startripLocality":startripLocality])): Send request successfully&#xD;
+&#xD;
+2019-09-17 18:28:28 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190917_182814\SMARTINDONASIA_API_SmokeTest\20190917_182814\requests\main\6.har&#xD;
+&#xD;
+2019-09-17 18:28:28 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-09-17 18:28:28 - [TEST_STEP][PASSED] - slurper2 = new groovy.json.JsonSlurper(): null&#xD;
+&#xD;
+2019-09-17 18:28:28 - [TEST_STEP][PASSED] - result2 = slurper2.parseText(resp2.getResponseText()): null&#xD;
+&#xD;
+2019-09-17 18:28:28 - [TEST_STEP][PASSED] - println("***************************************
+"): null&#xD;
+&#xD;
+2019-09-17 18:28:28 - [TEST_STEP][PASSED] - println("THIS IS THE RESPONSE FROM INSERT TRIP DETAILS  TEST CASE = " + result2): null&#xD;
+&#xD;
+2019-09-17 18:28:28 - [TEST_STEP][PASSED] - println("***************************************
+"): null&#xD;
+&#xD;
+2019-09-17 18:28:28 - [TEST_STEP][PASSED] - toString().split(triPID, 0): null&#xD;
+&#xD;
+2019-09-17 18:28:28 - [TEST_STEP][PASSED] - value2 = toString().substring(25, 61): null&#xD;
+&#xD;
+2019-09-17 18:28:28 - [TEST_STEP][PASSED] - println(value2): null&#xD;
+&#xD;
+2019-09-17 18:28:28 - [TEST_STEP][PASSED] - println("THE TRIP iD IS   = " + value2): null&#xD;
+&#xD;
+2019-09-17 18:28:28 - [TEST_STEP][PASSED] - f = new java.io.File(D:\InsertTripDetails_ID.txt): null&#xD;
+&#xD;
+2019-09-17 18:28:28 - [TEST_STEP][PASSED] - f.write(value2): null</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/cUpdateTripDetails_Test" classname="Test Cases/cUpdateTripDetails_Test" status="PASSED">
+            <system-out>2019-09-17 18:28:28 - [TEST_CASE][PASSED] - Test Cases/cUpdateTripDetails_Test: Test Cases/cUpdateTripDetails_Test&#xD;
+&#xD;
+2019-09-17 18:28:28 - [TEST_STEP][PASSED] - file1 = new java.io.File(D:\InsertTripDetails_ID.txt): null&#xD;
+&#xD;
+2019-09-17 18:28:28 - [TEST_STEP][PASSED] - triPID = file1.readLines(): null&#xD;
+&#xD;
+2019-09-17 18:28:28 - [TEST_STEP][PASSED] - println("--------------&gt;" + triPID): null&#xD;
+&#xD;
+2019-09-17 18:28:28 - [TEST_STEP][PASSED] - sendRequest(findTestObject("aValidate OTP", ["uniqueToken":uniquetoken, "userId":userid])): Send request successfully&#xD;
+&#xD;
+2019-09-17 18:28:29 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190917_182814\SMARTINDONASIA_API_SmokeTest\20190917_182814\requests\main\7.har&#xD;
+&#xD;
+2019-09-17 18:28:29 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-09-17 18:28:29 - [TEST_STEP][PASSED] - sendRequest(findTestObject("cUpdate Trip Detail", ["uptripiD":triPID, "userId":userid])): Send request successfully&#xD;
+&#xD;
+2019-09-17 18:28:29 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190917_182814\SMARTINDONASIA_API_SmokeTest\20190917_182814\requests\main\8.har&#xD;
+&#xD;
+2019-09-17 18:28:29 - [MESSAGE][PASSED] - Send request successfully</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/d.VersionMaster_Test" classname="Test Cases/d.VersionMaster_Test" status="PASSED">
+            <system-out>2019-09-17 18:28:29 - [TEST_CASE][PASSED] - Test Cases/d.VersionMaster_Test: Test Cases/d.VersionMaster_Test&#xD;
+&#xD;
+2019-09-17 18:28:29 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("d.Version Master", ["uniqueToken":uniquetoken])): Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-17 18:28:29 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190917_182814\SMARTINDONASIA_API_SmokeTest\20190917_182814\requests\main\9.har&#xD;
+&#xD;
+2019-09-17 18:28:29 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully&#xD;
+&#xD;
+2019-09-17 18:28:29 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null&#xD;
+&#xD;
+2019-09-17 18:28:30 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null&#xD;
+&#xD;
+2019-09-17 18:28:30 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[3].versionTableId", "54b4256c-dc5d-410f-b79a-786233d0d5e6"): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:30 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:30 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "[3].tableName", "LeaveTypeMaster"): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:30 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:30 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:30 - [MESSAGE][PASSED] - Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:30 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null&#xD;
+&#xD;
+2019-09-17 18:28:30 - [MESSAGE][PASSED] - Verify response successfully&#xD;
+&#xD;
+2019-09-17 18:28:30 - [MESSAGE][PASSED] - Send request and verify the response successfully</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/dLeaveType_Test" classname="Test Cases/dLeaveType_Test" status="PASSED">
+            <system-out>2019-09-17 18:28:30 - [TEST_CASE][PASSED] - Test Cases/dLeaveType_Test: Test Cases/dLeaveType_Test&#xD;
+&#xD;
+2019-09-17 18:28:30 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("eLeave Type", ["versiontableId":versiontableId, "userId":userid, "uniqueToken":uniquetoken])): Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-17 18:28:30 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190917_182814\SMARTINDONASIA_API_SmokeTest\20190917_182814\requests\main\10.har&#xD;
+&#xD;
+2019-09-17 18:28:30 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully&#xD;
+&#xD;
+2019-09-17 18:28:30 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null&#xD;
+&#xD;
+2019-09-17 18:28:30 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null&#xD;
+&#xD;
+2019-09-17 18:28:30 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "leaveInfo[0].leaveTypeId", 1): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:30 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:30 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "leaveInfo[0].leaveType", "Annual Leave"): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:30 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:30 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "leaveInfo[1].leaveTypeId", 2): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:30 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:30 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "leaveInfo[1].leaveType", "Public Holiday"): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:30 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:30 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "leaveInfo[2].leaveTypeId", 3): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:30 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:30 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "leaveInfo[2].leaveType", "Sick Leave"): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:30 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:30 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:30 - [MESSAGE][PASSED] - Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:30 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null&#xD;
+&#xD;
+2019-09-17 18:28:30 - [MESSAGE][PASSED] - Verify response successfully&#xD;
+&#xD;
+2019-09-17 18:28:30 - [MESSAGE][PASSED] - Send request and verify the response successfully</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/eLeaveApplication_Test" classname="Test Cases/eLeaveApplication_Test" status="PASSED">
+            <system-out>2019-09-17 18:28:30 - [TEST_CASE][PASSED] - Test Cases/eLeaveApplication_Test: Test Cases/eLeaveApplication_Test&#xD;
+&#xD;
+2019-09-17 18:28:31 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("eLeave Application", ["leavetypeId":leavetypeId, "fromdaTe":fromdaTe, "todaTe":todaTe, "commenTs":commenTs, "userId":userid, "uniqueToken":uniquetoken])): Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-17 18:28:31 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190917_182814\SMARTINDONASIA_API_SmokeTest\20190917_182814\requests\main\11.har&#xD;
+&#xD;
+2019-09-17 18:28:31 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully&#xD;
+&#xD;
+2019-09-17 18:28:31 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null&#xD;
+&#xD;
+2019-09-17 18:28:31 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null&#xD;
+&#xD;
+2019-09-17 18:28:31 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "message", "Leave Applied Successfully"): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:31 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:31 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:31 - [MESSAGE][PASSED] - Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:31 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null&#xD;
+&#xD;
+2019-09-17 18:28:31 - [MESSAGE][PASSED] - Verify response successfully&#xD;
+&#xD;
+2019-09-17 18:28:31 - [MESSAGE][PASSED] - Send request and verify the response successfully</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/eLeaveCancelApplicationTest" classname="Test Cases/eLeaveCancelApplicationTest" status="PASSED">
+            <system-out>2019-09-17 18:28:31 - [TEST_CASE][PASSED] - Test Cases/eLeaveCancelApplicationTest: Test Cases/eLeaveCancelApplicationTest&#xD;
+&#xD;
+2019-09-17 18:28:31 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("eLeave Cancel Application", ["userId":userid, "uniqueToken":uniquetoken, "fromdaTe":fromdaTe, "todaTe":todaTe])): Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-17 18:28:32 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190917_182814\SMARTINDONASIA_API_SmokeTest\20190917_182814\requests\main\12.har&#xD;
+&#xD;
+2019-09-17 18:28:32 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully&#xD;
+&#xD;
+2019-09-17 18:28:32 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null&#xD;
+&#xD;
+2019-09-17 18:28:32 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null&#xD;
+&#xD;
+2019-09-17 18:28:32 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:32 - [MESSAGE][PASSED] - Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:32 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null&#xD;
+&#xD;
+2019-09-17 18:28:32 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "message", "Leave Cancel Successfully"): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:32 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:32 - [MESSAGE][PASSED] - Verify response successfully&#xD;
+&#xD;
+2019-09-17 18:28:32 - [MESSAGE][PASSED] - Send request and verify the response successfully</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/gCropMasterTest" classname="Test Cases/gCropMasterTest" status="PASSED">
+            <system-out>2019-09-17 18:28:32 - [TEST_CASE][PASSED] - Test Cases/gCropMasterTest: Test Cases/gCropMasterTest&#xD;
+&#xD;
+2019-09-17 18:28:32 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("gCrop-Master", ["versiontableId":versiontableId, "userId":userid, "uniqueToken":uniquetoken])): Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-17 18:28:32 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190917_182814\SMARTINDONASIA_API_SmokeTest\20190917_182814\requests\main\13.har&#xD;
+&#xD;
+2019-09-17 18:28:33 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully&#xD;
+&#xD;
+2019-09-17 18:28:33 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null&#xD;
+&#xD;
+2019-09-17 18:28:33 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null&#xD;
+&#xD;
+2019-09-17 18:28:33 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:33 - [MESSAGE][PASSED] - Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:33 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null&#xD;
+&#xD;
+2019-09-17 18:28:33 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "cropInfo[0].cropName", "Corn"): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:33 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:33 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "cropInfo[0].cropId", "3fae2c89-2173-4bda-a49b-1c27b5fc5e07"): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:33 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:33 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "cropInfo[1].cropName", "Vegetables"): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:33 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:33 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "cropInfo[1].cropId", "7a9cc341-d6d3-4858-91de-27f0c1969218"): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:33 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:33 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "cropInfo[2].cropName", "Plantation"): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:33 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:33 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "cropInfo[2].cropId", "b43f3a40-78a4-4f63-b0a3-e0582b21847d"): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:33 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:33 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "cropInfo[3].cropName", "Rice"): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:33 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:33 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "cropInfo[3].cropId", "a49318df-a1aa-41bf-8114-ff0b702a403c"): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:33 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:33 - [MESSAGE][PASSED] - Verify response successfully&#xD;
+&#xD;
+2019-09-17 18:28:33 - [MESSAGE][PASSED] - Send request and verify the response successfully</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/hProductMaster_Test" classname="Test Cases/hProductMaster_Test" status="PASSED">
+            <system-out>2019-09-17 18:28:33 - [TEST_CASE][PASSED] - Test Cases/hProductMaster_Test: Test Cases/hProductMaster_Test&#xD;
+&#xD;
+2019-09-17 18:28:33 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("iUser_Crop_Product", ["versiontableId":"", "userId":userid, "uniqueToken":uniquetoken])): Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-17 18:28:33 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190917_182814\SMARTINDONASIA_API_SmokeTest\20190917_182814\requests\main\14.har&#xD;
+&#xD;
+2019-09-17 18:28:33 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully&#xD;
+&#xD;
+2019-09-17 18:28:33 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null&#xD;
+&#xD;
+2019-09-17 18:28:33 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null&#xD;
+&#xD;
+2019-09-17 18:28:33 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "cropproductinfo[0].cropId", "3fae2c89-2173-4bda-a49b-1c27b5fc5e07"): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:33 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:33 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "cropproductinfo[0].cropName", "Corn"): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:33 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:33 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "cropproductinfo[0].products[6].productId", "71471df5-c30b-474a-8479-472d9aabf96e"): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:34 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:34 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "cropproductinfo[0].products[6].productName", "P36"): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:34 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:34 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:34 - [MESSAGE][PASSED] - Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:34 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null&#xD;
+&#xD;
+2019-09-17 18:28:34 - [MESSAGE][PASSED] - Verify response successfully&#xD;
+&#xD;
+2019-09-17 18:28:34 - [MESSAGE][PASSED] - Send request and verify the response successfully</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/iUserCropProduct_Test" classname="Test Cases/iUserCropProduct_Test" status="PASSED">
+            <system-out>2019-09-17 18:28:34 - [TEST_CASE][PASSED] - Test Cases/iUserCropProduct_Test: Test Cases/iUserCropProduct_Test&#xD;
+&#xD;
+2019-09-17 18:28:34 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("iUser_Crop_Product", ["versiontableId":"", "userId":userid, "uniqueToken":uniquetoken])): Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-17 18:28:34 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190917_182814\SMARTINDONASIA_API_SmokeTest\20190917_182814\requests\main\15.har&#xD;
+&#xD;
+2019-09-17 18:28:34 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully&#xD;
+&#xD;
+2019-09-17 18:28:34 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null&#xD;
+&#xD;
+2019-09-17 18:28:34 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null&#xD;
+&#xD;
+2019-09-17 18:28:34 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "cropproductinfo[0].cropId", "3fae2c89-2173-4bda-a49b-1c27b5fc5e07"): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:34 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:34 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "cropproductinfo[0].cropName", "Corn"): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:34 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:34 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "cropproductinfo[0].products[6].productId", "71471df5-c30b-474a-8479-472d9aabf96e"): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:34 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:34 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "cropproductinfo[0].products[6].productName", "P36"): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:34 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:34 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:34 - [MESSAGE][PASSED] - Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:34 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null&#xD;
+&#xD;
+2019-09-17 18:28:34 - [MESSAGE][PASSED] - Verify response successfully&#xD;
+&#xD;
+2019-09-17 18:28:34 - [MESSAGE][PASSED] - Send request and verify the response successfully</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/jUserGeographyDetails_Test" classname="Test Cases/jUserGeographyDetails_Test" status="PASSED">
+            <system-out>2019-09-17 18:28:34 - [TEST_CASE][PASSED] - Test Cases/jUserGeographyDetails_Test: Test Cases/jUserGeographyDetails_Test&#xD;
+&#xD;
+2019-09-17 18:28:35 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("jUser Geography Details", ["versiontableId":versiontableId, "userId":userid, "uniqueToken":uniquetoken])): Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-17 18:28:35 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190917_182814\SMARTINDONASIA_API_SmokeTest\20190917_182814\requests\main\16.har&#xD;
+&#xD;
+2019-09-17 18:28:35 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully&#xD;
+&#xD;
+2019-09-17 18:28:35 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null&#xD;
+&#xD;
+2019-09-17 18:28:35 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null&#xD;
+&#xD;
+2019-09-17 18:28:35 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:35 - [MESSAGE][PASSED] - Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:35 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null&#xD;
+&#xD;
+2019-09-17 18:28:35 - [MESSAGE][PASSED] - Verify response successfully&#xD;
+&#xD;
+2019-09-17 18:28:35 - [MESSAGE][PASSED] - Send request and verify the response successfully</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/kUserTimeline_Test" classname="Test Cases/kUserTimeline_Test" status="PASSED">
+            <system-out>2019-09-17 18:28:35 - [TEST_CASE][PASSED] - Test Cases/kUserTimeline_Test: Test Cases/kUserTimeline_Test&#xD;
+&#xD;
+2019-09-17 18:28:35 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("kUserTimeline", ["fromdaTe":fromdaTe, "todaTe":todaTe, "userId":userid, "uniqueToken":uniquetoken])): Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-17 18:28:36 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190917_182814\SMARTINDONASIA_API_SmokeTest\20190917_182814\requests\main\17.har&#xD;
+&#xD;
+2019-09-17 18:28:36 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully&#xD;
+&#xD;
+2019-09-17 18:28:36 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null&#xD;
+&#xD;
+2019-09-17 18:28:36 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null&#xD;
+&#xD;
+2019-09-17 18:28:36 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:36 - [MESSAGE][PASSED] - Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:36 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null&#xD;
+&#xD;
+2019-09-17 18:28:36 - [MESSAGE][PASSED] - Verify response successfully&#xD;
+&#xD;
+2019-09-17 18:28:36 - [MESSAGE][PASSED] - Send request and verify the response successfully</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/lSeverityMaster_Test" classname="Test Cases/lSeverityMaster_Test" status="PASSED">
+            <system-out>2019-09-17 18:28:36 - [TEST_CASE][PASSED] - Test Cases/lSeverityMaster_Test: Test Cases/lSeverityMaster_Test&#xD;
+&#xD;
+2019-09-17 18:28:36 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("lSeverity Master", ["versiontableId":versiontableId, "userId":userid, "uniqueToken":uniquetoken])): Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-17 18:28:37 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190917_182814\SMARTINDONASIA_API_SmokeTest\20190917_182814\requests\main\18.har&#xD;
+&#xD;
+2019-09-17 18:28:37 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully&#xD;
+&#xD;
+2019-09-17 18:28:37 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null&#xD;
+&#xD;
+2019-09-17 18:28:37 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null&#xD;
+&#xD;
+2019-09-17 18:28:37 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:37 - [MESSAGE][PASSED] - Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:37 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null&#xD;
+&#xD;
+2019-09-17 18:28:37 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "severityInfo[0].severityId", "4706fb46-096d-46e6-a60c-0a4adae4ca14"): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:37 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:37 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "severityInfo[8].severityId", "3f8cb36c-a4c0-400a-ae1f-6d8e231b39aa"): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:37 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:37 - [MESSAGE][PASSED] - Verify response successfully&#xD;
+&#xD;
+2019-09-17 18:28:37 - [MESSAGE][PASSED] - Send request and verify the response successfully</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/mQuestionAnswerMaster_Test" classname="Test Cases/mQuestionAnswerMaster_Test" status="PASSED">
+            <system-out>2019-09-17 18:28:37 - [TEST_CASE][PASSED] - Test Cases/mQuestionAnswerMaster_Test: Test Cases/mQuestionAnswerMaster_Test&#xD;
+&#xD;
+2019-09-17 18:28:37 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("mQuestion Answer Master", ["lobID":lobID, "userId":userid, "uniqueToken":uniquetoken])): Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-17 18:28:37 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190917_182814\SMARTINDONASIA_API_SmokeTest\20190917_182814\requests\main\19.har&#xD;
+&#xD;
+2019-09-17 18:28:37 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully&#xD;
+&#xD;
+2019-09-17 18:28:37 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null&#xD;
+&#xD;
+2019-09-17 18:28:38 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null&#xD;
+&#xD;
+2019-09-17 18:28:38 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:38 - [MESSAGE][PASSED] - Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:38 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null&#xD;
+&#xD;
+2019-09-17 18:28:38 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "questionandAnswers[0].questionId", "51c9869d-f80c-441a-9ffa-37880fb5f80d"): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:38 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:38 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "questionandAnswers[5].questionId", "9bd6e5cb-5144-451a-83fe-65b6fc1e2520"): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:38 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:38 - [MESSAGE][PASSED] - Verify response successfully&#xD;
+&#xD;
+2019-09-17 18:28:38 - [MESSAGE][PASSED] - Send request and verify the response successfully</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/nHolidayMaster_Test" classname="Test Cases/nHolidayMaster_Test" status="PASSED">
+            <system-out>2019-09-17 18:28:38 - [TEST_CASE][PASSED] - Test Cases/nHolidayMaster_Test: Test Cases/nHolidayMaster_Test&#xD;
+&#xD;
+2019-09-17 18:28:38 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("nHoliday Master", ["versiontableId":versiontableId, "uniqueToken":uniquetoken, "userId":userid])): Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-17 18:28:38 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190917_182814\SMARTINDONASIA_API_SmokeTest\20190917_182814\requests\main\20.har&#xD;
+&#xD;
+2019-09-17 18:28:38 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully&#xD;
+&#xD;
+2019-09-17 18:28:38 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null&#xD;
+&#xD;
+2019-09-17 18:28:39 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null&#xD;
+&#xD;
+2019-09-17 18:28:39 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "holidaysinfo[0].holidayId", "86858bb1-4d53-49cf-bccc-0477e5cb0a8f"): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:39 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:39 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "holidaysinfo[19].holidayId", "e6aed40f-28bf-4dfe-9fae-fbe32678c0c8"): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:39 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:39 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:39 - [MESSAGE][PASSED] - Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:39 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null&#xD;
+&#xD;
+2019-09-17 18:28:39 - [MESSAGE][PASSED] - Verify response successfully&#xD;
+&#xD;
+2019-09-17 18:28:39 - [MESSAGE][PASSED] - Send request and verify the response successfully</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/oRefrenceMaster_Test" classname="Test Cases/oRefrenceMaster_Test" status="FAILED">
+            <failure type="FAILED" message="Test Cases/oRefrenceMaster_Test FAILED.&#xA;Reason:&#xA;com.kms.katalon.core.exception.StepFailedException: Expected status code is '200' but actual status code is '404'&#xD;&#xA;&#x9;at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)&#xD;&#xA;&#x9;at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)&#xD;&#xA;&#x9;at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)&#xD;&#xA;&#x9;at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)&#xD;&#xA;&#x9;at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)&#xD;&#xA;&#x9;at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)&#xD;&#xA;&#x9;at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)&#xD;&#xA;&#x9;at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)&#xD;&#xA;&#x9;at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:212)&#xD;&#xA;&#x9;at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)&#xD;&#xA;&#x9;at WSVerification1568725120002.run(WSVerification1568725120002:15)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.WSVerificationExecutor.runScript(WSVerificationExecutor.java:146)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.WSVerificationExecutor.doExecute(WSVerificationExecutor.java:140)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.WSVerificationExecutor.processExecutionPhase(WSVerificationExecutor.java:123)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.WSVerificationExecutor.accessMainPhase(WSVerificationExecutor.java:115)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.WSVerificationExecutor.execute(WSVerificationExecutor.java:103)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain.runWSVerificationScript(TestCaseMain.java:127)&#xD;&#xA;&#x9;at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.doCall(SendRequestAndVerifyKeyword.groovy:55)&#xD;&#xA;&#x9;at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.call(SendRequestAndVerifyKeyword.groovy)&#xD;&#xA;&#x9;at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)&#xD;&#xA;&#x9;at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.sendRequestAndVerify(SendRequestAndVerifyKeyword.groovy:43)&#xD;&#xA;&#x9;at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.execute(SendRequestAndVerifyKeyword.groovy:38)&#xD;&#xA;&#x9;at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)&#xD;&#xA;&#x9;at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequestAndVerify(WSBuiltInKeywords.groovy:65)&#xD;&#xA;&#x9;at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$sendRequestAndVerify.call(Unknown Source)&#xD;&#xA;&#x9;at oRefrenceMaster_Test.run(oRefrenceMaster_Test:16)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;&#xA;&#x9;at TempTestSuite1568725094317.run(TempTestSuite1568725094317.groovy:35)&#xD;&#xA;"/>
+            <system-out>2019-09-17 18:28:39 - [TEST_CASE][FAILED] - Test Cases/oRefrenceMaster_Test: Test Cases/oRefrenceMaster_Test FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected status code is '200' but actual status code is '404'&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)&#xD;
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:212)&#xD;
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)&#xD;
+	at WSVerification1568725120002.run(WSVerification1568725120002:15)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.WSVerificationExecutor.runScript(WSVerificationExecutor.java:146)&#xD;
+	at com.kms.katalon.core.main.WSVerificationExecutor.doExecute(WSVerificationExecutor.java:140)&#xD;
+	at com.kms.katalon.core.main.WSVerificationExecutor.processExecutionPhase(WSVerificationExecutor.java:123)&#xD;
+	at com.kms.katalon.core.main.WSVerificationExecutor.accessMainPhase(WSVerificationExecutor.java:115)&#xD;
+	at com.kms.katalon.core.main.WSVerificationExecutor.execute(WSVerificationExecutor.java:103)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.runWSVerificationScript(TestCaseMain.java:127)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.doCall(SendRequestAndVerifyKeyword.groovy:55)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.call(SendRequestAndVerifyKeyword.groovy)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.sendRequestAndVerify(SendRequestAndVerifyKeyword.groovy:43)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.execute(SendRequestAndVerifyKeyword.groovy:38)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)&#xD;
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequestAndVerify(WSBuiltInKeywords.groovy:65)&#xD;
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$sendRequestAndVerify.call(Unknown Source)&#xD;
+	at oRefrenceMaster_Test.run(oRefrenceMaster_Test:16)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1568725094317.run(TempTestSuite1568725094317.groovy:35)&#xD;
+&#xD;
+&#xD;
+2019-09-17 18:28:39 - [TEST_STEP][FAILED] - sendRequestAndVerify(findTestObject("oRefrence Master", ["uniqueToken":uniquetoken, "userId":userid])): Unable to send request and verify the response (Root cause: com.kms.katalon.core.exception.StepFailedException: Verification failed&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.doCall(SendRequestAndVerifyKeyword.groovy:59)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.call(SendRequestAndVerifyKeyword.groovy)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.sendRequestAndVerify(SendRequestAndVerifyKeyword.groovy:43)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.execute(SendRequestAndVerifyKeyword.groovy:38)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)&#xD;
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequestAndVerify(WSBuiltInKeywords.groovy:65)&#xD;
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$sendRequestAndVerify.call(Unknown Source)&#xD;
+	at oRefrenceMaster_Test.run(oRefrenceMaster_Test:16)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1568725094317.run(TempTestSuite1568725094317.groovy:35)&#xD;
+)&#xD;
+&#xD;
+2019-09-17 18:28:39 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190917_182814\SMARTINDONASIA_API_SmokeTest\20190917_182814\requests\main\21.har&#xD;
+&#xD;
+2019-09-17 18:28:40 - [TEST_CASE][FAILED] - Start Test Case : Verification: Verification FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected status code is '200' but actual status code is '404'&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)&#xD;
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:212)&#xD;
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)&#xD;
+	at WSVerification1568725120002.run(WSVerification1568725120002:15)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.WSVerificationExecutor.runScript(WSVerificationExecutor.java:146)&#xD;
+	at com.kms.katalon.core.main.WSVerificationExecutor.doExecute(WSVerificationExecutor.java:140)&#xD;
+	at com.kms.katalon.core.main.WSVerificationExecutor.processExecutionPhase(WSVerificationExecutor.java:123)&#xD;
+	at com.kms.katalon.core.main.WSVerificationExecutor.accessMainPhase(WSVerificationExecutor.java:115)&#xD;
+	at com.kms.katalon.core.main.WSVerificationExecutor.execute(WSVerificationExecutor.java:103)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.runWSVerificationScript(TestCaseMain.java:127)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.doCall(SendRequestAndVerifyKeyword.groovy:55)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.call(SendRequestAndVerifyKeyword.groovy)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.sendRequestAndVerify(SendRequestAndVerifyKeyword.groovy:43)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.execute(SendRequestAndVerifyKeyword.groovy:38)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)&#xD;
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequestAndVerify(WSBuiltInKeywords.groovy:65)&#xD;
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$sendRequestAndVerify.call(Unknown Source)&#xD;
+	at oRefrenceMaster_Test.run(oRefrenceMaster_Test:16)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1568725094317.run(TempTestSuite1568725094317.groovy:35)&#xD;
+&#xD;
+&#xD;
+2019-09-17 18:28:40 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null&#xD;
+&#xD;
+2019-09-17 18:28:40 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null&#xD;
+&#xD;
+2019-09-17 18:28:40 - [TEST_STEP][FAILED] - verifyResponseStatusCode(response, 200): Unable to verify response status code (Root cause: com.kms.katalon.core.exception.StepFailedException: Expected status code is '200' but actual status code is '404'&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)&#xD;
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:212)&#xD;
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)&#xD;
+	at WSVerification1568725120002.run(WSVerification1568725120002:15)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.WSVerificationExecutor.runScript(WSVerificationExecutor.java:146)&#xD;
+	at com.kms.katalon.core.main.WSVerificationExecutor.doExecute(WSVerificationExecutor.java:140)&#xD;
+	at com.kms.katalon.core.main.WSVerificationExecutor.processExecutionPhase(WSVerificationExecutor.java:123)&#xD;
+	at com.kms.katalon.core.main.WSVerificationExecutor.accessMainPhase(WSVerificationExecutor.java:115)&#xD;
+	at com.kms.katalon.core.main.WSVerificationExecutor.execute(WSVerificationExecutor.java:103)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.runWSVerificationScript(TestCaseMain.java:127)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.doCall(SendRequestAndVerifyKeyword.groovy:55)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.call(SendRequestAndVerifyKeyword.groovy)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.sendRequestAndVerify(SendRequestAndVerifyKeyword.groovy:43)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.execute(SendRequestAndVerifyKeyword.groovy:38)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)&#xD;
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequestAndVerify(WSBuiltInKeywords.groovy:65)&#xD;
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$sendRequestAndVerify.call(Unknown Source)&#xD;
+	at oRefrenceMaster_Test.run(oRefrenceMaster_Test:16)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1568725094317.run(TempTestSuite1568725094317.groovy:35)&#xD;
+)&#xD;
+&#xD;
+2019-09-17 18:28:40 - [MESSAGE][FAILED] - Expected status code is '200' but actual status code is '404'&#xD;
+&#xD;
+2019-09-17 18:28:40 - [MESSAGE][FAILED] - Unable to verify response status code (Root cause: com.kms.katalon.core.exception.StepFailedException: Expected status code is '200' but actual status code is '404'&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)&#xD;
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:212)&#xD;
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)&#xD;
+	at WSVerification1568725120002.run(WSVerification1568725120002:15)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.WSVerificationExecutor.runScript(WSVerificationExecutor.java:146)&#xD;
+	at com.kms.katalon.core.main.WSVerificationExecutor.doExecute(WSVerificationExecutor.java:140)&#xD;
+	at com.kms.katalon.core.main.WSVerificationExecutor.processExecutionPhase(WSVerificationExecutor.java:123)&#xD;
+	at com.kms.katalon.core.main.WSVerificationExecutor.accessMainPhase(WSVerificationExecutor.java:115)&#xD;
+	at com.kms.katalon.core.main.WSVerificationExecutor.execute(WSVerificationExecutor.java:103)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.runWSVerificationScript(TestCaseMain.java:127)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.doCall(SendRequestAndVerifyKeyword.groovy:55)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.call(SendRequestAndVerifyKeyword.groovy)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.sendRequestAndVerify(SendRequestAndVerifyKeyword.groovy:43)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.execute(SendRequestAndVerifyKeyword.groovy:38)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)&#xD;
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequestAndVerify(WSBuiltInKeywords.groovy:65)&#xD;
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$sendRequestAndVerify.call(Unknown Source)&#xD;
+	at oRefrenceMaster_Test.run(oRefrenceMaster_Test:16)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1568725094317.run(TempTestSuite1568725094317.groovy:35)&#xD;
+)&#xD;
+&#xD;
+2019-09-17 18:28:40 - [MESSAGE][FAILED] - Unable to send request and verify the response (Root cause: com.kms.katalon.core.exception.StepFailedException: Verification failed&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.doCall(SendRequestAndVerifyKeyword.groovy:59)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.call(SendRequestAndVerifyKeyword.groovy)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.sendRequestAndVerify(SendRequestAndVerifyKeyword.groovy:43)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.execute(SendRequestAndVerifyKeyword.groovy:38)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)&#xD;
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequestAndVerify(WSBuiltInKeywords.groovy:65)&#xD;
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$sendRequestAndVerify.call(Unknown Source)&#xD;
+	at oRefrenceMaster_Test.run(oRefrenceMaster_Test:16)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1568725094317.run(TempTestSuite1568725094317.groovy:35)&#xD;
+)</system-out>
+            <system-err>2019-09-17 18:28:39 - [TEST_CASE][FAILED] - Test Cases/oRefrenceMaster_Test: Test Cases/oRefrenceMaster_Test FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected status code is '200' but actual status code is '404'&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:50)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)&#xD;
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:212)&#xD;
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)&#xD;
+	at WSVerification1568725120002.run(WSVerification1568725120002:15)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.WSVerificationExecutor.runScript(WSVerificationExecutor.java:146)&#xD;
+	at com.kms.katalon.core.main.WSVerificationExecutor.doExecute(WSVerificationExecutor.java:140)&#xD;
+	at com.kms.katalon.core.main.WSVerificationExecutor.processExecutionPhase(WSVerificationExecutor.java:123)&#xD;
+	at com.kms.katalon.core.main.WSVerificationExecutor.accessMainPhase(WSVerificationExecutor.java:115)&#xD;
+	at com.kms.katalon.core.main.WSVerificationExecutor.execute(WSVerificationExecutor.java:103)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.runWSVerificationScript(TestCaseMain.java:127)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.doCall(SendRequestAndVerifyKeyword.groovy:55)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword$_sendRequestAndVerify_closure1.call(SendRequestAndVerifyKeyword.groovy)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.sendRequestAndVerify(SendRequestAndVerifyKeyword.groovy:43)&#xD;
+	at com.kms.katalon.core.webservice.keyword.builtin.SendRequestAndVerifyKeyword.execute(SendRequestAndVerifyKeyword.groovy:38)&#xD;
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)&#xD;
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequestAndVerify(WSBuiltInKeywords.groovy:65)&#xD;
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$sendRequestAndVerify.call(Unknown Source)&#xD;
+	at oRefrenceMaster_Test.run(oRefrenceMaster_Test:16)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1568725094317.run(TempTestSuite1568725094317.groovy:35)</system-err>
+        </testcase>
+        <testcase name="Test Cases/pLobByUser_Test" classname="Test Cases/pLobByUser_Test" status="PASSED">
+            <system-out>2019-09-17 18:28:40 - [TEST_CASE][PASSED] - Test Cases/pLobByUser_Test: Test Cases/pLobByUser_Test&#xD;
+&#xD;
+2019-09-17 18:28:40 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("pLob By User", ["uniqueToken":uniquetoken, "userId":userid])): Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-17 18:28:40 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190917_182814\SMARTINDONASIA_API_SmokeTest\20190917_182814\requests\main\22.har&#xD;
+&#xD;
+2019-09-17 18:28:40 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully&#xD;
+&#xD;
+2019-09-17 18:28:41 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null&#xD;
+&#xD;
+2019-09-17 18:28:41 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null&#xD;
+&#xD;
+2019-09-17 18:28:41 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:41 - [MESSAGE][PASSED] - Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:41 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null&#xD;
+&#xD;
+2019-09-17 18:28:41 - [MESSAGE][PASSED] - Verify response successfully&#xD;
+&#xD;
+2019-09-17 18:28:41 - [MESSAGE][PASSED] - Send request and verify the response successfully</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/qActivityHistory_Test" classname="Test Cases/qActivityHistory_Test" status="PASSED">
+            <system-out>2019-09-17 18:28:41 - [TEST_CASE][PASSED] - Test Cases/qActivityHistory_Test: Test Cases/qActivityHistory_Test&#xD;
+&#xD;
+2019-09-17 18:28:41 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("qActivity History", ["userId":userid, "uniqueToken":uniquetoken])): Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-17 18:28:57 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190917_182814\SMARTINDONASIA_API_SmokeTest\20190917_182814\requests\main\23.har&#xD;
+&#xD;
+2019-09-17 18:28:57 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully&#xD;
+&#xD;
+2019-09-17 18:28:57 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null&#xD;
+&#xD;
+2019-09-17 18:28:57 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null&#xD;
+&#xD;
+2019-09-17 18:28:57 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:57 - [MESSAGE][PASSED] - Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:57 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null&#xD;
+&#xD;
+2019-09-17 18:28:57 - [MESSAGE][PASSED] - Verify response successfully&#xD;
+&#xD;
+2019-09-17 18:28:57 - [MESSAGE][PASSED] - Send request and verify the response successfully</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/RoleAccessUser_Test" classname="Test Cases/RoleAccessUser_Test" status="PASSED">
+            <system-out>2019-09-17 18:28:57 - [TEST_CASE][PASSED] - Test Cases/RoleAccessUser_Test: Test Cases/RoleAccessUser_Test&#xD;
+&#xD;
+2019-09-17 18:28:57 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("Role Access By User", ["uniqueToken":uniquetoken, "userId":userid])): Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-17 18:28:57 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190917_182814\SMARTINDONASIA_API_SmokeTest\20190917_182814\requests\main\24.har&#xD;
+&#xD;
+2019-09-17 18:28:57 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully&#xD;
+&#xD;
+2019-09-17 18:28:58 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null&#xD;
+&#xD;
+2019-09-17 18:28:58 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null&#xD;
+&#xD;
+2019-09-17 18:28:58 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:58 - [MESSAGE][PASSED] - Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:58 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null&#xD;
+&#xD;
+2019-09-17 18:28:58 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "roleId", "53f2675a-31ab-4e22-b78e-471146e93e50"): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:58 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:58 - [MESSAGE][PASSED] - Verify response successfully&#xD;
+&#xD;
+2019-09-17 18:28:58 - [MESSAGE][PASSED] - Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-17 18:28:58 - [TEST_STEP][PASSED] - responseR = sendRequestAndVerify(findTestObject("Role Access By User")): Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-17 18:28:58 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190917_182814\SMARTINDONASIA_API_SmokeTest\20190917_182814\requests\main\25.har&#xD;
+&#xD;
+2019-09-17 18:28:58 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully&#xD;
+&#xD;
+2019-09-17 18:28:58 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null&#xD;
+&#xD;
+2019-09-17 18:28:58 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null&#xD;
+&#xD;
+2019-09-17 18:28:58 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:58 - [MESSAGE][PASSED] - Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:28:58 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null&#xD;
+&#xD;
+2019-09-17 18:28:58 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "roleId", "53f2675a-31ab-4e22-b78e-471146e93e50"): Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:58 - [MESSAGE][PASSED] - Verify element property value successfully&#xD;
+&#xD;
+2019-09-17 18:28:58 - [MESSAGE][PASSED] - Verify response successfully&#xD;
+&#xD;
+2019-09-17 18:28:58 - [MESSAGE][PASSED] - Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-17 18:28:58 - [TEST_STEP][PASSED] - slurperR = new groovy.json.JsonSlurper(): null&#xD;
+&#xD;
+2019-09-17 18:28:58 - [TEST_STEP][PASSED] - resultR = slurperR.parseText(responseR.getResponseText()): null&#xD;
+&#xD;
+2019-09-17 18:28:58 - [TEST_STEP][PASSED] - println("***************************************"): null&#xD;
+&#xD;
+2019-09-17 18:28:58 - [TEST_STEP][PASSED] - println("THIS IS THE RESPONSE FROM VALIDATEOTP TEST CASE = " + resultR): null&#xD;
+&#xD;
+2019-09-17 18:28:58 - [TEST_STEP][PASSED] - println("***************************************"): null&#xD;
+&#xD;
+2019-09-17 18:28:58 - [TEST_STEP][PASSED] - valueR = roleId: null&#xD;
+&#xD;
+2019-09-17 18:28:58 - [TEST_STEP][PASSED] - loGID = valueR: null&#xD;
+&#xD;
+2019-09-17 18:28:58 - [TEST_STEP][PASSED] - println("***************************************"): null&#xD;
+&#xD;
+2019-09-17 18:28:58 - [TEST_STEP][PASSED] - println("THE USER LOG ID IS   = " + loGID): null&#xD;
+&#xD;
+2019-09-17 18:28:58 - [TEST_STEP][PASSED] - println("***************************************"): null</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/sIncidentHistory_Test" classname="Test Cases/sIncidentHistory_Test" status="PASSED">
+            <system-out>2019-09-17 18:28:58 - [TEST_CASE][PASSED] - Test Cases/sIncidentHistory_Test: Test Cases/sIncidentHistory_Test&#xD;
+&#xD;
+2019-09-17 18:28:58 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("sIncident History", ["uniqueToken":uniquetoken, "userId":userid])): Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-17 18:29:00 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190917_182814\SMARTINDONASIA_API_SmokeTest\20190917_182814\requests\main\26.har&#xD;
+&#xD;
+2019-09-17 18:29:00 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully&#xD;
+&#xD;
+2019-09-17 18:29:00 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null&#xD;
+&#xD;
+2019-09-17 18:29:00 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null&#xD;
+&#xD;
+2019-09-17 18:29:00 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:29:00 - [MESSAGE][PASSED] - Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:29:00 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null&#xD;
+&#xD;
+2019-09-17 18:29:00 - [MESSAGE][PASSED] - Verify response successfully&#xD;
+&#xD;
+2019-09-17 18:29:00 - [MESSAGE][PASSED] - Send request and verify the response successfully</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/tMergeContactDetail_Test" classname="Test Cases/tMergeContactDetail_Test" status="PASSED">
+            <system-out>2019-09-17 18:29:00 - [TEST_CASE][PASSED] - Test Cases/tMergeContactDetail_Test: Test Cases/tMergeContactDetail_Test&#xD;
+&#xD;
+2019-09-17 18:29:00 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("tMerge Contact Detail", ["countryID":countryID, "uniqueToken":uniquetoken, "userId":userid])): Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-17 18:29:01 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190917_182814\SMARTINDONASIA_API_SmokeTest\20190917_182814\requests\main\27.har&#xD;
+&#xD;
+2019-09-17 18:29:01 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully&#xD;
+&#xD;
+2019-09-17 18:29:01 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null&#xD;
+&#xD;
+2019-09-17 18:29:01 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null&#xD;
+&#xD;
+2019-09-17 18:29:01 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:29:01 - [MESSAGE][PASSED] - Verify response status code successfully&#xD;
+&#xD;
+2019-09-17 18:29:01 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null&#xD;
+&#xD;
+2019-09-17 18:29:01 - [MESSAGE][PASSED] - Verify response successfully&#xD;
+&#xD;
+2019-09-17 18:29:01 - [MESSAGE][PASSED] - Send request and verify the response successfully</system-out>
+            <system-err></system-err>
+        </testcase>
+        <system-out>2019-09-17 18:28:17 - [TEST_SUITE][INCOMPLETE] - SMARTINDONASIA_API_SmokeTest: null</system-out>
+        <system-err>2019-09-17 18:28:17 - [TEST_SUITE][INCOMPLETE] - SMARTINDONASIA_API_SmokeTest: null</system-err>
+    </testsuite>
+</testsuites>

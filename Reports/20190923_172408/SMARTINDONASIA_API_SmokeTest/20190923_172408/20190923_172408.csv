@@ -1,0 +1,52 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+SMARTINDONASIA_API_SmokeTest,,,,2019-09-23 17:24:11,2019-09-23 17:24:20,8.965s,INCOMPLETE
+,,,,,,,
+Test Cases/a.ValidateMobileNumber_Test,,,,2019-09-23 17:24:11,2019-09-23 17:24:15,3.629s,PASSED
+"sendRequest(findTestObject(""aValidate Mobile Number"", [""protocal"":Endpoint]))",,,,2019-09-23 17:24:11,2019-09-23 17:24:13,1.972s,PASSED
+"response = sendRequestAndVerify(findTestObject(""aValidate Mobile Number"", [""protocal"":Endpoint]))",,,,2019-09-23 17:24:13,2019-09-23 17:24:15,1.122s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2019-09-23 17:24:15,2019-09-23 17:24:15,0.014s,PASSED
+result = slurper.parseText(response.getResponseText()),,,,2019-09-23 17:24:15,2019-09-23 17:24:15,0.025s,PASSED
+"println(""***************************************"")",,,,2019-09-23 17:24:15,2019-09-23 17:24:15,0.006s,PASSED
+"println(""THIS IS THE RESPONSE FROM VALIDATEMOBILENUMBER TEST CASE = "" + result)",,,,2019-09-23 17:24:15,2019-09-23 17:24:15,0.003s,PASSED
+"println(""***************************************"")",,,,2019-09-23 17:24:15,2019-09-23 17:24:15,0.001s,PASSED
+value = uniqueTokenCode,,,,2019-09-23 17:24:15,2019-09-23 17:24:15,0.013s,PASSED
+println(value),,,,2019-09-23 17:24:15,2019-09-23 17:24:15,0.001s,PASSED
+uniquetoken = value,,,,2019-09-23 17:24:15,2019-09-23 17:24:15,0.002s,PASSED
+"println(""***************************************"")",,,,2019-09-23 17:24:15,2019-09-23 17:24:15,0.002s,PASSED
+"println(""UNIQ TOKEN ID IS GENARATED  = "" + uniquetoken)",,,,2019-09-23 17:24:15,2019-09-23 17:24:15,0.009s,PASSED
+"println(""***************************************"")",,,,2019-09-23 17:24:15,2019-09-23 17:24:15,0.002s,PASSED
+,,,,,,,
+Test Cases/aValidate_OTPTest,,,,2019-09-23 17:24:15,2019-09-23 17:24:16,1.108s,ERROR
+"sendRequest(findTestObject(""aValidate OTP"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-23 17:24:15,2019-09-23 17:24:15,0.488s,PASSED
+"response1 = sendRequest(findTestObject(""aValidate OTP"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-23 17:24:15,2019-09-23 17:24:16,0.246s,PASSED
+slurper1 = new groovy.json.JsonSlurper(),,,,2019-09-23 17:24:16,2019-09-23 17:24:16,0.003s,PASSED
+result1 = slurper1.parseText(response1.getResponseText()),,,,2019-09-23 17:24:16,2019-09-23 17:24:16,0.002s,PASSED
+,,,,,,,
+Test Cases/bInsertUser_CheckInTest,,,,2019-09-23 17:24:16,2019-09-23 17:24:17,1.280s,ERROR
+chkInID = toString().toUpperCase(),,,,2019-09-23 17:24:16,2019-09-23 17:24:16,0.021s,PASSED
+println(chkInID),,,,2019-09-23 17:24:16,2019-09-23 17:24:16,0.002s,PASSED
+now = new java.util.Date(),,,,2019-09-23 17:24:16,2019-09-23 17:24:16,0.011s,PASSED
+"chkInTime = now.format(""dd-MM-YYYY HH:mm:ss +5:30"")",,,,2019-09-23 17:24:16,2019-09-23 17:24:16,0.005s,PASSED
+println(chkInTime),,,,2019-09-23 17:24:16,2019-09-23 17:24:16,0.002s,PASSED
+"resp3 = sendRequest(findTestObject(""bInsert User CheckIn"", [""uniqueToken"":uniquetoken, ""userId"":userid, ""checkInTime"":chkInTime, ""checkInID"":chkInID, ""checkinLocality"":checkinLocality]))",,,,2019-09-23 17:24:16,2019-09-23 17:24:17,0.857s,PASSED
+slurper3 = new groovy.json.JsonSlurper(),,,,2019-09-23 17:24:17,2019-09-23 17:24:17,0.001s,PASSED
+result3 = slurper3.parseText(resp3.getResponseText()),,,,2019-09-23 17:24:17,2019-09-23 17:24:17,0.001s,PASSED
+,,,,,,,
+Test Cases/bUpdateUser_CheckInTest,,,,2019-09-23 17:24:17,2019-09-23 17:24:18,0.592s,PASSED
+file3 = new java.io.File(D:\Checkin_ID.txt),,,,2019-09-23 17:24:17,2019-09-23 17:24:17,0.001s,PASSED
+checkinID = file3.readLines(),,,,2019-09-23 17:24:17,2019-09-23 17:24:17,0.008s,PASSED
+"println(""-------------->"" + checkinID)",,,,2019-09-23 17:24:17,2019-09-23 17:24:17,0.002s,PASSED
+now1 = new java.util.Date(),,,,2019-09-23 17:24:17,2019-09-23 17:24:17,0.001s,PASSED
+"chkOutTime = now1.format(""dd-MM-YYYY HH:mm:ss +5:30"")",,,,2019-09-23 17:24:17,2019-09-23 17:24:17,0.001s,PASSED
+println(chkOutTime),,,,2019-09-23 17:24:17,2019-09-23 17:24:17,0.001s,PASSED
+"resp4 = sendRequest(findTestObject(""bUpdate User CheckIn"", [""uniqueToken"":uniquetoken, ""userId"":userid, ""checkinID"":checkinID, ""checkedOutTime"":chkOutTime]))",,,,2019-09-23 17:24:17,2019-09-23 17:24:18,0.335s,PASSED
+,,,,,,,
+Test Cases/cInsertTripDetails_Test,,,,2019-09-23 17:24:18,2019-09-23 17:24:19,1.230s,FAILED
+"sendRequestAndVerify(findTestObject(""aValidate OTP"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-23 17:24:18,2019-09-23 17:24:19,0.719s,FAILED
+,,,,,,,
+Test Cases/cUpdateTripDetails_Test,,,,2019-09-23 17:24:19,2019-09-23 17:24:20,0.735s,PASSED
+file1 = new java.io.File(D:\InsertTripDetails_ID.txt),,,,2019-09-23 17:24:19,2019-09-23 17:24:19,0.001s,PASSED
+triPID = file1.readLines(),,,,2019-09-23 17:24:19,2019-09-23 17:24:19,0.002s,PASSED
+"println(""-------------->"" + triPID)",,,,2019-09-23 17:24:19,2019-09-23 17:24:19,0.001s,PASSED
+"sendRequest(findTestObject(""aValidate OTP"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-23 17:24:19,2019-09-23 17:24:19,0.238s,PASSED
+"sendRequest(findTestObject(""cUpdate Trip Detail"", [""uptripiD"":triPID, ""userId"":userid]))",,,,2019-09-23 17:24:19,2019-09-23 17:24:20,0.256s,PASSED

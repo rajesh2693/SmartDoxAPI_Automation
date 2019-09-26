@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>tMergeContactDetail_Test</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>04234072-78c2-49e6-b30b-a593255ae229</testCaseGuid>
+   <variable>
+      <defaultValue>'a847c339-dd92-4cf5-8da3-c1778a668e9c'</defaultValue>
+      <description></description>
+      <id>ad61b527-db8b-4f58-a8f3-0942bb74628c</id>
+      <masked>false</masked>
+      <name>countryID</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>cInsertTripDetails_Test</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0baedb6a-1464-409f-831c-625fd87158ac</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>90be6f61-c29d-4a01-9f27-f293ef22d746</id>
+      <masked>false</masked>
+      <name>tripid</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>26f5116a-5936-48f0-9872-7937fa8764b3</id>
+      <masked>false</masked>
+      <name>startriptime</name>
+   </variable>
+   <variable>
+      <defaultValue>'Bangalore'</defaultValue>
+      <description></description>
+      <id>f3018af5-22bd-4ae8-af63-abc4493bf1af</id>
+      <masked>false</masked>
+      <name>startripLocality</name>
+   </variable>
+</TestCaseEntity>

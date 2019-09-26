@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>jUserGeographyDetails_Test</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9d0db8f0-692a-4a98-96a4-ca13a4681e5c</testCaseGuid>
+   <variable>
+      <defaultValue>'2AC5D7A3-3547-4FAC-A366-F13048172422'</defaultValue>
+      <description></description>
+      <id>c68232be-7d31-4216-9608-962bb6f33d64</id>
+      <masked>false</masked>
+      <name>versiontableId</name>
+   </variable>
+</TestCaseEntity>

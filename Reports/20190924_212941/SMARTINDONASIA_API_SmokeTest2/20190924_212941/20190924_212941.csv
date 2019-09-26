@@ -1,0 +1,35 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+SMARTINDONASIA_API_SmokeTest2,,,,2019-09-24 21:29:44,2019-09-24 21:29:50,6.178s,INCOMPLETE
+,,,,,,,
+Test Cases/a.ValidateMobileNumber_Test,,,,2019-09-24 21:29:45,2019-09-24 21:29:48,3.338s,PASSED
+"sendRequest(findTestObject(""aValidate Mobile Number"", [""protocal"":Endpoint]))",,,,2019-09-24 21:29:45,2019-09-24 21:29:47,1.672s,PASSED
+"response = sendRequestAndVerify(findTestObject(""aValidate Mobile Number"", [""protocal"":Endpoint]))",,,,2019-09-24 21:29:47,2019-09-24 21:29:48,1.066s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2019-09-24 21:29:48,2019-09-24 21:29:48,0.013s,PASSED
+result = slurper.parseText(response.getResponseText()),,,,2019-09-24 21:29:48,2019-09-24 21:29:48,0.025s,PASSED
+"println(""***************************************"")",,,,2019-09-24 21:29:48,2019-09-24 21:29:48,0.009s,PASSED
+"println(""THIS IS THE RESPONSE FROM VALIDATEMOBILENUMBER TEST CASE = "" + result)",,,,2019-09-24 21:29:48,2019-09-24 21:29:48,0.004s,PASSED
+"println(""***************************************"")",,,,2019-09-24 21:29:48,2019-09-24 21:29:48,0.001s,PASSED
+value = uniqueTokenCode,,,,2019-09-24 21:29:48,2019-09-24 21:29:48,0.019s,PASSED
+println(value),,,,2019-09-24 21:29:48,2019-09-24 21:29:48,0.002s,PASSED
+uniquetoken = value,,,,2019-09-24 21:29:48,2019-09-24 21:29:48,0.002s,PASSED
+"println(""***************************************"")",,,,2019-09-24 21:29:48,2019-09-24 21:29:48,0.008s,PASSED
+"println(""UNIQ TOKEN ID IS GENARATED  = "" + uniquetoken)",,,,2019-09-24 21:29:48,2019-09-24 21:29:48,0.004s,PASSED
+"println(""***************************************"")",,,,2019-09-24 21:29:48,2019-09-24 21:29:48,0.001s,PASSED
+,,,,,,,
+Test Cases/aValidate_OTPTest,,,,2019-09-24 21:29:48,2019-09-24 21:29:49,0.833s,PASSED
+"sendRequest(findTestObject(""aValidate OTP"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-24 21:29:48,2019-09-24 21:29:49,0.242s,PASSED
+"response1 = sendRequest(findTestObject(""aValidate Mobile Number""))",,,,2019-09-24 21:29:49,2019-09-24 21:29:49,0.301s,PASSED
+slurper1 = new groovy.json.JsonSlurper(),,,,2019-09-24 21:29:49,2019-09-24 21:29:49,0.001s,PASSED
+result1 = slurper1.parseText(responseBodyContent),,,,2019-09-24 21:29:49,2019-09-24 21:29:49,0.002s,PASSED
+"println(""***************************************"")",,,,2019-09-24 21:29:49,2019-09-24 21:29:49,0.001s,PASSED
+"println(""THIS IS THE RESPONSE FROM VALIDATEOTP TEST CASE = "" + result1)",,,,2019-09-24 21:29:49,2019-09-24 21:29:49,0.001s,PASSED
+"println(""***************************************"")",,,,2019-09-24 21:29:49,2019-09-24 21:29:49,0.002s,PASSED
+value1 = userId,,,,2019-09-24 21:29:49,2019-09-24 21:29:49,0.002s,PASSED
+userid = value1,,,,2019-09-24 21:29:49,2019-09-24 21:29:49,0.001s,PASSED
+"println(""***************************************"")",,,,2019-09-24 21:29:49,2019-09-24 21:29:49,0.002s,PASSED
+"println(""THE USER ID IS GENARATED  = "" + userid)",,,,2019-09-24 21:29:49,2019-09-24 21:29:49,0.002s,PASSED
+"println(""***************************************"")",,,,2019-09-24 21:29:49,2019-09-24 21:29:49,0.001s,PASSED
+,,,,,,,
+Test Cases/yMobileTracking_Test,,,,2019-09-24 21:29:49,2019-09-24 21:29:50,1.625s,FAILED
+"sendRequest(findTestObject(""yMobile Tracking"", [""uniqueToken"":uniquetoken, ""userId"":userid, ""createdDatE"":createdDatE, ""ctiD"":ctiD, ""submittedDatE"":submittedDatE]))",,,,2019-09-24 21:29:49,2019-09-24 21:29:50,0.254s,PASSED
+"responsey = sendRequestAndVerify(findTestObject(""yMobile Tracking"", [""uniqueToken"":uniquetoken, ""userId"":userid, ""createdDatE"":createdDatE, ""ctiD"":ctiD, ""submittedDatE"":submittedDatE]))",,,,2019-09-24 21:29:50,2019-09-24 21:29:50,0.787s,FAILED

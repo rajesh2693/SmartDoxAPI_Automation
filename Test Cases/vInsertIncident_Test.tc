@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>vInsertIncident_Test</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d169da64-df9b-4980-9509-1ac469003800</testCaseGuid>
+   <variable>
+      <defaultValue>'bangalore'</defaultValue>
+      <description></description>
+      <id>a6d04999-399f-4135-81b8-e293f699ff38</id>
+      <masked>false</masked>
+      <name>checkInLocality</name>
+   </variable>
+   <variable>
+      <defaultValue>'Bangalore'</defaultValue>
+      <description></description>
+      <id>f7d0227b-5b51-4718-892a-2df28ca2a17a</id>
+      <masked>false</masked>
+      <name>incidentLocality</name>
+   </variable>
+</TestCaseEntity>

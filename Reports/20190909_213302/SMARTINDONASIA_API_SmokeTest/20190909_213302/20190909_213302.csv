@@ -1,0 +1,60 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+SMARTINDONASIA_API_SmokeTest,,,,2019-09-09 21:33:05,2019-09-09 21:33:12,7.230s,INCOMPLETE
+,,,,,,,
+Test Cases/a.ValidateMobileNumberTest,,,,2019-09-09 21:33:05,2019-09-09 21:33:09,3.525s,PASSED
+"response = sendRequestAndVerify(findTestObject(""avalidate_mobile_number""))",,,,2019-09-09 21:33:06,2019-09-09 21:33:09,2.751s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2019-09-09 21:33:09,2019-09-09 21:33:09,0.010s,PASSED
+result = slurper.parseText(response.getResponseText()),,,,2019-09-09 21:33:09,2019-09-09 21:33:09,0.024s,PASSED
+"println(""***************************************"")",,,,2019-09-09 21:33:09,2019-09-09 21:33:09,0.006s,PASSED
+"println(""THIS IS THE RESPONSE FROM VALIDATEMOBILENUMBER TEST CASE = "" + result)",,,,2019-09-09 21:33:09,2019-09-09 21:33:09,0.004s,PASSED
+"println(""***************************************"")",,,,2019-09-09 21:33:09,2019-09-09 21:33:09,0.002s,PASSED
+value = uniqueTokenCode,,,,2019-09-09 21:33:09,2019-09-09 21:33:09,0.008s,PASSED
+println(value),,,,2019-09-09 21:33:09,2019-09-09 21:33:09,0.001s,PASSED
+uniquetoken = value,,,,2019-09-09 21:33:09,2019-09-09 21:33:09,0.018s,PASSED
+"println(""***************************************"")",,,,2019-09-09 21:33:09,2019-09-09 21:33:09,0.001s,PASSED
+"println(""UNIQ TOKEN ID IS GENARATED  = "" + uniquetoken)",,,,2019-09-09 21:33:09,2019-09-09 21:33:09,0.002s,PASSED
+"println(""***************************************"")",,,,2019-09-09 21:33:09,2019-09-09 21:33:09,0.001s,PASSED
+,,,,,,,
+Test Cases/aValidate_OTPTest,,,,2019-09-09 21:33:09,2019-09-09 21:33:11,1.756s,PASSED
+"sendRequestAndVerify(findTestObject(""avalidate_OTP"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-09 21:33:09,2019-09-09 21:33:10,0.670s,PASSED
+"response1 = sendRequestAndVerify(findTestObject(""avalidate_mobile_number""))",,,,2019-09-09 21:33:10,2019-09-09 21:33:11,0.770s,PASSED
+slurper1 = new groovy.json.JsonSlurper(),,,,2019-09-09 21:33:11,2019-09-09 21:33:11,0.001s,PASSED
+result1 = slurper1.parseText(response1.getResponseText()),,,,2019-09-09 21:33:11,2019-09-09 21:33:11,0.001s,PASSED
+"println(""***************************************"")",,,,2019-09-09 21:33:11,2019-09-09 21:33:11,0.001s,PASSED
+"println(""THIS IS THE RESPONSE FROM VALIDATEOTP TEST CASE = "" + result1)",,,,2019-09-09 21:33:11,2019-09-09 21:33:11,0.001s,PASSED
+"println(""***************************************"")",,,,2019-09-09 21:33:11,2019-09-09 21:33:11,0.001s,PASSED
+value1 = userId,,,,2019-09-09 21:33:11,2019-09-09 21:33:11,0.001s,PASSED
+userid = value1,,,,2019-09-09 21:33:11,2019-09-09 21:33:11,0.001s,PASSED
+"println(""***************************************"")",,,,2019-09-09 21:33:11,2019-09-09 21:33:11,0.001s,PASSED
+"println(""THE USER ID IS GENARATED  = "" + userid)",,,,2019-09-09 21:33:11,2019-09-09 21:33:11,0.001s,PASSED
+"println(""***************************************"")",,,,2019-09-09 21:33:11,2019-09-09 21:33:11,0.001s,PASSED
+,,,,,,,
+Test Cases/bInsertUser_CheckIn,,,,2019-09-09 21:33:11,2019-09-09 21:33:11,0.690s,PASSED
+chkInID = toString().toUpperCase(),,,,2019-09-09 21:33:11,2019-09-09 21:33:11,0.007s,PASSED
+println(chkInID),,,,2019-09-09 21:33:11,2019-09-09 21:33:11,0.001s,PASSED
+now = new java.util.Date(),,,,2019-09-09 21:33:11,2019-09-09 21:33:11,0.007s,PASSED
+"chkInTime = now.format(""dd-MM-YYYY HH:mm:ss +5:30"")",,,,2019-09-09 21:33:11,2019-09-09 21:33:11,0.004s,PASSED
+println(chkInTime),,,,2019-09-09 21:33:11,2019-09-09 21:33:11,0.002s,PASSED
+"resp3 = sendRequest(findTestObject(""bInsertUserCheckIn"", [""uniqueToken"":uniquetoken, ""userId"":userid, ""checkInTime"":chkInTime, ""checkInID"":chkInID, ""checkinLocality"":checkinLocality]))",,,,2019-09-09 21:33:11,2019-09-09 21:33:11,0.276s,PASSED
+slurper3 = new groovy.json.JsonSlurper(),,,,2019-09-09 21:33:11,2019-09-09 21:33:11,0.001s,PASSED
+result3 = slurper3.parseText(resp3.getResponseText()),,,,2019-09-09 21:33:11,2019-09-09 21:33:11,0.000s,PASSED
+"println(""***************************************
+"")",,,,2019-09-09 21:33:11,2019-09-09 21:33:11,0.001s,PASSED
+"println(""THIS IS THE RESPONSE FROM USER_CHECKIN TEST CASE = "" + result3)",,,,2019-09-09 21:33:11,2019-09-09 21:33:11,0.000s,PASSED
+"println(""***************************************
+"")",,,,2019-09-09 21:33:11,2019-09-09 21:33:11,0.000s,PASSED
+"toString().split(chkInID, 0)",,,,2019-09-09 21:33:11,2019-09-09 21:33:11,0.002s,PASSED
+"value3 = toString().substring(11, 47)",,,,2019-09-09 21:33:11,2019-09-09 21:33:11,0.001s,PASSED
+println(value3),,,,2019-09-09 21:33:11,2019-09-09 21:33:11,0.001s,PASSED
+"println(""THE CHECKIN  iD IS   = "" + value3)",,,,2019-09-09 21:33:11,2019-09-09 21:33:11,0.000s,PASSED
+f = new java.io.File(D:\Checkin_ID.txt),,,,2019-09-09 21:33:11,2019-09-09 21:33:11,0.001s,PASSED
+f.write(value3),,,,2019-09-09 21:33:11,2019-09-09 21:33:11,0.034s,PASSED
+,,,,,,,
+Test Cases/bUpdateUser_CheckIn,,,,2019-09-09 21:33:11,2019-09-09 21:33:12,0.786s,PASSED
+file1 = new java.io.File(D:\InsertTripDetails_ID.txt),,,,2019-09-09 21:33:12,2019-09-09 21:33:12,0.001s,PASSED
+checkinID = file1.readLines(),,,,2019-09-09 21:33:12,2019-09-09 21:33:12,0.011s,PASSED
+"println(""-------------->"" + checkinID)",,,,2019-09-09 21:33:12,2019-09-09 21:33:12,0.010s,PASSED
+now = new java.util.Date(),,,,2019-09-09 21:33:12,2019-09-09 21:33:12,0.001s,PASSED
+"chkOutTime = now.format(""dd-MM-YYYY HH:mm:ss +5:30"")",,,,2019-09-09 21:33:12,2019-09-09 21:33:12,0.001s,PASSED
+println(chkOutTime),,,,2019-09-09 21:33:12,2019-09-09 21:33:12,0.003s,PASSED
+"resp4 = sendRequest(findTestObject(""bUpdateUserCheckIn"", [""uniqueToken"":uniquetoken, ""userId"":userid, ""checkinID"":checkinID, ""checkedOutTime"":chkOutTime]))",,,,2019-09-09 21:33:12,2019-09-09 21:33:12,0.305s,PASSED

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites name="SMARTINDONASIA_API_SmokeTest" time="8" tests="4" failures="0" errors="1">
+    <testsuite name="SMARTINDONASIA_API_SmokeTest" tests="4" failures="0" errors="1" time="8" timestamp="2019-09-25 21:12:57" hostname="Rajesh.Veeranna - VSPLBLRLT0060.visionetsystems.com" id="Test Suites/SMARTINDONASIA_API_SmokeTest">
+        <properties>
+            <property name="deviceName" value=""/>
+            <property name="devicePlatform" value=""/>
+            <property name="logFolder" value="C:\\Users\\rajesh.veeranna\\Katalon Studio\\SmartIndonasia\\Reports\\20190925_211254\\SMARTINDONASIA_API_SmokeTest\\20190925_211254"/>
+            <property name="logFiles" value="C:\\Users\\rajesh.veeranna\\Katalon Studio\\SmartIndonasia\\Reports\\20190925_211254\\SMARTINDONASIA_API_SmokeTest\\20190925_211254\\execution0.log"/>
+            <property name="attachments" value=""/>
+            <property name="hostName" value="Rajesh.Veeranna - VSPLBLRLT0060.visionetsystems.com"/>
+            <property name="hostAddress" value="10.130.3.183"/>
+            <property name="os" value="Windows 7 64bit"/>
+            <property name="katalonVersion" value="6.3.3.11"/>
+        </properties>
+        <testcase name="Test Cases/a.ValidateMobileNumber_Test" classname="Test Cases/a.ValidateMobileNumber_Test" status="PASSED">
+            <system-out>2019-09-25 21:12:57 - [TEST_CASE][PASSED] - Test Cases/a.ValidateMobileNumber_Test: Test Cases/a.ValidateMobileNumber_Test&#xD;
+&#xD;
+2019-09-25 21:12:57 - [TEST_STEP][PASSED] - sendRequest(findTestObject("aValidate Mobile Number", ["protocal":Endpoint])): Send request successfully&#xD;
+&#xD;
+2019-09-25 21:12:59 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190925_211254\SMARTINDONASIA_API_SmokeTest\20190925_211254\requests\main\0.har&#xD;
+&#xD;
+2019-09-25 21:12:59 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-09-25 21:12:59 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("aValidate Mobile Number", ["protocal":Endpoint])): Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-25 21:13:00 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190925_211254\SMARTINDONASIA_API_SmokeTest\20190925_211254\requests\main\1.har&#xD;
+&#xD;
+2019-09-25 21:13:00 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully&#xD;
+&#xD;
+2019-09-25 21:13:00 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null&#xD;
+&#xD;
+2019-09-25 21:13:00 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null&#xD;
+&#xD;
+2019-09-25 21:13:00 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully&#xD;
+&#xD;
+2019-09-25 21:13:00 - [MESSAGE][PASSED] - Verify response status code successfully&#xD;
+&#xD;
+2019-09-25 21:13:00 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null&#xD;
+&#xD;
+2019-09-25 21:13:01 - [MESSAGE][PASSED] - Verify response successfully&#xD;
+&#xD;
+2019-09-25 21:13:01 - [MESSAGE][PASSED] - Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-25 21:13:01 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null&#xD;
+&#xD;
+2019-09-25 21:13:01 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseText()): null&#xD;
+&#xD;
+2019-09-25 21:13:01 - [TEST_STEP][PASSED] - println("***************************************"): null&#xD;
+&#xD;
+2019-09-25 21:13:01 - [TEST_STEP][PASSED] - println("THIS IS THE RESPONSE FROM VALIDATEMOBILENUMBER TEST CASE = " + result): null&#xD;
+&#xD;
+2019-09-25 21:13:01 - [TEST_STEP][PASSED] - println("***************************************"): null&#xD;
+&#xD;
+2019-09-25 21:13:01 - [TEST_STEP][PASSED] - value = uniqueTokenCode: null&#xD;
+&#xD;
+2019-09-25 21:13:01 - [TEST_STEP][PASSED] - println(value): null&#xD;
+&#xD;
+2019-09-25 21:13:01 - [TEST_STEP][PASSED] - uniquetoken = value: null&#xD;
+&#xD;
+2019-09-25 21:13:01 - [TEST_STEP][PASSED] - println("***************************************"): null&#xD;
+&#xD;
+2019-09-25 21:13:01 - [TEST_STEP][PASSED] - println("UNIQ TOKEN ID IS GENARATED  = " + uniquetoken): null&#xD;
+&#xD;
+2019-09-25 21:13:01 - [TEST_STEP][PASSED] - println("***************************************"): null</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/aValidate_OTPTest" classname="Test Cases/aValidate_OTPTest" status="PASSED">
+            <system-out>2019-09-25 21:13:01 - [TEST_CASE][PASSED] - Test Cases/aValidate_OTPTest: Test Cases/aValidate_OTPTest&#xD;
+&#xD;
+2019-09-25 21:13:01 - [TEST_STEP][PASSED] - sendRequest(findTestObject("aValidate OTP", ["uniqueToken":uniquetoken, "userId":userid])): Send request successfully&#xD;
+&#xD;
+2019-09-25 21:13:01 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190925_211254\SMARTINDONASIA_API_SmokeTest\20190925_211254\requests\main\2.har&#xD;
+&#xD;
+2019-09-25 21:13:01 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-09-25 21:13:01 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("aValidate Mobile Number")): Send request successfully&#xD;
+&#xD;
+2019-09-25 21:13:02 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190925_211254\SMARTINDONASIA_API_SmokeTest\20190925_211254\requests\main\3.har&#xD;
+&#xD;
+2019-09-25 21:13:02 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-09-25 21:13:02 - [TEST_STEP][PASSED] - slurper1 = new groovy.json.JsonSlurper(): null&#xD;
+&#xD;
+2019-09-25 21:13:02 - [TEST_STEP][PASSED] - result1 = slurper1.parseText(responseBodyContent): null&#xD;
+&#xD;
+2019-09-25 21:13:02 - [TEST_STEP][PASSED] - println("***************************************"): null&#xD;
+&#xD;
+2019-09-25 21:13:02 - [TEST_STEP][PASSED] - println("THIS IS THE RESPONSE FROM VALIDATEOTP TEST CASE = " + result1): null&#xD;
+&#xD;
+2019-09-25 21:13:02 - [TEST_STEP][PASSED] - println("***************************************"): null&#xD;
+&#xD;
+2019-09-25 21:13:02 - [TEST_STEP][PASSED] - value1 = userId: null&#xD;
+&#xD;
+2019-09-25 21:13:02 - [TEST_STEP][PASSED] - userid = value1: null&#xD;
+&#xD;
+2019-09-25 21:13:02 - [TEST_STEP][PASSED] - println("***************************************"): null&#xD;
+&#xD;
+2019-09-25 21:13:02 - [TEST_STEP][PASSED] - println("THE USER ID IS GENARATED  = " + userid): null&#xD;
+&#xD;
+2019-09-25 21:13:02 - [TEST_STEP][PASSED] - println("***************************************"): null</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/bInsertUser_CheckInTest" classname="Test Cases/bInsertUser_CheckInTest" status="PASSED">
+            <system-out>2019-09-25 21:13:02 - [TEST_CASE][PASSED] - Test Cases/bInsertUser_CheckInTest: Test Cases/bInsertUser_CheckInTest&#xD;
+&#xD;
+2019-09-25 21:13:02 - [TEST_STEP][PASSED] - chkInID = toString().toUpperCase(): null&#xD;
+&#xD;
+2019-09-25 21:13:02 - [TEST_STEP][PASSED] - println(chkInID): null&#xD;
+&#xD;
+2019-09-25 21:13:02 - [TEST_STEP][PASSED] - f = new java.io.File(D:\SmartDoxApiResponse\CtID.txt): null&#xD;
+&#xD;
+2019-09-25 21:13:02 - [TEST_STEP][PASSED] - f.write(chkInID): null&#xD;
+&#xD;
+2019-09-25 21:13:02 - [TEST_STEP][PASSED] - now = new java.util.Date(): null&#xD;
+&#xD;
+2019-09-25 21:13:02 - [TEST_STEP][PASSED] - chkInTime = now.format("dd-MM-YYYY HH:mm:ss +5:30"): null&#xD;
+&#xD;
+2019-09-25 21:13:02 - [TEST_STEP][PASSED] - println(chkInTime): null&#xD;
+&#xD;
+2019-09-25 21:13:02 - [TEST_STEP][PASSED] - resp3 = sendRequest(findTestObject("bInsert User CheckIn", ["uniqueToken":uniquetoken, "userId":userid, "checkInTime":chkInTime, "checkInID":chkInID, "checkinLocality":checkinLocality])): Send request successfully&#xD;
+&#xD;
+2019-09-25 21:13:02 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190925_211254\SMARTINDONASIA_API_SmokeTest\20190925_211254\requests\main\4.har&#xD;
+&#xD;
+2019-09-25 21:13:02 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-09-25 21:13:02 - [TEST_STEP][PASSED] - slurper3 = new groovy.json.JsonSlurper(): null&#xD;
+&#xD;
+2019-09-25 21:13:02 - [TEST_STEP][PASSED] - result3 = slurper3.parseText(resp3.getResponseText()): null&#xD;
+&#xD;
+2019-09-25 21:13:02 - [TEST_STEP][PASSED] - println("***************************************
+"): null&#xD;
+&#xD;
+2019-09-25 21:13:02 - [TEST_STEP][PASSED] - println("THIS IS THE RESPONSE FROM USER_CHECKIN TEST CASE = " + result3): null&#xD;
+&#xD;
+2019-09-25 21:13:02 - [TEST_STEP][PASSED] - println("***************************************
+"): null&#xD;
+&#xD;
+2019-09-25 21:13:02 - [TEST_STEP][PASSED] - toString().split(chkInID, 0): null&#xD;
+&#xD;
+2019-09-25 21:13:02 - [TEST_STEP][PASSED] - value3 = toString().substring(11, 47): null&#xD;
+&#xD;
+2019-09-25 21:13:02 - [TEST_STEP][PASSED] - println(value3): null&#xD;
+&#xD;
+2019-09-25 21:13:02 - [TEST_STEP][PASSED] - println("THE CHECKIN  iD IS   = " + value3): null&#xD;
+&#xD;
+2019-09-25 21:13:02 - [TEST_STEP][PASSED] - f = new java.io.File(D:\Checkin_ID.txt): null&#xD;
+&#xD;
+2019-09-25 21:13:02 - [TEST_STEP][PASSED] - f.write(value3): null</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/zMobileAppVersion_Test" classname="Test Cases/zMobileAppVersion_Test" status="PASSED">
+            <system-out>2019-09-25 21:13:02 - [TEST_CASE][PASSED] - Test Cases/zMobileAppVersion_Test: Test Cases/zMobileAppVersion_Test&#xD;
+&#xD;
+2019-09-25 21:13:03 - [TEST_STEP][PASSED] - sendRequest(findTestObject("y1Mobile App Version", ["uniqueToken":uniquetoken, "oparatingSystem":oparatingSystem, "versionNumber":versionNumber])): Send request successfully&#xD;
+&#xD;
+2019-09-25 21:13:03 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190925_211254\SMARTINDONASIA_API_SmokeTest\20190925_211254\requests\main\5.har&#xD;
+&#xD;
+2019-09-25 21:13:03 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-09-25 21:13:03 - [TEST_STEP][PASSED] - responsez = sendRequestAndVerify(findTestObject("y1Mobile App Version", ["uniqueToken":uniquetoken, "oparatingSystem":oparatingSystem, "versionNumber":versionNumber])): Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-25 21:13:04 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190925_211254\SMARTINDONASIA_API_SmokeTest\20190925_211254\requests\main\6.har&#xD;
+&#xD;
+2019-09-25 21:13:04 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully&#xD;
+&#xD;
+2019-09-25 21:13:04 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null&#xD;
+&#xD;
+2019-09-25 21:13:04 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null&#xD;
+&#xD;
+2019-09-25 21:13:04 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully&#xD;
+&#xD;
+2019-09-25 21:13:04 - [MESSAGE][PASSED] - Verify response status code successfully&#xD;
+&#xD;
+2019-09-25 21:13:04 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null&#xD;
+&#xD;
+2019-09-25 21:13:04 - [MESSAGE][PASSED] - Verify response successfully&#xD;
+&#xD;
+2019-09-25 21:13:04 - [MESSAGE][PASSED] - Send request and verify the response successfully&#xD;
+&#xD;
+2019-09-25 21:13:04 - [TEST_STEP][PASSED] - slurperz = new groovy.json.JsonSlurper(): null&#xD;
+&#xD;
+2019-09-25 21:13:04 - [TEST_STEP][PASSED] - resultz = slurperz.parseText(responsez.getResponseText()): null&#xD;
+&#xD;
+2019-09-25 21:13:04 - [TEST_STEP][PASSED] - println("***************************************"): null&#xD;
+&#xD;
+2019-09-25 21:13:04 - [TEST_STEP][PASSED] - println("THIS IS THE RESPONSE FROM MOBILE APP VERSION TEST CASE = " + resultz): null&#xD;
+&#xD;
+2019-09-25 21:13:04 - [TEST_STEP][PASSED] - println("***************************************"): null&#xD;
+&#xD;
+2019-09-25 21:13:04 - [TEST_STEP][PASSED] - CtID = toString().toUpperCase(): null&#xD;
+&#xD;
+2019-09-25 21:13:04 - [TEST_STEP][PASSED] - f = new java.io.File(D:\SmartDoxApiResponse\CtID.txt): null&#xD;
+&#xD;
+2019-09-25 21:13:04 - [TEST_STEP][PASSED] - f.write(CtID): null&#xD;
+&#xD;
+2019-09-25 21:13:04 - [TEST_STEP][PASSED] - now = new java.util.Date(): null&#xD;
+&#xD;
+2019-09-25 21:13:04 - [TEST_STEP][PASSED] - CreatedDate = now.format("dd-MM-YYYY HH:mm:ss +5:30"): null&#xD;
+&#xD;
+2019-09-25 21:13:04 - [TEST_STEP][PASSED] - f = new java.io.File(D:\SmartDoxApiResponse\CreatedDate.txt): null&#xD;
+&#xD;
+2019-09-25 21:13:04 - [TEST_STEP][PASSED] - f.write(CreatedDate): null&#xD;
+&#xD;
+2019-09-25 21:13:04 - [TEST_STEP][PASSED] - now1 = new java.util.Date(): null&#xD;
+&#xD;
+2019-09-25 21:13:04 - [TEST_STEP][PASSED] - SubmitedDate = now1.format("dd-MM-YYYY HH:mm:ss +5:30"): null&#xD;
+&#xD;
+2019-09-25 21:13:04 - [TEST_STEP][PASSED] - f = new java.io.File(D:\SmartDoxApiResponse\SubmitedDate.txt): null&#xD;
+&#xD;
+2019-09-25 21:13:04 - [TEST_STEP][PASSED] - f.write(SubmitedDate): null</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/x1TargetBreakDown_Test" classname="Test Cases/x1TargetBreakDown_Test" status="ERROR">
+            <error type="ERROR" message="Test Cases/x1TargetBreakDown_Test FAILED.&#xA;Reason:&#xA;groovy.lang.MissingMethodException: No signature of method: java.io.File.write() is applicable for argument types: (groovy.json.internal.LazyMap) values: [[Message:An error has occurred.]]&#xA;Possible solutions: write(java.lang.String), write(java.lang.String, java.lang.String), wait(), wait(long), with(groovy.lang.Closure), size()&#xD;&#xA;&#x9;at x1TargetBreakDown_Test.run(x1TargetBreakDown_Test:47)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;&#xA;&#x9;at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;&#xA;&#x9;at TempTestSuite1569426174061.run(TempTestSuite1569426174061.groovy:35)&#xD;&#xA;"/>
+            <system-out>2019-09-25 21:13:04 - [TEST_CASE][ERROR] - Test Cases/x1TargetBreakDown_Test: Test Cases/x1TargetBreakDown_Test FAILED.
+Reason:
+groovy.lang.MissingMethodException: No signature of method: java.io.File.write() is applicable for argument types: (groovy.json.internal.LazyMap) values: [[Message:An error has occurred.]]
+Possible solutions: write(java.lang.String), write(java.lang.String, java.lang.String), wait(), wait(long), with(groovy.lang.Closure), size()&#xD;
+	at x1TargetBreakDown_Test.run(x1TargetBreakDown_Test:47)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1569426174061.run(TempTestSuite1569426174061.groovy:35)&#xD;
+&#xD;
+&#xD;
+2019-09-25 21:13:04 - [TEST_STEP][PASSED] - now = new java.util.Date(): null&#xD;
+&#xD;
+2019-09-25 21:13:04 - [TEST_STEP][PASSED] - fromDatE = now.format("dd-MM-YYYY HH:mm:ss +5:30"): null&#xD;
+&#xD;
+2019-09-25 21:13:04 - [TEST_STEP][PASSED] - println(fromDatE): null&#xD;
+&#xD;
+2019-09-25 21:13:04 - [TEST_STEP][PASSED] - toDatE = now.format("dd-MM-YYYY HH:mm:ss +5:30"): null&#xD;
+&#xD;
+2019-09-25 21:13:04 - [TEST_STEP][PASSED] - println(toDatE): null&#xD;
+&#xD;
+2019-09-25 21:13:04 - [TEST_STEP][PASSED] - sendRequest(findTestObject("x1Target Break Down", ["uniqueToken":uniquetoken, "userId":userid, "fromDatE":fromDatE, "toDatE":toDatE])): Send request successfully&#xD;
+&#xD;
+2019-09-25 21:13:05 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190925_211254\SMARTINDONASIA_API_SmokeTest\20190925_211254\requests\main\7.har&#xD;
+&#xD;
+2019-09-25 21:13:05 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-09-25 21:13:05 - [TEST_STEP][PASSED] - responsex1 = sendRequest(findTestObject("x1Target Break Down", ["uniqueToken":uniquetoken, "userId":userid, "fromDatE":fromDatE, "toDatE":toDatE])): Send request successfully&#xD;
+&#xD;
+2019-09-25 21:13:05 - [MESSAGE][INFO] - HAR: C:\Users\rajesh.veeranna\Katalon Studio\SmartIndonasia\Reports\20190925_211254\SMARTINDONASIA_API_SmokeTest\20190925_211254\requests\main\8.har&#xD;
+&#xD;
+2019-09-25 21:13:05 - [MESSAGE][PASSED] - Send request successfully&#xD;
+&#xD;
+2019-09-25 21:13:05 - [TEST_STEP][PASSED] - slurperx = new groovy.json.JsonSlurper(): null&#xD;
+&#xD;
+2019-09-25 21:13:05 - [TEST_STEP][PASSED] - resultx = slurperx.parseText(responsex1.getResponseText()): null&#xD;
+&#xD;
+2019-09-25 21:13:05 - [TEST_STEP][PASSED] - println("***************************************"): null&#xD;
+&#xD;
+2019-09-25 21:13:05 - [TEST_STEP][PASSED] - println("THIS IS THE RESPONSE FROM DASBOARD TEST CASE = " + resultx): null&#xD;
+&#xD;
+2019-09-25 21:13:05 - [TEST_STEP][PASSED] - println("***************************************"): null&#xD;
+&#xD;
+2019-09-25 21:13:05 - [TEST_STEP][PASSED] - f = new java.io.File(D:\SmartDoxApiResponse\TargetBreakDownResponse.txt): null&#xD;
+&#xD;
+2019-09-25 21:13:05 - [TEST_STEP][PASSED] - f.write(resultx): null</system-out>
+            <system-err>2019-09-25 21:13:04 - [TEST_CASE][ERROR] - Test Cases/x1TargetBreakDown_Test: Test Cases/x1TargetBreakDown_Test FAILED.
+Reason:
+groovy.lang.MissingMethodException: No signature of method: java.io.File.write() is applicable for argument types: (groovy.json.internal.LazyMap) values: [[Message:An error has occurred.]]
+Possible solutions: write(java.lang.String), write(java.lang.String, java.lang.String), wait(), wait(long), with(groovy.lang.Closure), size()&#xD;
+	at x1TargetBreakDown_Test.run(x1TargetBreakDown_Test:47)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xD;
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)&#xD;
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)&#xD;
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)&#xD;
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)&#xD;
+	at TempTestSuite1569426174061.run(TempTestSuite1569426174061.groovy:35)</system-err>
+        </testcase>
+        <system-out>2019-09-25 21:12:57 - [TEST_SUITE][INCOMPLETE] - SMARTINDONASIA_API_SmokeTest: null</system-out>
+        <system-err>2019-09-25 21:12:57 - [TEST_SUITE][INCOMPLETE] - SMARTINDONASIA_API_SmokeTest: null</system-err>
+    </testsuite>
+</testsuites>

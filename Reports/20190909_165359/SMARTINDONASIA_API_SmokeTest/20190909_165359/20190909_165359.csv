@@ -1,0 +1,17 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+SMARTINDONASIA_API_SmokeTest,,,,2019-09-09 16:54:03,2019-09-09 16:55:32,1m - 29.532s,INCOMPLETE
+,,,,,,,
+Test Cases/aValidateMobileNumberTest,,,,2019-09-09 16:54:03,2019-09-09 16:54:27,24.094s,FAILED
+"response = sendRequestAndVerify(findTestObject(""avalidate_mobile_number""))",,,,2019-09-09 16:54:04,2019-09-09 16:54:27,23.421s,FAILED
+,,,,,,,
+Test Cases/bValidate_OTPTest,,,,2019-09-09 16:54:27,2019-09-09 16:54:49,21.718s,FAILED
+"sendRequestAndVerify(findTestObject(""bvalidate_OTP"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-09 16:54:28,2019-09-09 16:54:49,21.303s,FAILED
+,,,,,,,
+Test Cases/cInsertTripDetailsTest,,,,2019-09-09 16:54:49,2019-09-09 16:55:11,21.571s,FAILED
+"sendRequestAndVerify(findTestObject(""bvalidate_OTP"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-09 16:54:50,2019-09-09 16:55:11,21.168s,FAILED
+,,,,,,,
+Test Cases/dUpdateTripDetails,,,,2019-09-09 16:55:11,2019-09-09 16:55:32,21.602s,FAILED
+file1 = new java.io.File(D:\InsertTripDetails_ID.txt),,,,2019-09-09 16:55:11,2019-09-09 16:55:11,0.002s,PASSED
+triPID = file1.readLines(),,,,2019-09-09 16:55:11,2019-09-09 16:55:11,0.036s,PASSED
+"println(""-------------->"" + triPID)",,,,2019-09-09 16:55:11,2019-09-09 16:55:11,0.006s,PASSED
+"sendRequest(findTestObject(""bvalidate_OTP"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-09 16:55:11,2019-09-09 16:55:32,21.198s,FAILED

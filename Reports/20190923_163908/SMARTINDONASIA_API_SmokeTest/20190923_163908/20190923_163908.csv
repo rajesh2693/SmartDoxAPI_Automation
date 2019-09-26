@@ -1,0 +1,20 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+SMARTINDONASIA_API_SmokeTest,,,,2019-09-23 16:39:11,2019-09-23 16:39:18,6.532s,INCOMPLETE
+,,,,,,,
+Test Cases/a.ValidateMobileNumber_Test,,,,2019-09-23 16:39:11,2019-09-23 16:39:15,3.348s,PASSED
+"sendRequest(findTestObject(""aValidate Mobile Number"", [""protocal"":Endpoint, ""mobiLe"":mobiLe]))",,,,2019-09-23 16:39:12,2019-09-23 16:39:14,1.748s,PASSED
+"response = sendRequestAndVerify(findTestObject(""aValidate Mobile Number"", [""protocal"":Endpoint, ""mobiLe"":mobiLe]))",,,,2019-09-23 16:39:14,2019-09-23 16:39:15,0.968s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2019-09-23 16:39:15,2019-09-23 16:39:15,0.011s,PASSED
+result = slurper.parseText(response.getResponseText()),,,,2019-09-23 16:39:15,2019-09-23 16:39:15,0.020s,PASSED
+"println(""***************************************"")",,,,2019-09-23 16:39:15,2019-09-23 16:39:15,0.005s,PASSED
+"println(""THIS IS THE RESPONSE FROM VALIDATEMOBILENUMBER TEST CASE = "" + result)",,,,2019-09-23 16:39:15,2019-09-23 16:39:15,0.003s,PASSED
+"println(""***************************************"")",,,,2019-09-23 16:39:15,2019-09-23 16:39:15,0.001s,PASSED
+value = uniqueTokenCode,,,,2019-09-23 16:39:15,2019-09-23 16:39:15,0.007s,PASSED
+println(value),,,,2019-09-23 16:39:15,2019-09-23 16:39:15,0.001s,PASSED
+uniquetoken = value,,,,2019-09-23 16:39:15,2019-09-23 16:39:15,0.001s,PASSED
+"println(""***************************************"")",,,,2019-09-23 16:39:15,2019-09-23 16:39:15,0.002s,PASSED
+"println(""UNIQ TOKEN ID IS GENARATED  = "" + uniquetoken)",,,,2019-09-23 16:39:15,2019-09-23 16:39:15,0.002s,PASSED
+"println(""***************************************"")",,,,2019-09-23 16:39:15,2019-09-23 16:39:15,0.001s,PASSED
+,,,,,,,
+Test Cases/aValidate_OTPTest,,,,2019-09-23 16:39:15,2019-09-23 16:39:18,2.823s,FAILED
+"sendRequest(findTestObject(""aValidate Mobile Number"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-23 16:39:15,2019-09-23 16:39:17,2.501s,FAILED

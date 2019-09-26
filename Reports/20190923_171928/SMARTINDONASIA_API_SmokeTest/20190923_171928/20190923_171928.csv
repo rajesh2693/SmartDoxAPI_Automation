@@ -1,0 +1,21 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+SMARTINDONASIA_API_SmokeTest,,,,2019-09-23 17:19:30,2019-09-23 17:19:36,5.384s,INCOMPLETE
+,,,,,,,
+Test Cases/a.ValidateMobileNumber_Test,,,,2019-09-23 17:19:31,2019-09-23 17:19:34,3.490s,PASSED
+"sendRequest(findTestObject(""aValidate Mobile Number"", [""protocal"":Endpoint]))",,,,2019-09-23 17:19:31,2019-09-23 17:19:33,1.795s,PASSED
+"response = sendRequestAndVerify(findTestObject(""aValidate Mobile Number"", [""protocal"":Endpoint]))",,,,2019-09-23 17:19:33,2019-09-23 17:19:34,1.159s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2019-09-23 17:19:34,2019-09-23 17:19:34,0.011s,PASSED
+result = slurper.parseText(response.getResponseText()),,,,2019-09-23 17:19:34,2019-09-23 17:19:34,0.024s,PASSED
+"println(""***************************************"")",,,,2019-09-23 17:19:34,2019-09-23 17:19:34,0.007s,PASSED
+"println(""THIS IS THE RESPONSE FROM VALIDATEMOBILENUMBER TEST CASE = "" + result)",,,,2019-09-23 17:19:34,2019-09-23 17:19:34,0.005s,PASSED
+"println(""***************************************"")",,,,2019-09-23 17:19:34,2019-09-23 17:19:34,0.001s,PASSED
+value = uniqueTokenCode,,,,2019-09-23 17:19:34,2019-09-23 17:19:34,0.018s,PASSED
+println(value),,,,2019-09-23 17:19:34,2019-09-23 17:19:34,0.002s,PASSED
+uniquetoken = value,,,,2019-09-23 17:19:34,2019-09-23 17:19:34,0.002s,PASSED
+"println(""***************************************"")",,,,2019-09-23 17:19:34,2019-09-23 17:19:34,0.007s,PASSED
+"println(""UNIQ TOKEN ID IS GENARATED  = "" + uniquetoken)",,,,2019-09-23 17:19:34,2019-09-23 17:19:34,0.004s,PASSED
+"println(""***************************************"")",,,,2019-09-23 17:19:34,2019-09-23 17:19:34,0.002s,PASSED
+,,,,,,,
+Test Cases/aValidate_OTPTest,,,,2019-09-23 17:19:34,2019-09-23 17:19:36,1.498s,FAILED
+"sendRequest(findTestObject(""aValidate OTP"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-23 17:19:35,2019-09-23 17:19:35,0.468s,PASSED
+"response1 = sendRequestAndVerify(findTestObject(""aValidate OTP"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-23 17:19:35,2019-09-23 17:19:36,0.672s,FAILED

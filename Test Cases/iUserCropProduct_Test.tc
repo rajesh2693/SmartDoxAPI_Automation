@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>iUserCropProduct_Test</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>364c7532-67a7-44a0-9ff7-2cb459820c9c</testCaseGuid>
+   <variable>
+      <defaultValue>'3A934A5A-3A46-4FB6-8BD7-FBBBD32F5353'</defaultValue>
+      <description></description>
+      <id>782f6264-b26a-4741-bf5c-75e46f868d08</id>
+      <masked>false</masked>
+      <name>versiontableId</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,23 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+SMARTINDONASIA_API_SmokeTest,,,,2019-09-23 16:37:48,2019-09-23 16:37:53,4.451s,INCOMPLETE
+,,,,,,,
+Test Cases/a.ValidateMobileNumber_Test,,,,2019-09-23 16:37:49,2019-09-23 16:37:52,3.201s,PASSED
+"sendRequest(findTestObject(""aValidate Mobile Number"", [""protocal"":Endpoint, ""mobiLe"":mobiLe]))",,,,2019-09-23 16:37:49,2019-09-23 16:37:51,1.536s,PASSED
+"response = sendRequestAndVerify(findTestObject(""aValidate Mobile Number"", [""protocal"":Endpoint, ""mobiLe"":mobiLe]))",,,,2019-09-23 16:37:51,2019-09-23 16:37:52,1.056s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2019-09-23 16:37:52,2019-09-23 16:37:52,0.023s,PASSED
+result = slurper.parseText(response.getResponseText()),,,,2019-09-23 16:37:52,2019-09-23 16:37:52,0.022s,PASSED
+"println(""***************************************"")",,,,2019-09-23 16:37:52,2019-09-23 16:37:52,0.006s,PASSED
+"println(""THIS IS THE RESPONSE FROM VALIDATEMOBILENUMBER TEST CASE = "" + result)",,,,2019-09-23 16:37:52,2019-09-23 16:37:52,0.003s,PASSED
+"println(""***************************************"")",,,,2019-09-23 16:37:52,2019-09-23 16:37:52,0.001s,PASSED
+value = uniqueTokenCode,,,,2019-09-23 16:37:52,2019-09-23 16:37:52,0.007s,PASSED
+println(value),,,,2019-09-23 16:37:52,2019-09-23 16:37:52,0.001s,PASSED
+uniquetoken = value,,,,2019-09-23 16:37:52,2019-09-23 16:37:52,0.001s,PASSED
+"println(""***************************************"")",,,,2019-09-23 16:37:52,2019-09-23 16:37:52,0.002s,PASSED
+"println(""UNIQ TOKEN ID IS GENARATED  = "" + uniquetoken)",,,,2019-09-23 16:37:52,2019-09-23 16:37:52,0.002s,PASSED
+"println(""***************************************"")",,,,2019-09-23 16:37:52,2019-09-23 16:37:52,0.001s,PASSED
+,,,,,,,
+Test Cases/aValidate_OTPTest,,,,2019-09-23 16:37:52,2019-09-23 16:37:53,0.869s,ERROR
+"sendRequest(findTestObject(""aValidate OTP"", [""uniqueToken"":uniquetoken, ""userId"":userid]))",,,,2019-09-23 16:37:52,2019-09-23 16:37:53,0.218s,PASSED
+"response1 = sendRequest(findTestObject(""aValidate Mobile Number""))",,,,2019-09-23 16:37:53,2019-09-23 16:37:53,0.252s,PASSED
+slurper1 = new groovy.json.JsonSlurper(),,,,2019-09-23 16:37:53,2019-09-23 16:37:53,0.001s,PASSED
+result1 = slurper1.parseText(response1.getResponseText()),,,,2019-09-23 16:37:53,2019-09-23 16:37:53,0.001s,PASSED

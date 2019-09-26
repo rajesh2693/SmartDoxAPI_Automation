@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>dLeaveType_Test</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a8e0982c-db54-4e80-b5f2-ea489a6c3b1e</testCaseGuid>
+   <variable>
+      <defaultValue>'54b4256c-dc5d-410f-b79a-786233d0d5e6'</defaultValue>
+      <description></description>
+      <id>8a665b87-4dea-4011-b03d-7d8f6719bab2</id>
+      <masked>false</masked>
+      <name>versiontableId</name>
+   </variable>
+</TestCaseEntity>
